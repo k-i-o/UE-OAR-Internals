@@ -950,7 +950,7 @@
 //#include "SDK/Setup_Jewellery_1_classes.hpp"
 //#include "SDK/RandomMapUI_classes.hpp"
 //#include "SDK/MapSelectUI_classes.hpp"
-//#include "SDK/RobberController_classes.hpp"
+#include "SDK/RobberController_classes.hpp"
 //#include "SDK/MessagePopup_classes.hpp"
 //#include "SDK/LoadingImageUI_classes.hpp"
 //#include "SDK/InviteRecievedUI_classes.hpp"
