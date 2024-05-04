@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="config.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_demo.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_draw.cpp" />
@@ -163,6 +164,10 @@
     <ClCompile Include="externals\UEDump\SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\Engine_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\PlayerCharacter_functions.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="gui_base.cpp" />
+    <ClCompile Include="main_window.cpp" />
+    <ClCompile Include="manager.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +178,7 @@
     <ResourceCompile Include="externals\libs\kiero\minhook\dll_resources\MinHook.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config.h" />
     <ClInclude Include="externals\libs\imgui\imconfig.h" />
     <ClInclude Include="externals\libs\imgui\imgui.h" />
     <ClInclude Include="externals\libs\imgui\imgui_impl_dx11.h" />
@@ -219,7 +225,10 @@
     <ClInclude Include="externals\UEDump\SDK\SteamCore_structs.hpp" />
     <ClInclude Include="externals\UEDump\UnrealContainers.hpp" />
     <ClInclude Include="functions.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="manager.h" />
     <ClInclude Include="variables.h" />
+    <ClInclude Include="version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
