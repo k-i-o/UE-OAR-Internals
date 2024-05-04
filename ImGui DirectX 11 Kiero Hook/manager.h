@@ -14,6 +14,7 @@ public:
 	MainManager() noexcept;
 
 	void InitSDK();
+	void DumpUObjects();
 
 	std::unique_ptr<KFNGUI>    m_pGui;
 	std::unique_ptr<KFNConfig> m_pConfig;

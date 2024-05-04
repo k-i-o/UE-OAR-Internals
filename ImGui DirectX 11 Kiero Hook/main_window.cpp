@@ -21,8 +21,18 @@ void KFNGUI::RenderMainWindow()
 
 	ImGui::SetCursorPos(ImVec2{ (windowSize.x - ImGui::CalcTextSize(APP_NAME).x) * 0.5f, ImGui::CalcTextSize(APP_NAME).y * 0.5f });
 	ImGui::Text(APP_NAME);
-	bool v = false;
-	ImGui::Checkbox("IhateNiggers!", &v);
+
+	ImGui::Checkbox("Speed", &manager->m_pConfig->speed.enabled);
+	ImGui::SliderInt("Level", &manager->m_pConfig->levelHack.level, 0, 9999);
+	if(ImGui::Button("SetLevel"))
+	{
+		manager->m_pConfig->levelHack.setLevel = true;
+	}
+
+#ifdef _DEBUG
+	if (ImGui::Button("Dump UObjects"))
+		manager->DumpUObjects();
+#endif
 
 	ImGui::End();
 }

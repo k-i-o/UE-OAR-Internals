@@ -10,7 +10,8 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 	{
 		if (Vars::MyController)
 		{
-			hiddenMouse = true;
+			if(!Vars::MyController->bShowMouseCursor)
+				hiddenMouse = true;
 			Vars::MyController->bShowMouseCursor = true;
 		}
 		ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
@@ -75,7 +76,7 @@ HRESULT __stdcall KFNGUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterva
 	ImGui::Render();
 
 	// Call our features
-	// manager->m_pHacks->RunHacks();
+	manager->m_pHacks->RunHacks();
 
 	manager->m_pGui->pContext->OMSetRenderTargets(1, &manager->m_pGui->mainRenderTargetView, NULL);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());

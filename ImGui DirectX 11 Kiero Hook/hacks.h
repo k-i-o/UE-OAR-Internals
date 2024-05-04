@@ -8,5 +8,6 @@ public:
 
 private:
 	// Hacks
-
+	void SpeedHack();
+	void LevelHack();
 };

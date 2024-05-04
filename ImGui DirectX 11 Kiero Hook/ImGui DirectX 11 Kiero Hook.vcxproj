@@ -164,6 +164,10 @@
     <ClCompile Include="externals\UEDump\SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\Engine_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\PlayerCharacter_functions.cpp" />
+    <ClCompile Include="externals\UEDump\SDK\RobberController_functions.cpp" />
+    <ClCompile Include="externals\UEDump\SDK\RobberGameState_functions.cpp" />
+    <ClCompile Include="externals\UEDump\SDK\RobberGI_functions.cpp" />
+    <ClCompile Include="externals\UEDump\SDK\RobberGM_functions.cpp" />
     <ClCompile Include="gui.cpp" />
     <ClCompile Include="gui_base.cpp" />
     <ClCompile Include="hacks.cpp" />
@@ -200,6 +204,7 @@
     <ClInclude Include="externals\libs\kiero\minhook\src\trampoline.h" />
     <ClInclude Include="externals\UEDump\PropertyFixup.hpp" />
     <ClInclude Include="externals\UEDump\SDK.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\AdvancedSessions_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\AttachmentArrayStructure_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\AudioPlatformConfiguration_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\Basic.hpp" />
@@ -212,6 +217,7 @@
     <ClInclude Include="externals\UEDump\SDK\Engine_parameters.hpp" />
     <ClInclude Include="externals\UEDump\SDK\Engine_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\InputCore_structs.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\InputSettingStruct_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\OnlineSubsystemUtils_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PacketHandler_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PhysicsCore_classes.hpp" />
@@ -219,7 +225,18 @@
     <ClInclude Include="externals\UEDump\SDK\PlayerCharacter_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PlayerCharacter_parameters.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PropertyAccess_structs.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberController_classes.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberController_parameters.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGameState_classes.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGameState_parameters.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGI_classes.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGI_parameters.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGM_classes.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberGM_parameters.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\RobberPlayerState_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\SettingsStruct_structs.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\ShopItemCategory_structs.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\SkillProgressStruct_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\SkillSaveStruct_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\SlateCore_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\Slate_structs.hpp" />
