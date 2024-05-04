@@ -35,6 +35,14 @@ void KFNGUI::RenderMainWindow()
 		manager->m_pConfig->cashHack.setCash = true;
 	}
 
+	ImGui::Checkbox("Fly hack", &manager->m_pConfig->flyHack.enabled);
+	if(manager->m_pConfig->flyHack.enabled)
+	{
+		ImGui::Indent();
+		ImGui::Checkbox("Noclip", &manager->m_pConfig->flyHack.noclip);
+		ImGui::Unindent();
+	}
+
 	ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);
 	if(manager->m_pConfig->miscHacks.enabled)
 	{

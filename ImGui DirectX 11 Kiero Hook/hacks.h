@@ -12,4 +12,5 @@ private:
 	void LevelHack();
 	void CashHack();
 	void MiscHacks();
+	void FlyHack();
 };
