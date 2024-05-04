@@ -2,7 +2,7 @@
 
 #include "externals/includes.h"
 
-class GUI
+class KFNGUI
 {
 public:
 	// Vars

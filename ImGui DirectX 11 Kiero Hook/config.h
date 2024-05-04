@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-class Config
+class KFNConfig
 {
 public:
 	void Hotkeys();

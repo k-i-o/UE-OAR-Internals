@@ -4,7 +4,7 @@
 #include "gui.h"
 #include "manager.h"
 
-void GUI::SetupImGuiFonts()
+void KFNGUI::SetupImGuiFonts()
 {
 	// Setup Dear ImGui font
 	const ImGuiIO& io = ImGui::GetIO();
@@ -29,7 +29,7 @@ void GUI::SetupImGuiFonts()
 	io.Fonts->Build();
 }
 
-void GUI::SetupImGuiStyle()
+void KFNGUI::SetupImGuiStyle()
 {
 	ImGuiStyle& style = ImGui::GetStyle();
 
@@ -79,7 +79,7 @@ void GUI::SetupImGuiStyle()
 
 
 // Base
-ImFont* GUI::AddFont(float fontSize, const char* fontPath, ImFontConfig* fontCfg)
+ImFont* KFNGUI::AddFont(float fontSize, const char* fontPath, ImFontConfig* fontCfg)
 {
 	ImGuiIO& io = ImGui::GetIO();
 	(void)io;
@@ -97,7 +97,7 @@ ImFont* GUI::AddFont(float fontSize, const char* fontPath, ImFontConfig* fontCfg
 	return font;
 }
 
-ImWchar* GUI::GetFontGlyphRanges() noexcept
+ImWchar* KFNGUI::GetFontGlyphRanges() noexcept
 {
 	static ImVector<ImWchar> ranges;
 	if (ranges.empty())

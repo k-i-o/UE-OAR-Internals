@@ -1,6 +1,6 @@
 #pragma once
 
-class Hacks
+class KFNHacks
 {
 public:
 	// Main

@@ -1,9 +1,9 @@
 #include "manager.h"
 
 MainManager::MainManager() noexcept :
-    m_pGui(std::make_unique<GUI>()),
-	m_pConfig(std::make_unique<Config>()),
-	m_pHacks(std::make_unique<Hacks>()) {}
+    m_pGui(std::make_unique<KFNGUI>()),
+	m_pConfig(std::make_unique<KFNConfig>()),
+	m_pHacks(std::make_unique<KFNHacks>()) {}
 
 void MainManager::InitSDK()
 {

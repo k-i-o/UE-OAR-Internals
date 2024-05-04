@@ -36,7 +36,7 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
 }
 
 // Main
-HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
+HRESULT __stdcall KFNGUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
 	if (!manager->m_pGui->initDx)
 	{
@@ -97,7 +97,7 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 
 
 // ImGui
-void GUI::InitImGui()
+void KFNGUI::InitImGui()
 {
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO();
@@ -111,7 +111,7 @@ void GUI::InitImGui()
 	ImGui_ImplDX11_Init(pDevice, pContext);
 }
 
-void GUI::RenderImGui()
+void KFNGUI::RenderImGui()
 {
 	manager->m_pGui->RenderMainWindow();
 	// TODO: Render esp

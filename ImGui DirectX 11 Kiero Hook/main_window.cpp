@@ -3,7 +3,7 @@
 
 #include "gui.h"
 
-void GUI::RenderMainWindow()
+void KFNGUI::RenderMainWindow()
 {
 	if (!manager->m_pConfig->menu.enabled)
 		return;

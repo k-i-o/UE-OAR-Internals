@@ -1,6 +1,6 @@
 #include "hacks.h"
 
-void Hacks::RunHacks()
+void KFNHacks::RunHacks()
 {
 	
 }

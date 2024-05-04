@@ -3,7 +3,7 @@
 
 #include "config.h"
 
-void Config::Hotkeys()
+void KFNConfig::Hotkeys()
 {
 	if (GetAsyncKeyState(menu.keyEnable) & 1)
 	{

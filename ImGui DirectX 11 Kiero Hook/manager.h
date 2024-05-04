@@ -15,9 +15,9 @@ public:
 
 	void InitSDK();
 
-	std::unique_ptr<GUI>    m_pGui;
-	std::unique_ptr<Config> m_pConfig;
-	std::unique_ptr<Hacks>  m_pHacks;
+	std::unique_ptr<KFNGUI>    m_pGui;
+	std::unique_ptr<KFNConfig> m_pConfig;
+	std::unique_ptr<KFNHacks>  m_pHacks;
 };
 
 extern std::unique_ptr<MainManager> manager;
