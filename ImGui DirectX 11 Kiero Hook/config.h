@@ -58,4 +58,9 @@ public:
 		bool enabled{ false };
 		bool noclip{ false };
 	} flyHack;
+
+	struct GunHacks
+	{
+		bool enabled{ false };
+	} gunHacks;
 };
