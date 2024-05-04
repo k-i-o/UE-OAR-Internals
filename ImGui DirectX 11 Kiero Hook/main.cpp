@@ -15,21 +15,24 @@ DWORD WINAPI MainThread(HMODULE hmodule)
 	{
 		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
 		{
+			// Initialize manager
+			manager = std::make_unique<MainManager>();
+
+			// Bind kiero
+			kiero::bind(8, (void**)&manager->m_pGui->oPresent, manager->m_pGui->hkPresent);
+
+#ifdef _DEBUG
 			AllocConsole();
 			SetConsoleTitleA(APP_NAME);
 			freopen_s(&file, "CONOUT$", "w", stdout);
-
-			// Initialize manager
-			manager = std::make_unique<MainManager>();
-		
-			// Bind kiero
-			kiero::bind(8, (void**)&manager->m_pGui->oPresent, manager->m_pGui->hkPresent);
-			
 			std::cout << APP_NAME << " successfully initialized...\n";
 			std::cout << "Press INS to open window!\n";
+#endif
+
+			// Init SDK
+			manager->InitSDK();
 
 			init_hook = true;
-
 		}
 	} while (!init_hook);
 

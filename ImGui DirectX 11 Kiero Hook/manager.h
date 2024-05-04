@@ -12,6 +12,8 @@ class MainManager
 public:
 	MainManager() noexcept;
 
+	void InitSDK();
+
 	std::unique_ptr<GUI> m_pGui;
 	std::unique_ptr<Config> m_pConfig;
 };
