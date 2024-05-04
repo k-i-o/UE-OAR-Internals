@@ -75,6 +75,9 @@ HRESULT __stdcall KFNGUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterva
 
 	ImGui::Render();
 
+	// Update sdk
+	manager->InitSDK();
+
 	// Call our features
 	manager->m_pHacks->RunHacks();
 

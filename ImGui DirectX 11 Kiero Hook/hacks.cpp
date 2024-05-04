@@ -10,6 +10,7 @@ void KFNHacks::RunHacks()
 	LevelHack();
 	CashHack();
 	MiscHacks();
+	FlyHack();
 }
 
 
@@ -86,4 +87,32 @@ void KFNHacks::MiscHacks()
 
 	if (manager->m_pConfig->miscHacks.addedDamageImmunity)
 		Vars::CharacterClass->DamageImmunity = manager->m_pConfig->miscHacks.damageImmunity;
+}
+
+void KFNHacks::FlyHack()
+{
+	// Todo: Improve with camera mgr
+	if (!manager->m_pConfig->flyHack.enabled)
+		return;
+	if (!Vars::CharacterClass)
+		return;
+	if (!Vars::CharacterClass->HasLoaded_)
+		return;
+
+	if (manager->m_pConfig->flyHack.noclip)
+		Vars::CharacterClass->bActorEnableCollision = false;
+
+	Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
+	Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
+
+	if (GetAsyncKeyState(VK_SPACE))
+	{
+		SDK::FVector posUp = { 0.f, 0.f, 10.f };
+		Vars::CharacterClass->CharacterMovement->AddInputVector(posUp, true);
+	}
+	if (GetAsyncKeyState(VK_LCONTROL))
+	{
+		SDK::FVector posDown = { 0.f, 0.f, -10.f };
+		Vars::CharacterClass->CharacterMovement->AddInputVector(posDown, true);
+	}
 }

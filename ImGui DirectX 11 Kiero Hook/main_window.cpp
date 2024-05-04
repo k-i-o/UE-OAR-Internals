@@ -23,6 +23,12 @@ void KFNGUI::RenderMainWindow()
 	ImGui::Text(APP_NAME);
 
 	ImGui::Checkbox("Speed", &manager->m_pConfig->speed.enabled);
+	if (manager->m_pConfig->speed.enabled)
+	{
+		ImGui::Indent();
+		ImGui::SliderFloat("##speedValue", &manager->m_pConfig->speed.speed, 0.f, 3000.f);
+		ImGui::Unindent();
+	}
 	ImGui::SliderInt("Level", &manager->m_pConfig->levelHack.level, 0, 9999);
 	if(ImGui::Button("Set Level"))
 	{
@@ -33,6 +39,14 @@ void KFNGUI::RenderMainWindow()
 	if (ImGui::Button("Set Cash"))
 	{
 		manager->m_pConfig->cashHack.setCash = true;
+	}
+
+	ImGui::Checkbox("Fly hack", &manager->m_pConfig->flyHack.enabled);
+	if(manager->m_pConfig->flyHack.enabled)
+	{
+		ImGui::Indent();
+		ImGui::Checkbox("Noclip", &manager->m_pConfig->flyHack.noclip);
+		ImGui::Unindent();
 	}
 
 	ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);

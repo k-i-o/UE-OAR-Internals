@@ -52,4 +52,10 @@ public:
 		bool setCash{ false };
 		int cashValue{ 694200 };
 	} cashHack;
+
+	struct FlyHack
+	{
+		bool enabled{ false };
+		bool noclip{ false };
+	} flyHack;
 };
