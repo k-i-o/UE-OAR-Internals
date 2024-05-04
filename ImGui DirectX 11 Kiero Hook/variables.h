@@ -5,17 +5,17 @@
 #include "externals/UEDump/SDK.hpp"
 
 namespace Vars {
-	bool Debug = true;
-	bool ShowMenu = true;
+	inline bool Debug = true;
+	inline bool ShowMenu = true;
 
-	SDK::UEngine* Engine{};
-	SDK::UWorld* World{};
+	inline SDK::UEngine* Engine{};
+	inline SDK::UWorld* World{};
 	//inline SDK::AActor* actor{};
 	//inline SDK::FVector location{};
-	SDK::APlayerController* MyController{};
+	inline SDK::APlayerController* MyController{};
 	//inline SDK::TArray<SDK::AActor*> actors{};
 	//inline SDK::AActor* LocalP{};
-	SDK::APlayerCharacter_C* CharacterClass{};
-	SDK::APawn* MyPawn{};
-	SDK::TArray<class SDK::APlayerState*> PlayerArray{};
+	inline SDK::APlayerCharacter_C* CharacterClass{};
+	inline SDK::APawn* MyPawn{};
+	inline SDK::TArray<class SDK::APlayerState*> PlayerArray{};
 }
