@@ -10,4 +10,6 @@ private:
 	// Hacks
 	void SpeedHack();
 	void LevelHack();
+	void CashHack();
+	void MiscHacks();
 };

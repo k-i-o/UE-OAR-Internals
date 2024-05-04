@@ -18,7 +18,7 @@ public:
 	struct Speed
 	{
 		bool enabled{ false };
-		float speed{ 5000.f };
+		float speed{ 2500.f };
 	} speed;
 
 	struct LevelHack
@@ -27,4 +27,29 @@ public:
 		int level = 1;
 	} levelHack;
 
+	struct MiscHacks
+	{
+		bool enabled{ false };
+
+		bool addedGuardPhoneTime{ false };
+		int phoneTime{ 15 };
+
+		bool addedAccuracy{ false };
+		int accuracy{ 99 };
+
+		bool addedDrillImmunityTime{ false };
+		int drillImmunityTime{ false };
+
+		bool addedLastBulletsDmg{ false };
+		int lastBulletsDmg{ 99 };
+
+		bool addedDamageImmunity{ false };
+		int damageImmunity{ 99 };
+	} miscHacks;
+
+	struct CashHack
+	{
+		bool setCash{ false };
+		int cashValue{ 694200 };
+	} cashHack;
 };
