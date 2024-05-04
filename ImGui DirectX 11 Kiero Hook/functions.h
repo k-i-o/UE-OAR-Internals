@@ -10,7 +10,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::ULocalPlayer* ptr)
 	{
@@ -19,7 +19,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::APlayerController* ptr)
 	{
@@ -28,7 +28,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::APlayerState* ptr)
 	{
@@ -37,7 +37,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::UWorld* ptr)
 	{
@@ -46,7 +46,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::AGameStateBase* ptr)
 	{
@@ -55,7 +55,7 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 	inline bool IsBadPoint(SDK::UProjectileMovementComponent* ptr)
 	{
@@ -64,6 +64,6 @@ namespace Fns {
 		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
 			return true;
 
-		else return false;
+		return false;
 	}
 }
