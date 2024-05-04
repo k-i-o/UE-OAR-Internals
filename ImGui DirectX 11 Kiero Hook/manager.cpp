@@ -2,7 +2,8 @@
 
 MainManager::MainManager() noexcept :
     m_pGui(std::make_unique<GUI>()),
-	m_pConfig(std::make_unique<Config>()) {}
+	m_pConfig(std::make_unique<Config>()),
+	m_pHacks(std::make_unique<Hacks>()) {}
 
 void MainManager::InitSDK()
 {

@@ -166,6 +166,7 @@
     <ClCompile Include="externals\UEDump\SDK\PlayerCharacter_functions.cpp" />
     <ClCompile Include="gui.cpp" />
     <ClCompile Include="gui_base.cpp" />
+    <ClCompile Include="hacks.cpp" />
     <ClCompile Include="main_window.cpp" />
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -226,6 +227,7 @@
     <ClInclude Include="externals\UEDump\UnrealContainers.hpp" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="gui.h" />
+    <ClInclude Include="hacks.h" />
     <ClInclude Include="manager.h" />
     <ClInclude Include="variables.h" />
     <ClInclude Include="version.h" />
