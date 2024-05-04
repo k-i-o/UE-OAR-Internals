@@ -13,4 +13,5 @@ private:
 	void CashHack();
 	void MiscHacks();
 	void FlyHack();
+	void GunHacks();
 };

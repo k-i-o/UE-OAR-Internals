@@ -49,6 +49,8 @@ void KFNGUI::RenderMainWindow()
 		ImGui::Unindent();
 	}
 
+	ImGui::Checkbox("Gun hacks", &manager->m_pConfig->gunHacks.enabled);
+
 	ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);
 	if(manager->m_pConfig->miscHacks.enabled)
 	{
