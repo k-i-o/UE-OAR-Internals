@@ -6,22 +6,20 @@ extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	static bool hiddenMouse = false;
-	SDK::UWorld* World = SDK::UWorld::GetWorld();
-	SDK::APlayerController* MyController = World->OwningGameInstance->LocalPlayers[0]->PlayerController;
 	if (manager->m_pConfig->menu.enabled)
 	{
-		if (MyController)
+		if (Vars::MyController)
 		{
 			hiddenMouse = true;
-			MyController->bShowMouseCursor = true;
+			Vars::MyController->bShowMouseCursor = true;
 		}
 		ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
 		return true;
 	}
 
-	if(hiddenMouse && MyController)
+	if(hiddenMouse && Vars::MyController)
 	{
-		MyController->bShowMouseCursor = false;
+		Vars::MyController->bShowMouseCursor = false;
 		hiddenMouse = false;
 	}
 
