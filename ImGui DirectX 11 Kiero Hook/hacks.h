@@ -14,4 +14,6 @@ private:
 	void MiscHacks();
 	void FlyHack();
 	void GunHacks();
+	void ESP();
+	void Aimbot();
 };

@@ -62,5 +62,21 @@ public:
 	struct GunHacks
 	{
 		bool enabled{ false };
-	} gunHacks;
+	} gunHacks;	
+	
+	struct EspHacks
+	{
+		bool enabled{ false };
+	} espHacks;
+
+	struct Aimbot
+	{
+		bool enabled{ false };
+		bool silent{ false };
+		bool visibleCheck{ false };
+		bool autoShoot{ false };
+		bool autoAim{ false };
+		bool fovCheck{ false };
+		float aimFov{ 10.f };
+	} aimbotHacks;
 };

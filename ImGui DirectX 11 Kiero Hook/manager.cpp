@@ -10,7 +10,7 @@ void MainManager::InitSDK()
 	Vars::World = SDK::UWorld::GetWorld();
 	Vars::Engine = SDK::UEngine::GetEngine();
 
-	Vars::PlayerArray = Vars::World->GameState->PlayerArray;
+	Vars::PlayersArray = Vars::World->GameState->PlayerArray;
 	Vars::MyController = Vars::World->OwningGameInstance->LocalPlayers[0]->PlayerController;
 
 	Vars::MyPawn = Vars::MyController->AcknowledgedPawn;

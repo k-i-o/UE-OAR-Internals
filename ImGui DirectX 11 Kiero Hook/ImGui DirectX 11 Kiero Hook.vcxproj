@@ -212,6 +212,7 @@
     <ClInclude Include="externals\libs\kiero\minhook\src\trampoline.h" />
     <ClInclude Include="externals\UEDump\PropertyFixup.hpp" />
     <ClInclude Include="externals\UEDump\SDK.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\AdvancedSessions_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\AdvancedSessions_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\AttachmentArrayStructure_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\AudioPlatformConfiguration_structs.hpp" />
@@ -240,6 +241,7 @@
     <ClInclude Include="externals\UEDump\SDK\MovieSceneTracks_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\MovieScene_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\MovieScene_structs.hpp" />
+    <ClInclude Include="externals\UEDump\SDK\NPCBase_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\OnlineSubsystemUtils_structs.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PacketHandler_classes.hpp" />
     <ClInclude Include="externals\UEDump\SDK\PhysicsCore_classes.hpp" />

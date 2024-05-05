@@ -11,8 +11,7 @@ void KFNGUI::RenderMainWindow()
 	ImVec2 windowSize = ImVec2(800, 600);
 	std::string windowName = "##mainWindow";
 	bool* windowOpen = &manager->m_pConfig->menu.enabled;
-	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar |
-		ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_AlwaysUseWindowPadding;
+	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_AlwaysUseWindowPadding;
 
 	// Set first time window size
 	ImGui::SetNextWindowSize(windowSize, ImGuiCond_Once);
@@ -50,6 +49,15 @@ void KFNGUI::RenderMainWindow()
 	}
 
 	ImGui::Checkbox("Gun hacks", &manager->m_pConfig->gunHacks.enabled);
+
+	ImGui::Checkbox("Aimbot hacks", &manager->m_pConfig->aimbotHacks.enabled);
+	if (manager->m_pConfig->aimbotHacks.enabled) {
+		ImGui::Indent();
+		ImGui::Checkbox("Silent aimbot", &manager->m_pConfig->aimbotHacks.silent);
+		ImGui::Unindent();
+	}
+
+	ImGui::Checkbox("ESP hacks", &manager->m_pConfig->espHacks.enabled);
 
 	ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);
 	if(manager->m_pConfig->miscHacks.enabled)
