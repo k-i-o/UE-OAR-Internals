@@ -1,3 +1,4 @@
+#include "color.h"
 #include "manager.h"
 #include "version.h"
 
@@ -8,7 +9,7 @@ void KFNGUI::RenderMainWindow()
 	if (!manager->m_pConfig->menu.enabled)
 		return;
 
-	ImVec2 windowSize = ImVec2(800, 600);
+	ImVec2 windowSize = ImVec2(700, 700);
 	std::string windowName = "KFN";
 	bool* windowOpen = &manager->m_pConfig->menu.enabled;
 	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar |
@@ -17,6 +18,9 @@ void KFNGUI::RenderMainWindow()
 	// Set first time window size
 	ImGui::SetNextWindowSize(windowSize, ImGuiCond_Once);
 
+	const float opacity = 255.f * 0.85f;
+	Colors::windowBgColor.a = opacity;
+	ImGui::PushStyleColor(ImGuiCol_WindowBg, Colors::windowBgColor.imGui());
 	ImGui::Begin(windowName.c_str(), windowOpen, windowFlags);
 
 	ImGui::SliderInt("Level", &manager->m_pConfig->levelHack.level, 0, 9999);
@@ -32,7 +36,6 @@ void KFNGUI::RenderMainWindow()
 	}
 
 	ImGui::Spacing();
-
 
 	ImGui::Checkbox("Speed", &manager->m_pConfig->speed.enabled);
 	if (manager->m_pConfig->speed.enabled)
@@ -94,4 +97,6 @@ void KFNGUI::RenderMainWindow()
 #endif
 
 	ImGui::End();
+	ImGui::PopStyleColor();
+	Colors::windowBgColor.a = 255.f;
 }
