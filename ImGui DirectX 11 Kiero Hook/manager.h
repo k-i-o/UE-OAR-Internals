@@ -13,7 +13,7 @@ class MainManager
 public:
 	MainManager() noexcept;
 
-	void InitSDK();
+	bool UpdateSDK();
 	void DumpUObjects();
 
 	std::unique_ptr<KFNGUI>    m_pGui;

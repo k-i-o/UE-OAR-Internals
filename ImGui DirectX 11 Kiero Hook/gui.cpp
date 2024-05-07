@@ -76,10 +76,11 @@ HRESULT __stdcall KFNGUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterva
 	ImGui::Render();
 
 	// Update sdk
-	manager->InitSDK();
-
-	// Call our features
-	manager->m_pHacks->RunHacks();
+	if (manager->UpdateSDK())
+	{
+		// Call our features
+		manager->m_pHacks->RunHacks();
+	}
 
 	manager->m_pGui->pContext->OMSetRenderTargets(1, &manager->m_pGui->mainRenderTargetView, NULL);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());

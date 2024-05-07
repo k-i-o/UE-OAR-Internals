@@ -5,12 +5,15 @@
 
 #include "version.h"
 #include "manager.h"
+#include "externals/libs/kiero/minhook/include/MinHook.h"
 std::unique_ptr<MainManager> manager;
 
 DWORD WINAPI MainThread(HMODULE hmodule)
 {
 	bool init_hook = false;
+#ifdef _DEBUG
 	FILE* file = nullptr;
+#endif
 	do
 	{
 		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
@@ -30,7 +33,7 @@ DWORD WINAPI MainThread(HMODULE hmodule)
 #endif
 
 			// Init SDK
-			manager->InitSDK();
+			manager->UpdateSDK();
 
 			init_hook = true;
 		}
@@ -40,18 +43,19 @@ DWORD WINAPI MainThread(HMODULE hmodule)
 	while (manager->m_pConfig->menu.injected)
 	{
 		if (GetAsyncKeyState(manager->m_pConfig->menu.keyUnload) & 1)
-		{
-			if (file != nullptr)
-				fclose(file);
-			FreeConsole();
-	
-			manager->m_pConfig->menu.injected = false;
-			Sleep(1000);
-			FreeLibraryAndExitThread(hmodule, 0);
-		}
+			break;
+		Sleep(1000);
 	}
 
-	return TRUE;
+#ifdef _DEBUG
+	if (file != nullptr)
+		fclose(file);
+	FreeConsole();
+#endif
+	manager->m_pConfig->menu.injected = false;
+	FreeLibraryAndExitThread(hmodule, 0);
+
+	return 0;
 }
 
 BOOL WINAPI DllMain(HMODULE hMod, DWORD dwReason, LPVOID lpReserved)
@@ -64,6 +68,7 @@ BOOL WINAPI DllMain(HMODULE hMod, DWORD dwReason, LPVOID lpReserved)
 		break;
 	case DLL_PROCESS_DETACH:
 		kiero::shutdown();
+		MH_Uninitialize();
 		break;
 	default:
 		break;

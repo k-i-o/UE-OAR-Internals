@@ -148,13 +148,19 @@ void KFNHacks::GunHacks()
 		return;
 	if (!Vars::CharacterClass->HoldingGun)
 		return;
-
-	Vars::CharacterClass->HoldingGun->RecoilStrength = 0.f;
-	Vars::CharacterClass->HoldingGun->Accuracy = 99.f;
-	Vars::CharacterClass->HoldingGun->CalculatedReloadTime = 0.f;
-	Vars::CharacterClass->HoldingGun->Damage = 999;
-	Vars::CharacterClass->HoldingGun->BulletsLeft = 1337;
-	Vars::CharacterClass->HoldingGun->GunKickMultiplier = 0.f;
+	__try
+	{
+		Vars::CharacterClass->HoldingGun->RecoilStrength = 0.f;
+		Vars::CharacterClass->HoldingGun->Accuracy = 99.f;
+		Vars::CharacterClass->HoldingGun->CalculatedReloadTime = 0.f;
+		Vars::CharacterClass->HoldingGun->Damage = 999;
+		Vars::CharacterClass->HoldingGun->BulletsLeft = 1337;
+		Vars::CharacterClass->HoldingGun->GunKickMultiplier = 0.f;
+	}
+	__except(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION)
+	{
+		;
+	}
 }
 
 void KFNHacks::JumpHack()
