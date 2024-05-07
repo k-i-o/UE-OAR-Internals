@@ -9,28 +9,18 @@ void KFNGUI::RenderMainWindow()
 		return;
 
 	ImVec2 windowSize = ImVec2(800, 600);
-	std::string windowName = "##mainWindow";
+	std::string windowName = "KFN";
 	bool* windowOpen = &manager->m_pConfig->menu.enabled;
 	ImGuiWindowFlags windowFlags = ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar |
-		ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_AlwaysUseWindowPadding;
+		ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_AlwaysUseWindowPadding;
 
 	// Set first time window size
 	ImGui::SetNextWindowSize(windowSize, ImGuiCond_Once);
 
 	ImGui::Begin(windowName.c_str(), windowOpen, windowFlags);
 
-	ImGui::SetCursorPos(ImVec2{ (windowSize.x - ImGui::CalcTextSize(APP_NAME).x) * 0.5f, ImGui::CalcTextSize(APP_NAME).y * 0.5f });
-	ImGui::Text(APP_NAME);
-
-	ImGui::Checkbox("Speed", &manager->m_pConfig->speed.enabled);
-	if (manager->m_pConfig->speed.enabled)
-	{
-		ImGui::Indent();
-		ImGui::SliderFloat("##speedValue", &manager->m_pConfig->speed.speed, 0.f, 3000.f);
-		ImGui::Unindent();
-	}
 	ImGui::SliderInt("Level", &manager->m_pConfig->levelHack.level, 0, 9999);
-	if(ImGui::Button("Set Level"))
+	if (ImGui::Button("Set Level"))
 	{
 		manager->m_pConfig->levelHack.setLevel = true;
 	}
@@ -39,6 +29,25 @@ void KFNGUI::RenderMainWindow()
 	if (ImGui::Button("Set Cash"))
 	{
 		manager->m_pConfig->cashHack.setCash = true;
+	}
+
+	ImGui::Spacing();
+
+
+	ImGui::Checkbox("Speed", &manager->m_pConfig->speed.enabled);
+	if (manager->m_pConfig->speed.enabled)
+	{
+		ImGui::Indent();
+		ImGui::SliderFloat("##speedValue", &manager->m_pConfig->speed.speed, 0.f, 3000.f);
+		ImGui::Unindent();
+	}
+
+	ImGui::Checkbox("Jump", &manager->m_pConfig->jumpHack.enabled);
+	if (manager->m_pConfig->jumpHack.enabled)
+	{
+		ImGui::Indent();
+		ImGui::SliderInt("##jumpValue", &manager->m_pConfig->jumpHack.value, 0.f, 30);
+		ImGui::Unindent();
 	}
 
 	ImGui::Checkbox("Fly hack", &manager->m_pConfig->flyHack.enabled);

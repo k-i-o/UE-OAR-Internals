@@ -63,4 +63,10 @@ public:
 	{
 		bool enabled{ false };
 	} gunHacks;
+
+	struct JumpHack
+	{
+		bool enabled{ false };
+		int value{ 1 };
+	} jumpHack;
 };

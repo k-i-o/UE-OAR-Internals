@@ -1,6 +1,7 @@
 #include <filesystem>
 #include <string>
 
+#include "color.h"
 #include "gui.h"
 #include "manager.h"
 
@@ -50,31 +51,31 @@ void KFNGUI::SetupImGuiStyle()
 	// style.ScaleAllSizes(vars->dpi / USER_DEFAULT_SCREEN_DPI);
 
 	// Colors
-	// style.Colors[ImGuiCol_Border] = Colors::UltramarineBlueLow.imVec4();
-	// style.Colors[ImGuiCol_CheckMark] = Colors::UltramarineBlue.imVec4();
-	// style.Colors[ImGuiCol_Text] = Colors::mainFontColor.imVec4();
-	// 
-	// style.Colors[ImGuiCol_TitleBg] = Colors::UltramarineBlue.imVec4();
-	// style.Colors[ImGuiCol_TitleBgActive] = Colors::UltramarineBlue.imVec4();
-	// 
-	// style.Colors[ImGuiCol_WindowBg] = Colors::windowBgColor.imVec4();
-	// style.Colors[ImGuiCol_ChildBg] = Colors::childBgColor.imVec4();
-	// 
-	// style.Colors[ImGuiCol_Button] = Colors::buttonColor.imVec4();
-	// style.Colors[ImGuiCol_ButtonHovered] = Colors::buttonHoveredColor.imVec4();
-	// style.Colors[ImGuiCol_ButtonActive] = Colors::buttonActiveColor.imVec4();
-	// 
-	// style.Colors[ImGuiCol_FrameBg] = style.Colors[ImGuiCol_WindowBg]; // Invisible frame bg
-	// style.Colors[ImGuiCol_FrameBgHovered] = Colors::frameColor.imVec4();
-	// style.Colors[ImGuiCol_FrameBgActive] = Colors::frameColor.imVec4();
-	// 
-	// style.Colors[ImGuiCol_Header] = Colors::headerColor.imVec4();
-	// style.Colors[ImGuiCol_HeaderActive] = Colors::headerColor.imVec4();
-	// style.Colors[ImGuiCol_HeaderHovered] = Colors::headerColor.imVec4();
-	// 
-	// style.Colors[ImGuiCol_Separator] = Colors::UltramarineBlue.imVec4();
-	// style.Colors[ImGuiCol_SeparatorHovered] = Colors::UltramarineBlue.imVec4();
-	// style.Colors[ImGuiCol_SeparatorActive] = Colors::UltramarineBlue.imVec4();
+    style.Colors[ImGuiCol_Border] = Colors::UltramarineBlueLow.imVec4();
+    style.Colors[ImGuiCol_CheckMark] = Colors::UltramarineBlue.imVec4();
+    style.Colors[ImGuiCol_Text] = Colors::mainFontColor.imVec4();
+    
+    style.Colors[ImGuiCol_TitleBg] = Colors::UltramarineBlue.imVec4();
+    style.Colors[ImGuiCol_TitleBgActive] = Colors::UltramarineBlue.imVec4();
+    
+    style.Colors[ImGuiCol_WindowBg] = Colors::windowBgColor.imVec4();
+    style.Colors[ImGuiCol_ChildBg] = Colors::childBgColor.imVec4();
+    
+    style.Colors[ImGuiCol_Button] = Colors::buttonColor.imVec4();
+    style.Colors[ImGuiCol_ButtonHovered] = Colors::buttonHoveredColor.imVec4();
+    style.Colors[ImGuiCol_ButtonActive] = Colors::buttonActiveColor.imVec4();
+    
+    style.Colors[ImGuiCol_FrameBg] = style.Colors[ImGuiCol_WindowBg]; // Invisible frame bg
+    style.Colors[ImGuiCol_FrameBgHovered] = Colors::frameColor.imVec4();
+    style.Colors[ImGuiCol_FrameBgActive] = Colors::frameColor.imVec4();
+    
+    style.Colors[ImGuiCol_Header] = Colors::headerColor.imVec4();
+    style.Colors[ImGuiCol_HeaderActive] = Colors::headerColor.imVec4();
+    style.Colors[ImGuiCol_HeaderHovered] = Colors::headerColor.imVec4();
+    
+    style.Colors[ImGuiCol_Separator] = Colors::UltramarineBlue.imVec4();
+    style.Colors[ImGuiCol_SeparatorHovered] = Colors::UltramarineBlue.imVec4();
+    style.Colors[ImGuiCol_SeparatorActive] = Colors::UltramarineBlue.imVec4();
 }
 
 

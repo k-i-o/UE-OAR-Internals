@@ -14,21 +14,28 @@ void KFNHacks::RunHacks()
 	MiscHacks();
 	FlyHack();
 	GunHacks();
+	JumpHack();
 }
 
 
 // Hacks
 void KFNHacks::SpeedHack()
 {
-	if (!manager->m_pConfig->speed.enabled)
-		return;
 	if (!Vars::CharacterClass)
 		return;
 	if (!Vars::CharacterClass->HasLoaded_)
 		return;
 
-	Vars::CharacterClass->CharacterMovement->MaxWalkSpeed = manager->m_pConfig->speed.speed;
-	Vars::CharacterClass->CharacterMovement->MaxAcceleration = manager->m_pConfig->speed.speed;
+	static bool speedState = false;
+	if (manager->m_pConfig->speed.enabled)
+	{
+		Vars::CharacterClass->CharacterMovement->MaxWalkSpeed = manager->m_pConfig->speed.speed;
+		Vars::CharacterClass->CharacterMovement->MaxAcceleration = manager->m_pConfig->speed.speed;
+	}
+	else if(!manager->m_pConfig->speed.enabled && speedState)
+	{
+		speedState = false;
+	}
 }
 
 void KFNHacks::LevelHack()
@@ -95,28 +102,38 @@ void KFNHacks::MiscHacks()
 void KFNHacks::FlyHack()
 {
 	// Todo: Improve with camera mgr
-	if (!manager->m_pConfig->flyHack.enabled)
-		return;
 	if (!Vars::CharacterClass)
 		return;
 	if (!Vars::CharacterClass->HasLoaded_)
 		return;
 
-	if (manager->m_pConfig->flyHack.noclip)
-		Vars::CharacterClass->bActorEnableCollision = false;
-
-	Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
-	Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
-
-	if (GetAsyncKeyState(VK_SPACE))
+	static bool flyHackState = false;
+	if (manager->m_pConfig->flyHack.enabled)
 	{
-		SDK::FVector posUp = { 0.f, 0.f, 10.f };
-		Vars::CharacterClass->CharacterMovement->AddInputVector(posUp, true);
+		if (manager->m_pConfig->flyHack.noclip)
+			Vars::CharacterClass->bActorEnableCollision = false;
+
+		Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
+		Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
+
+		if (GetAsyncKeyState(VK_SPACE))
+		{
+			SDK::FVector posUp = { 0.f, 0.f, 10.f };
+			Vars::CharacterClass->CharacterMovement->AddInputVector(posUp, true);
+		}
+		if (GetAsyncKeyState(VK_LCONTROL))
+		{
+			SDK::FVector posDown = { 0.f, 0.f, -10.f };
+			Vars::CharacterClass->CharacterMovement->AddInputVector(posDown, true);
+		}
+
+		flyHackState = true;
 	}
-	if (GetAsyncKeyState(VK_LCONTROL))
+	else if(!manager->m_pConfig->flyHack.enabled && flyHackState)
 	{
-		SDK::FVector posDown = { 0.f, 0.f, -10.f };
-		Vars::CharacterClass->CharacterMovement->AddInputVector(posDown, true);
+		Vars::CharacterClass->bActorEnableCollision = true;
+		Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Falling;
+		flyHackState = false;
 	}
 }
 
@@ -138,4 +155,16 @@ void KFNHacks::GunHacks()
 	Vars::CharacterClass->HoldingGun->Damage = 999;
 	Vars::CharacterClass->HoldingGun->BulletsLeft = 1337;
 	Vars::CharacterClass->HoldingGun->GunKickMultiplier = 0.f;
+}
+
+void KFNHacks::JumpHack()
+{
+	if (!manager->m_pConfig->jumpHack.enabled)
+		return;
+	if (!Vars::CharacterClass)
+		return;
+	if (!Vars::CharacterClass->HasLoaded_)
+		return;
+
+	Vars::CharacterClass->CharacterMovement->JumpZVelocity = static_cast<float>(manager->m_pConfig->jumpHack.value) * 100.f;
 }
