@@ -84,27 +84,24 @@ void KFNHacks::MiscHacks()
 
 void KFNHacks::FlyHack()
 {
-	// Todo: Improve with camera mgr
 	static bool flyHackState = false;
 	if (manager->m_pConfig->flyHack.enabled)
 	{
 		if (manager->m_pConfig->flyHack.noclip)
 			Vars::CharacterClass->bActorEnableCollision = false;
 
-		Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
-		Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
+		SDK::FVector sum = { };
+		float flySpeed = Vars::CharacterClass->CharacterMovement->MaxFlySpeed / 90.f;
 
-		if (GetAsyncKeyState(VK_SPACE))
-		{
-			SDK::FVector posUp = { 0.f, 0.f, 10.f };
-			Vars::CharacterClass->CharacterMovement->AddInputVector(posUp, true);
-		}
+		if (GetAsyncKeyState(VK_SHIFT))
+			flySpeed *= 1.5f;
+
 		if (GetAsyncKeyState(VK_LCONTROL))
-		{
-			SDK::FVector posDown = { 0.f, 0.f, -10.f };
-			Vars::CharacterClass->CharacterMovement->AddInputVector(posDown, true);
-		}
+			sum.Z -= flySpeed;
+		else if (GetAsyncKeyState(VK_SPACE))
+			sum.Z += flySpeed;
 
+		Vars::CharacterClass->K2_TeleportTo(Vars::CharacterClass->K2_GetActorLocation() + sum, Vars::CharacterClass->K2_GetActorRotation());
 		flyHackState = true;
 	}
 	else if(!manager->m_pConfig->flyHack.enabled && flyHackState)
