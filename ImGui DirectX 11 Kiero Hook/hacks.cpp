@@ -93,7 +93,7 @@ void KFNHacks::FlyHack()
 		Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
 		Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
 
-		SDK::FVector pos = { 0.f, 0.f, 10.f };
+		SDK::FVector pos = { 0.f, 0.f, 0.f };
 		if (GetAsyncKeyState(VK_SPACE))
 			pos = { 0.f, 0.f, 10.f };
 		else if (GetAsyncKeyState(VK_LCONTROL))
