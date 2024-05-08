@@ -19,7 +19,22 @@ public:
 	{
 		bool enabled{ false };
 		float speed{ 2500.f };
+		int keyEnable{ VK_F1 };
 	} speed;
+
+	struct JumpHack
+	{
+		bool enabled{ false };
+		int value{ 1 };
+		int keyEnable{ VK_F2 };
+	} jumpHack;
+
+	struct FlyHack
+	{
+		bool enabled{ false };
+		bool noclip{ false };
+		int keyEnable{ VK_F3 };
+	} flyHack;
 
 	struct LevelHack
 	{
@@ -50,20 +65,8 @@ public:
 		int cashValue{ 694200 };
 	} cashHack;
 
-	struct FlyHack
-	{
-		bool enabled{ false };
-		bool noclip{ false };
-	} flyHack;
-
 	struct GunHacks
 	{
 		bool enabled{ false };
 	} gunHacks;
-
-	struct JumpHack
-	{
-		bool enabled{ false };
-		int value{ 1 };
-	} jumpHack;
 };
