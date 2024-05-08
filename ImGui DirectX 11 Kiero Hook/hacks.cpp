@@ -154,26 +154,34 @@ void KFNHacks::ESP() {
 	}
 
 
-	Vars::ActorsArray = Vars::World->OwningGameInstance->LocalPlayers[0]->ViewportClient->World->Levels[0]->Actors;
+	for (int i = 0; i < Vars::World->Levels.Num(); i++) {
+		auto currLevel = Vars::World->Levels[i];
 
-	std::cout << "Actors: " << Vars::ActorsArray.Num() << std::endl;
+		if (!currLevel) continue;
 
-	for (int i = 0; i < Vars::ActorsArray.Num(); i++)
-	{
-		auto currActor = Vars::ActorsArray[i];
+		for (int j = 0; j < currLevel->Actors.Num(); j++) {
+			auto currActor = currLevel->Actors[j];
 
-		if (!currActor) continue;
-		if (Fns::IsBadPoint(currActor)) continue;
-		if (!currActor->IsA(SDK::ANPCBase_C::StaticClass())) continue;
+			if (!currActor) continue;
+			if (Fns::IsBadPoint(currActor)) continue;
+			std::string actor_name = currActor->GetFullName();
+			if (actor_name.find("NPC_Police") == std::string::npos && actor_name.find("NPC_Guard") == std::string::npos) continue;
 
-		SDK::FVector2D w2s_pos{};
-		float Visible[3]{ 0.f, 0.f, 1.f };
-		if (Vars::MyController->ProjectWorldLocationToScreen(currActor->K2_GetActorLocation(), &w2s_pos, false))
-		{
-			Fns::DrawLine({ 1920 / 2, 0 }, w2s_pos, Visible, 1.f, false, false);
+			auto location = currActor->K2_GetActorLocation();
+
+			if (location.X == 0 || location.Y == 0 || location.Z == 0) continue;
+
+			SDK::FVector2D w2s_pos{};
+			float Visible[3]{ 0.f, 0.f, 1.f };
+			if (Vars::MyController->ProjectWorldLocationToScreen(currActor->K2_GetActorLocation(), &w2s_pos, false))
+			{
+				Fns::DrawLine({ 1920 / 2, 0 }, w2s_pos, Visible, 1.f, false, false);
+			}
+
 		}
 
 	}
+
 }
 
 void KFNHacks::Aimbot() {
@@ -192,44 +200,53 @@ void KFNHacks::Aimbot() {
 	float MaxDistance = FLT_MAX;
 	float CMaxDistance = 0;
 
-	Vars::ActorsArray = Vars::World->OwningGameInstance->LocalPlayers[0]->ViewportClient->World->Levels[0]->Actors;
+	Vars::ActorsArray = Vars::World->PersistentLevel->Actors;
 
 	std::cout << "Actors: " << Vars::ActorsArray.Num() << std::endl;
 
 	auto CameraLocation = Vars::MyController->PlayerCameraManager->GetCameraLocation();
 	auto CameraRotation = Vars::MyController->PlayerCameraManager->GetCameraRotation();
 
-	for (int i = 0; i < Vars::ActorsArray.Num(); i++)
-	{
-		auto currActor = Vars::ActorsArray[i];
+	for (int i = 0; i < Vars::World->Levels.Num(); i++) {
+		auto currLevel = Vars::World->Levels[i];
 
-		if (!currActor) continue;
-		if (Fns::IsBadPoint(currActor)) continue;
-		if (!currActor->IsA(SDK::ANPCBase_C::StaticClass())) continue;
+		if (!currLevel) continue;
 
-		SDK::FVector2D w2s_pos{};
-		if (Vars::MyController->ProjectWorldLocationToScreen(currActor->K2_GetActorLocation(), &w2s_pos, false))
-		{
-			std::cout << "Actor pos: " << w2s_pos.X << " " << w2s_pos.Y << std::endl;
-			auto rot = SDK::UKismetMathLibrary::FindLookAtRotation(CameraLocation, currActor->K2_GetActorLocation());
+		for (int j = 0; j < currLevel->Actors.Num(); j++) {
+			auto currActor = currLevel->Actors[j];
 
-			SDK::FVector2D screen_middle = { 1920 / 2, 1080 / 2 };
+			if (!currActor) continue;
+			if (Fns::IsBadPoint(currActor)) continue;
+			std::string actor_name = currActor->GetFullName();
+			if (actor_name.find("NPC_Police") == std::string::npos && actor_name.find("NPC_Guard") == std::string::npos) continue;
 
-			float aimbot_distance = SDK::UKismetMathLibrary::Distance2D(w2s_pos, screen_middle);
+			auto location = currActor->K2_GetActorLocation();
 
-			if (aimbot_distance > CMaxDistance && aimbot_distance < MaxDistance)
+			if(location.X == 0 || location.Y == 0 || location.Z == 0) continue;
+
+			SDK::FVector2D w2s_pos{};
+			if (Vars::MyController->ProjectWorldLocationToScreen(location, &w2s_pos, false))
 			{
-				MaxDistance = aimbot_distance;
-				closest_actor = currActor;
-				closest_actor_rotation = rot;
+				auto rot = SDK::UKismetMathLibrary::FindLookAtRotation(CameraLocation, location);
+
+				SDK::FVector2D screen_middle = { 1920 / 2, 1080 / 2 };
+
+				float aimbot_distance = SDK::UKismetMathLibrary::Distance2D(w2s_pos, screen_middle);
+
+				if (aimbot_distance > CMaxDistance && aimbot_distance < MaxDistance)
+				{
+					MaxDistance = aimbot_distance;
+					closest_actor = currActor;
+					closest_actor_rotation = rot;
+				}
 			}
+
 		}
 
 	}
 
 	if (closest_actor && GetAsyncKeyState(VK_RBUTTON))
 	{
-		std::cout << "Aiming at pos " << closest_actor_rotation.Pitch << " " << closest_actor_rotation.Yaw << " " << closest_actor_rotation.Roll << std::endl;
 		Vars::MyController->SetControlRotation(closest_actor_rotation);
 	}
 }
