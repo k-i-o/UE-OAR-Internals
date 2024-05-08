@@ -72,9 +72,6 @@ void KFNHacks::MiscHacks()
 	if (manager->m_pConfig->miscHacks.addedGuardPhoneTime)
 		Vars::CharacterClass->AddedGuardPhoneTime = manager->m_pConfig->miscHacks.phoneTime;
 
-	if (manager->m_pConfig->miscHacks.addedAccuracy)
-		Vars::CharacterClass->AddedAccuracy = static_cast<float>(manager->m_pConfig->miscHacks.accuracy);
-
 	if (manager->m_pConfig->miscHacks.addedDrillImmunityTime)
 		Vars::CharacterClass->DrillImmunityTime = static_cast<float>(manager->m_pConfig->miscHacks.drillImmunityTime);
 

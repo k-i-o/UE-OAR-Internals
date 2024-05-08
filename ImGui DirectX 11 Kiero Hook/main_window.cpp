@@ -72,10 +72,6 @@ void KFNGUI::RenderMainWindow()
 		if (manager->m_pConfig->miscHacks.addedGuardPhoneTime)
 			ImGui::SliderInt("##timeGuardPhone", &manager->m_pConfig->miscHacks.phoneTime, 0, 999);
 
-		ImGui::Checkbox("Accuracy", &manager->m_pConfig->miscHacks.addedAccuracy);
-		if (manager->m_pConfig->miscHacks.addedAccuracy)
-			ImGui::SliderInt("##valueAccuracy", &manager->m_pConfig->miscHacks.accuracy, 0, 999);
-
 		ImGui::Checkbox("Drill immunity time", &manager->m_pConfig->miscHacks.addedDrillImmunityTime);
 		if (manager->m_pConfig->miscHacks.addedDrillImmunityTime)
 			ImGui::SliderInt("##timeImmunityDrill", &manager->m_pConfig->miscHacks.drillImmunityTime, 0, 999);

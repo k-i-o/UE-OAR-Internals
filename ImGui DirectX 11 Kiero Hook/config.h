@@ -34,9 +34,6 @@ public:
 		bool addedGuardPhoneTime{ false };
 		int phoneTime{ 15 };
 
-		bool addedAccuracy{ false };
-		int accuracy{ 99 };
-
 		bool addedDrillImmunityTime{ false };
 		int drillImmunityTime{ false };
 
