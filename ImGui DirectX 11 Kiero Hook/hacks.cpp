@@ -8,7 +8,7 @@
 // Main
 void KFNHacks::RunHacks()
 {
-	if (!Vars::CharacterClass->Loaded || !Vars::CharacterClass->HasLoaded_)
+	if (!Vars::CharacterClass->HasLoaded_)
 		return;
 
 	SpeedHack();
