@@ -8,6 +8,9 @@
 // Main
 void KFNHacks::RunHacks()
 {
+	if (!Vars::CharacterClass->Loaded || !Vars::CharacterClass->HasLoaded_)
+		return;
+
 	SpeedHack();
 	LevelHack();
 	CashHack();
@@ -21,11 +24,6 @@ void KFNHacks::RunHacks()
 // Hacks
 void KFNHacks::SpeedHack()
 {
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
-
 	static bool speedState = false;
 	if (manager->m_pConfig->speed.enabled)
 	{
@@ -42,10 +40,6 @@ void KFNHacks::LevelHack()
 {
 	if (!manager->m_pConfig->levelHack.setLevel)
 		return;
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
 	if (!Vars::CharacterClass->PCController)
 		return;
 	if (!Vars::CharacterClass->PCController->Level)
@@ -60,10 +54,6 @@ void KFNHacks::CashHack()
 {
 	if (!manager->m_pConfig->cashHack.setCash)
 		return;
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
 	if (!Vars::CharacterClass->PCController)
 		return;
 	if (!Vars::CharacterClass->PCController->Cash)
@@ -77,10 +67,6 @@ void KFNHacks::CashHack()
 void KFNHacks::MiscHacks()
 {
 	if (!manager->m_pConfig->miscHacks.enabled)
-		return;
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
 		return;
 
 	if (manager->m_pConfig->miscHacks.addedGuardPhoneTime)
@@ -102,11 +88,6 @@ void KFNHacks::MiscHacks()
 void KFNHacks::FlyHack()
 {
 	// Todo: Improve with camera mgr
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
-
 	static bool flyHackState = false;
 	if (manager->m_pConfig->flyHack.enabled)
 	{
@@ -142,10 +123,6 @@ void KFNHacks::GunHacks()
 	// Todo: Actual no recoil
 	if (!manager->m_pConfig->gunHacks.enabled)
 		return;
-	if (!Vars::CharacterClass)
-		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
 	if (!Vars::CharacterClass->HoldingGun)
 		return;
 	__try
@@ -167,10 +144,7 @@ void KFNHacks::JumpHack()
 {
 	if (!manager->m_pConfig->jumpHack.enabled)
 		return;
-	if (!Vars::CharacterClass)
+	if (Vars::CharacterClass->CharacterMovement == nullptr)
 		return;
-	if (!Vars::CharacterClass->HasLoaded_)
-		return;
-
 	Vars::CharacterClass->CharacterMovement->JumpZVelocity = static_cast<float>(manager->m_pConfig->jumpHack.value) * 100.f;
 }

@@ -29,7 +29,11 @@ bool MainManager::UpdateSDK()
 
 	Vars::PlayerArray = Vars::World->GameState->PlayerArray;
 	Vars::MyPawn = Vars::MyController->AcknowledgedPawn;
+	if (Vars::MyPawn == nullptr)
+		return false;
 	Vars::CharacterClass = static_cast<SDK::APlayerCharacter_C*>(Vars::MyPawn);
+	if (Vars::CharacterClass == nullptr)
+		return false;
 	return true;
 }
 
