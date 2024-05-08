@@ -179,6 +179,7 @@
     <ClCompile Include="gui.cpp" />
     <ClCompile Include="gui_base.cpp" />
     <ClCompile Include="hacks.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="main_window.cpp" />
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="main.cpp" />
@@ -272,6 +273,7 @@
     <ClInclude Include="functions.h" />
     <ClInclude Include="gui.h" />
     <ClInclude Include="hacks.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="manager.h" />
     <ClInclude Include="variables.h" />
     <ClInclude Include="version.h" />
