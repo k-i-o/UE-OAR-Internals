@@ -1,43 +1,57 @@
 #include "manager.h"
 
-MainManager::MainManager() noexcept :
+KFNManager::KFNManager() noexcept :
 	m_pGui(std::make_unique<KFNGUI>()),
 	m_pConfig(std::make_unique<KFNConfig>()),
 	m_pHacks(std::make_unique<KFNHacks>())
 {
 }
 
-bool MainManager::UpdateSDK()
+bool KFNManager::UpdateSDK()
 {
+	// Init UWorld and check if it's valid
 	Vars::World = SDK::UWorld::GetWorld();
 	if (Fns::IsBadPoint(Vars::World))
 		return false;
 
+	// Init engine
 	Vars::Engine = SDK::UEngine::GetEngine();
 
-	if (Fns::IsBadPoint(Vars::World->OwningGameInstance))
-		return false;
-	if (Fns::IsBadPoint(Vars::World->OwningGameInstance->LocalPlayers[0]))
-		return false;
+	// Init PlayerController
+	{
+		if (Fns::IsBadPoint(Vars::World->OwningGameInstance))
+			return false;
+		if (Fns::IsBadPoint(Vars::World->OwningGameInstance->LocalPlayers[0]))
+			return false;
+		Vars::MyController = Vars::World->OwningGameInstance->LocalPlayers[0]->PlayerController;
+		if (Fns::IsBadPoint(Vars::MyController))
+			return false;
+	}
 
-	Vars::MyController = Vars::World->OwningGameInstance->LocalPlayers[0]->PlayerController;
-	if (Fns::IsBadPoint(Vars::MyController))
-		return false;
+	// Init PlayerArray
+	{
+		if (Fns::IsBadPoint(Vars::World->GameState))
+			return false;
+		Vars::PlayerArray = Vars::World->GameState->PlayerArray;
+	}
 
-	if (Fns::IsBadPoint(Vars::World->GameState))
-		return false;
+	// Init Pawn
+	{
+		Vars::MyPawn = Vars::MyController->AcknowledgedPawn;
+		if (Vars::MyPawn == nullptr)
+			return false;
+	}
 
-	Vars::PlayerArray = Vars::World->GameState->PlayerArray;
-	Vars::MyPawn = Vars::MyController->AcknowledgedPawn;
-	if (Vars::MyPawn == nullptr)
-		return false;
-	Vars::CharacterClass = static_cast<SDK::APlayerCharacter_C*>(Vars::MyPawn);
-	if (Vars::CharacterClass == nullptr)
-		return false;
+	// Init CharacterClass
+	{
+		Vars::CharacterClass = static_cast<SDK::APlayerCharacter_C*>(Vars::MyPawn);
+		if (Vars::CharacterClass == nullptr)
+			return false;
+	}
 	return true;
 }
 
-void MainManager::DumpUObjects()
+void KFNManager::DumpUObjects()
 {
 	/* Print the full-name of an object ("ClassName PackageName.OptionalOuter.ObjectName") */
 	std::cout << Vars::Engine->ConsoleClass->GetFullName() << std::endl;

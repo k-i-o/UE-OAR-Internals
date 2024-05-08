@@ -7,7 +7,7 @@
 #include "logger.h"
 #include "manager.h"
 
-std::unique_ptr<MainManager> manager;
+std::unique_ptr<KFNManager> manager;
 
 DWORD WINAPI MainThread(HMODULE hmodule)
 {
@@ -19,7 +19,7 @@ DWORD WINAPI MainThread(HMODULE hmodule)
 		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
 		{
 			// Initialize manager
-			manager = std::make_unique<MainManager>();
+			manager = std::make_unique<KFNManager>();
 
 			// Bind kiero
 			kiero::bind(8, (void**)&manager->m_pGui->oPresent, manager->m_pGui->hkPresent);

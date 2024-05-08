@@ -8,10 +8,10 @@
 
 #define ASSERT(x) { MessageBoxA(NULL, NULL, x, NULL); exit(0); }
 
-class MainManager
+class KFNManager
 {
 public:
-	MainManager() noexcept;
+	KFNManager() noexcept;
 
 	bool UpdateSDK();
 	void DumpUObjects();
@@ -21,4 +21,4 @@ public:
 	std::unique_ptr<KFNHacks>  m_pHacks;
 };
 
-extern std::unique_ptr<MainManager> manager;
+extern std::unique_ptr<KFNManager> manager;
