@@ -36,12 +36,16 @@ void KFNGUI::RenderMainWindow()
 				ImGui::Indent();
 
 				ImGui::Checkbox("Police", &manager->m_pConfig->esp.policeEspEnabled);
-				MultiCombo("Features",
-					{ "Nameplates", "Box" },
-					{ 1 << static_cast<int>(EspSelection::Nameplates),
-							   1 << static_cast<int>(EspSelection::Box)},
-					&manager->m_pConfig->esp.policeEspSelection);
+				if (manager->m_pConfig->esp.policeEspEnabled)
+				{
+					MultiCombo("Features Police",
+						{ "Nameplates", "Box" },
+						{ 1 << static_cast<int>(EspSelection::Nameplates),
+								   1 << static_cast<int>(EspSelection::Box) },
+						&manager->m_pConfig->esp.policeEspSelection);
+				}
 
+				ImGui::Checkbox("Cameras", &manager->m_pConfig->esp.cameraEspEnabled);
 
 				ImGui::Unindent();
 			}

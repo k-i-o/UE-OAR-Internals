@@ -8,6 +8,7 @@ public:
 private:
 	void ActorsLoop();
 	void EspPolice(SDK::AActor* currActor);
+	void EspCameras(SDK::AActor* currActor);
 
 	// Base
 	float GetPlayerHeight(ImVec2 head, ImVec2 feet);

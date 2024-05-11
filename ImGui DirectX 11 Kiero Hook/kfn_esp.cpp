@@ -40,6 +40,7 @@ void KFNEsp::ActorsLoop()
 			continue;
 
 		EspPolice(currActor);
+		EspCameras(currActor);
 	}
 }
 
@@ -71,4 +72,22 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 		RenderNameplate(footPos, currActor->GetName());
 	if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Box))
 		RenderBox(headPos, footPos);
+}
+
+void KFNEsp::EspCameras(SDK::AActor* currActor)
+{
+	if (!manager->m_pConfig->esp.cameraEspEnabled)
+		return;
+
+	// Actor isn't police
+	if (currActor->GetFullName().find("CameraBP") == std::string::npos)
+		return;
+
+	// Do W2S
+	SDK::FVector2D origin{};
+	if (!Vars::MyController->ProjectWorldLocationToScreen(currActor->K2_GetActorLocation(), &origin, false))
+		return;
+
+	// Render ESP
+	RenderNameplate(origin, currActor->GetName());
 }
