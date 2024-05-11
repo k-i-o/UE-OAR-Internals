@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "ShopItemCategory_structs.hpp"
+#include "SkillProgressStruct_structs.hpp"
 #include "SettingsStruct_structs.hpp"
+#include "InputSettingStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ShopItemCategory_structs.hpp"
 #include "SteamCore_structs.hpp"
-#include "SkillProgressStruct_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
 #include "SkillSaveStruct_structs.hpp"
-#include "InputSettingStruct_structs.hpp"
 
 
 namespace SDK
@@ -37,7 +37,7 @@ public:
 	int32                                         Level;                                             // 0x05B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Exp;                                               // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Cash;                                              // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_243F[0x4];                                     // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241B[0x4];                                     // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             LoadedAll;                                         // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UClass*>                         Mask_equipped;                                     // 0x05D8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
 	TArray<class UClass*>                         OutfitEquipped;                                    // 0x05E8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
@@ -52,31 +52,31 @@ public:
 	TArray<class FString>                         ChatNameLog;                                       // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_             ToolsSetOnServer;                                  // 0x0688(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          FilterInititated_;                                 // 0x0698(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2440[0x7];                                     // 0x0699(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241C[0x7];                                     // 0x0699(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ARobberController_C*>            RestartVotes;                                      // 0x06A0(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnTemplate, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_             ToolsLoaded;                                       // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FSettingsStruct                        SettingsStruct;                                    // 0x06C0(0x002C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2441[0x4];                                     // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241D[0x4];                                     // 0x06EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             SettingsApplied;                                   // 0x06F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         GraphicsNum;                                       // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2442[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241E[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             UploadedToCloud;                                   // 0x0708(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             DownloadedFromCloud;                               // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UMaterialInterface*                     SkinColor;                                         // 0x0728(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RedeemedRecently_;                                 // 0x0730(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2443[0x3];                                     // 0x0731(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241F[0x3];                                     // 0x0731(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamInventoryResult                  InventoryHandle;                                   // 0x0734(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         Coins;                                             // 0x0738(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2444[0x4];                                     // 0x073C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2420[0x4];                                     // 0x073C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 LocalCurrency;                                     // 0x0740(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<struct FSteamItemDetails>              SteamInventoryResultItems;                         // 0x0750(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                         UnlockedMaps;                                      // 0x0760(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         Loadout_Equipped;                                  // 0x0770(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2445[0x4];                                     // 0x0774(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2421[0x4];                                     // 0x0774(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         RandomMultiplier;                                  // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         MultipliedValue;                                   // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowSkinPopup;                                     // 0x0788(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2446[0x3];                                     // 0x0789(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2422[0x3];                                     // 0x0789(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CivCasualty;                                       // 0x078C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         UnlockedSetups;                                    // 0x0790(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                         CompletedSetups;                                   // 0x07A0(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance)
@@ -89,7 +89,7 @@ public:
 	FMulticastInlineDelegateProperty_             SetupsLoaded;                                      // 0x0810(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         PlayerLoggedVersion;                               // 0x0820(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsLogged_;                                         // 0x0824(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2447[0x3];                                     // 0x0825(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2423[0x3];                                     // 0x0825(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             LoadedAllFromCloud;                                // 0x0828(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:

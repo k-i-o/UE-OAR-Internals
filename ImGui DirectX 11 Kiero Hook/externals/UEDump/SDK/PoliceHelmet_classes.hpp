@@ -26,7 +26,7 @@ public:
 	class UDamageComponent_C*                     DamageComponent;                                   // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USphereComponent*                       Sphere;                                            // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         Health;                                            // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1EB8[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ED0[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARobberGameState_C*                     As_Robber_Game_State;                              // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             HelmetDestroyed;                                   // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

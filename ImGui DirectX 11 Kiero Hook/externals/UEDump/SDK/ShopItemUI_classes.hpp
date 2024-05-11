@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "ShopItemCategory_structs.hpp"
 #include "RarityNum_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 
 
 namespace SDK
@@ -45,12 +45,12 @@ public:
 	class UClass*                                 Item;                                              // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InShop_;                                           // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2320[0x7];                                     // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2311[0x7];                                     // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGunBase_C*                             GunRef;                                            // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         ItemIndexReference;                                // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          AutoEquip_;                                        // 0x030C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          AleadyOwned_;                                      // 0x030D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2321[0x2];                                     // 0x030E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2312[0x2];                                     // 0x030E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         Multiplier;                                        // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         InitialMultipluerValue;                            // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SaleAmount;                                        // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)

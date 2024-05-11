@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "RarityNum_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
 #include "UMG_classes.hpp"
+#include "RarityNum_structs.hpp"
 
 
 namespace SDK
@@ -32,7 +32,7 @@ public:
 	class UImage*                                 Rarity;                                            // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<EShopItemCategory>                     Categories;                                        // 0x0290(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                         IndexReference;                                    // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1DE5[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DD1[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Item;                                              // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Selected_;                                         // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

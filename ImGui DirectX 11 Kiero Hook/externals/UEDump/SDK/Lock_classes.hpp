@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass Lock.Lock_C
 // 0x0088 (0x02A8 - 0x0220)
-class ALock_C : public AActor
+class ALock_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -38,10 +38,10 @@ public:
 	class ALock_pick_C*                           Tool;                                              // 0x0288(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Unlocked_;                                         // 0x0290(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          Attaches_;                                         // 0x0291(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D68[0x6];                                     // 0x0292(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D51[0x6];                                     // 0x0292(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   AttachComponent;                                   // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Triggers_alarm_;                                   // 0x02A0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D69[0x3];                                     // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D52[0x3];                                     // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Exp;                                               // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

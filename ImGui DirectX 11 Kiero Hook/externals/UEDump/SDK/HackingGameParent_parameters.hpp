@@ -25,7 +25,7 @@ struct HackingGameParent_C_ExecuteUbergraph_HackingGameParent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D65[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1494[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHackingGame_base_C*                    CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,12 +53,12 @@ public:
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
 	TArray<struct FInputActionKeyMapping>         CallFunc_GetActionMappingByName_OutMappings;       // 0x0148(0x0010)(ReferenceParm)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D66[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1495[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputActionKeyMapping                 CallFunc_Array_Get_Item;                           // 0x0160(0x0028)()
 	struct FInputActionKeyMapping                 CallFunc_Array_Get_Item_1;                         // 0x0188(0x0028)()
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_2;          // 0x01B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D67[0x6];                                     // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1496[0x6];                                     // 0x01B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x01B8(0x00B8)()
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0271(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

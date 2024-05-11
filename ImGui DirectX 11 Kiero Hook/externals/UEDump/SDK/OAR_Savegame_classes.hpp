@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "SkillProgressStruct_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
 #include "Engine_classes.hpp"
 #include "SettingsStruct_structs.hpp"
-#include "SkillSaveStruct_structs.hpp"
 #include "InputSettingStruct_structs.hpp"
+#include "SkillProgressStruct_structs.hpp"
+#include "SkillSaveStruct_structs.hpp"
 
 
 namespace SDK
@@ -41,13 +41,13 @@ public:
 	class UMaterialInterface*                     SkinColorSave;                                     // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         MapsSave;                                          // 0x00E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         LoadoutEquipped;                                   // 0x00F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23A5[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AC[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 LoadoutSteamID;                                    // 0x0100(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	TMap<int32, class UClass*>                    SecureCashSave;                                    // 0x0110(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<int32, class UClass*>                    SecureLevelSave;                                   // 0x0160(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<class FString, class UClass*>            SecureSteamID;                                     // 0x01B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         SkinRotation;                                      // 0x0200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23A6[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AD[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         UnlockedSetupsSave;                                // 0x0208(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                         CompletedSetupsSave;                               // 0x0218(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FInputSettingStruct>            InputSettingsSave;                                 // 0x0228(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

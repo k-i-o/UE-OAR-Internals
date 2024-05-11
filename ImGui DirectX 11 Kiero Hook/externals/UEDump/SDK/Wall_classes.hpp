@@ -24,14 +24,14 @@ class AWall_C : public AActor
 public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         Length;                                            // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2585[0x4];                                     // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2552[0x4];                                     // 0x022C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            Wallmesh;                                          // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class UMaterialInterface*>             Material;                                          // 0x0238(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          Override_mats_;                                    // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_2586[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2553[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               MeshRotation;                                      // 0x024C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	float                                         WallLength;                                        // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2587[0x4];                                     // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2554[0x4];                                     // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UStaticMeshComponent*>           MeshComponents;                                    // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:

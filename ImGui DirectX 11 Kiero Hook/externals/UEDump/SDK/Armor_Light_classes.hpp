@@ -31,7 +31,7 @@ public:
 	int32                                         ArmorHealth;                                       // 0x0248(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ArmorStage;                                        // 0x024C(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Destroyed_;                                        // 0x0250(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_216C[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2160[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             InitiateHeal;                                      // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class USkeletalMesh*                          ArmorSK_mesh;                                      // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

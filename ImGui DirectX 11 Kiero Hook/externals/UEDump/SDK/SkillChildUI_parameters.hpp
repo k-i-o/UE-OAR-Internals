@@ -31,23 +31,23 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EShopItemCategory                             K2Node_Event_Category_1;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EShopItemCategory                             K2Node_Event_Category;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D05[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CE6[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Event_ItemInfo;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_SalePrice;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D06[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CE7[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUserWidget*>                    CallFunc_GetAllWidgetsWithInterface_FoundWidgets;  // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D07[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CE8[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IMenuUIInteraface_C>   K2Node_DynamicCast_AsMenu_UIInteraface;            // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D08[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CE9[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D09[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CEA[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSkillTier_Tier;                        // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -116,7 +116,7 @@ struct SkillChildUI_C_GetBrush_0 final
 public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D0A[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CEB[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0090(0x0088)()
 };
 static_assert(alignof(SkillChildUI_C_GetBrush_0) == 0x000008, "Wrong alignment on SkillChildUI_C_GetBrush_0");
@@ -132,7 +132,7 @@ struct SkillChildUI_C_GetText_0 final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D0B[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CEC[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 };
 static_assert(alignof(SkillChildUI_C_GetText_0) == 0x000008, "Wrong alignment on SkillChildUI_C_GetText_0");
@@ -153,7 +153,7 @@ public:
 	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D0C[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CED[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SkillChildUI_C_Get_Rarity_ColorAndOpacity_0) == 0x000004, "Wrong alignment on SkillChildUI_C_Get_Rarity_ColorAndOpacity_0");
@@ -204,7 +204,7 @@ struct SkillChildUI_C_GetVisibility_0 final
 public:
 	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_FindResearchingSkill_Is_researching_;     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D0D[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CEE[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSkillProgressStruct                   CallFunc_FindResearchingSkill_Array_Element;       // 0x0008(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SkillChildUI_C_GetVisibility_0) == 0x000008, "Wrong alignment on SkillChildUI_C_GetVisibility_0");
@@ -220,7 +220,7 @@ struct SkillChildUI_C_GetPercent_0 final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_FindResearchingSkill_Is_researching_;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D0E[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CEF[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSkillProgressStruct                   CallFunc_FindResearchingSkill_Array_Element;       // 0x0008(0x0018)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

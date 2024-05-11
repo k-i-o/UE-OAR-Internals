@@ -26,10 +26,10 @@ public:
 	class UArrowComponent*                        Arrow;                                             // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Taken_;                                            // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D18[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CF9[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainMenuPlayer_C*                      Player;                                            // 0x0240(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Index_PlayerSpawnSpot_C;                           // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1D19[0x4];                                     // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CFA[0x4];                                     // 0x024C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMenuPlayerPreview_C*                   PlayerPreview;                                     // 0x0250(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

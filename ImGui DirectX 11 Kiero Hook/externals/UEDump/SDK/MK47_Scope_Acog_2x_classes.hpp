@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Attachment_scope_base_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

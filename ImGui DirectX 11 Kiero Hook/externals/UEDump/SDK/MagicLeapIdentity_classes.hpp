@@ -22,7 +22,7 @@ namespace SDK
 class UMagicLeapIdentity final : public UObject
 {
 public:
-	uint8                                         Pad_15DC[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C5[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AvailableIdentityAttributesDelegate__DelegateSignature(EMagicLeapIdentityError ResultCode, const TArray<EMagicLeapIdentityKey>& AvailableAttributes);

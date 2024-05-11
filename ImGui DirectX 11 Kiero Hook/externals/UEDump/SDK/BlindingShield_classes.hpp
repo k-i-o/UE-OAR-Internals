@@ -31,7 +31,7 @@ public:
 	bool                                          LightActive_;                                      // 0x0250(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Cooldown_;                                         // 0x0251(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Disabled_;                                         // 0x0252(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EC1[0x5];                                     // 0x0253(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1077[0x5];                                     // 0x0253(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Hit_Player;                                        // 0x0258(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

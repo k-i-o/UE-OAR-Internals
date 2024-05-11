@@ -23,16 +23,16 @@ namespace SDK
 class URatAnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_231D[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F7[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_BlendSpacePlayer             AnimGraphNode_BlendSpacePlayer;                    // 0x02F8(0x00E8)()
 	float                                         Speed;                                             // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void ExecuteUbergraph_RatAnimBP(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void AnimGraph(struct FPoseLink* Param_AnimGraph);
 
 public:
 	static class UClass* StaticClass()

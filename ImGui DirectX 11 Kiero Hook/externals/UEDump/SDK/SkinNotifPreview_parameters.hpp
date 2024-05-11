@@ -25,13 +25,13 @@ struct SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0 final
 public:
 	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ERarityNum                                    Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2342[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2349[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Temp_struct_Variable;                              // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2343[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234A[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0) == 0x000004, "Wrong alignment on SkinNotifPreview_C_Get_Rarity_ColorAndOpacity_0");
@@ -52,7 +52,7 @@ struct SkinNotifPreview_C_GetBrush_0 final
 public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2344[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234B[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0090(0x0088)()
 };
 static_assert(alignof(SkinNotifPreview_C_GetBrush_0) == 0x000008, "Wrong alignment on SkinNotifPreview_C_GetBrush_0");

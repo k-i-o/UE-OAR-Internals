@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SpottedHighlightcomponent_classes.hpp"
 #include "Engine_structs.hpp"
+#include "SpottedHighlightcomponent_classes.hpp"
 
 
 namespace SDK

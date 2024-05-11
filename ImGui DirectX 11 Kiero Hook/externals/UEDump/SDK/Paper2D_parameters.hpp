@@ -47,7 +47,7 @@ struct PaperFlipbookComponent_SetFlipbook final
 public:
 	class UPaperFlipbook*                         NewFlipbook;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1144[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperFlipbookComponent_SetFlipbook) == 0x000008, "Wrong alignment on PaperFlipbookComponent_SetFlipbook");
 static_assert(sizeof(PaperFlipbookComponent_SetFlipbook) == 0x000010, "Wrong size on PaperFlipbookComponent_SetFlipbook");
@@ -83,7 +83,7 @@ struct PaperFlipbookComponent_SetPlaybackPosition final
 public:
 	float                                         NewPosition;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireEvents;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1145[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperFlipbookComponent_SetPlaybackPosition) == 0x000004, "Wrong alignment on PaperFlipbookComponent_SetPlaybackPosition");
 static_assert(sizeof(PaperFlipbookComponent_SetPlaybackPosition) == 0x000008, "Wrong size on PaperFlipbookComponent_SetPlaybackPosition");
@@ -97,7 +97,7 @@ struct PaperFlipbookComponent_SetPlaybackPositionInFrames final
 public:
 	int32                                         NewFramePosition;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireEvents;                                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1146[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperFlipbookComponent_SetPlaybackPositionInFrames) == 0x000004, "Wrong alignment on PaperFlipbookComponent_SetPlaybackPositionInFrames");
 static_assert(sizeof(PaperFlipbookComponent_SetPlaybackPositionInFrames) == 0x000008, "Wrong size on PaperFlipbookComponent_SetPlaybackPositionInFrames");
@@ -243,7 +243,7 @@ struct PaperFlipbook_GetKeyFrameIndexAtTime final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bClampToEnds;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1154[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114B[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperFlipbook_GetKeyFrameIndexAtTime) == 0x000004, "Wrong alignment on PaperFlipbook_GetKeyFrameIndexAtTime");
@@ -280,7 +280,7 @@ struct PaperFlipbook_GetSpriteAtFrame final
 {
 public:
 	int32                                         FrameIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1155[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSprite*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperFlipbook_GetSpriteAtFrame) == 0x000008, "Wrong alignment on PaperFlipbook_GetSpriteAtFrame");
@@ -295,7 +295,7 @@ struct PaperFlipbook_GetSpriteAtTime final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bClampToEnds;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1156[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114D[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSprite*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperFlipbook_GetSpriteAtTime) == 0x000008, "Wrong alignment on PaperFlipbook_GetSpriteAtTime");
@@ -322,7 +322,7 @@ struct PaperFlipbook_IsValidKeyFrameIndex final
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1157[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperFlipbook_IsValidKeyFrameIndex) == 0x000004, "Wrong alignment on PaperFlipbook_IsValidKeyFrameIndex");
 static_assert(sizeof(PaperFlipbook_IsValidKeyFrameIndex) == 0x000008, "Wrong size on PaperFlipbook_IsValidKeyFrameIndex");
@@ -337,7 +337,7 @@ public:
 	struct FTransform                             Transform;                                         // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class UPaperSprite*                           Sprite;                                            // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1159[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1150[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Color;                                             // 0x003C(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x004C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -356,7 +356,7 @@ struct PaperGroupedSpriteComponent_RemoveInstance final
 public:
 	int32                                         InstanceIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1151[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperGroupedSpriteComponent_RemoveInstance) == 0x000004, "Wrong alignment on PaperGroupedSpriteComponent_RemoveInstance");
 static_assert(sizeof(PaperGroupedSpriteComponent_RemoveInstance) == 0x000008, "Wrong size on PaperGroupedSpriteComponent_RemoveInstance");
@@ -383,7 +383,7 @@ public:
 	struct FLinearColor                           NewInstanceColor;                                  // 0x0004(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMarkRenderStateDirty;                             // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0015(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115B[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1152[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperGroupedSpriteComponent_UpdateInstanceColor) == 0x000004, "Wrong alignment on PaperGroupedSpriteComponent_UpdateInstanceColor");
 static_assert(sizeof(PaperGroupedSpriteComponent_UpdateInstanceColor) == 0x000018, "Wrong size on PaperGroupedSpriteComponent_UpdateInstanceColor");
@@ -398,13 +398,13 @@ struct PaperGroupedSpriteComponent_UpdateInstanceTransform final
 {
 public:
 	int32                                         InstanceIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115C[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1153[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             NewInstanceTransform;                              // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMarkRenderStateDirty;                             // 0x0041(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTeleport;                                         // 0x0042(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0043(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115D[0xC];                                     // 0x0044(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1154[0xC];                                     // 0x0044(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperGroupedSpriteComponent_UpdateInstanceTransform) == 0x000010, "Wrong alignment on PaperGroupedSpriteComponent_UpdateInstanceTransform");
 static_assert(sizeof(PaperGroupedSpriteComponent_UpdateInstanceTransform) == 0x000050, "Wrong size on PaperGroupedSpriteComponent_UpdateInstanceTransform");
@@ -432,11 +432,11 @@ struct PaperGroupedSpriteComponent_GetInstanceTransform final
 {
 public:
 	int32                                         InstanceIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115E[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1155[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OutInstanceTransform;                              // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0041(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_115F[0xE];                                     // 0x0042(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1156[0xE];                                     // 0x0042(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperGroupedSpriteComponent_GetInstanceTransform) == 0x000010, "Wrong alignment on PaperGroupedSpriteComponent_GetInstanceTransform");
 static_assert(sizeof(PaperGroupedSpriteComponent_GetInstanceTransform) == 0x000050, "Wrong size on PaperGroupedSpriteComponent_GetInstanceTransform");
@@ -480,7 +480,7 @@ struct PaperSpriteComponent_SetSprite final
 public:
 	class UPaperSprite*                           NewSprite;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1164[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_115B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperSpriteComponent_SetSprite) == 0x000008, "Wrong alignment on PaperSpriteComponent_SetSprite");
 static_assert(sizeof(PaperSpriteComponent_SetSprite) == 0x000010, "Wrong size on PaperSpriteComponent_SetSprite");
@@ -531,7 +531,7 @@ public:
 	int32                                         Param_TileHeight;                                  // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PixelsPerUnrealUnit;                               // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateLayer;                                      // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1171[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1168[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperTileMapComponent_CreateNewTileMap) == 0x000004, "Wrong alignment on PaperTileMapComponent_CreateNewTileMap");
 static_assert(sizeof(PaperTileMapComponent_CreateNewTileMap) == 0x000018, "Wrong size on PaperTileMapComponent_CreateNewTileMap");
@@ -577,7 +577,7 @@ struct PaperTileMapComponent_SetDefaultCollisionThickness final
 public:
 	float                                         Thickness;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildCollision;                                 // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1172[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1169[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperTileMapComponent_SetDefaultCollisionThickness) == 0x000004, "Wrong alignment on PaperTileMapComponent_SetDefaultCollisionThickness");
 static_assert(sizeof(PaperTileMapComponent_SetDefaultCollisionThickness) == 0x000008, "Wrong size on PaperTileMapComponent_SetDefaultCollisionThickness");
@@ -592,13 +592,13 @@ public:
 	int32                                         Layer;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasCollision;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideThickness;                                // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1173[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116A[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CustomThickness;                                   // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideOffset;                                   // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1174[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116B[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CustomOffset;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildCollision;                                 // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1175[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116C[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperTileMapComponent_SetLayerCollision) == 0x000004, "Wrong alignment on PaperTileMapComponent_SetLayerCollision");
 static_assert(sizeof(PaperTileMapComponent_SetLayerCollision) == 0x000018, "Wrong size on PaperTileMapComponent_SetLayerCollision");
@@ -631,7 +631,7 @@ public:
 	int32                                         X;                                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Y;                                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Layer;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1176[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPaperTileInfo                         NewValue;                                          // 0x0010(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperTileMapComponent_SetTile) == 0x000008, "Wrong alignment on PaperTileMapComponent_SetTile");
@@ -648,7 +648,7 @@ struct PaperTileMapComponent_SetTileMap final
 public:
 	class UPaperTileMap*                          NewTileMap;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1177[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperTileMapComponent_SetTileMap) == 0x000008, "Wrong alignment on PaperTileMapComponent_SetTileMap");
 static_assert(sizeof(PaperTileMapComponent_SetTileMap) == 0x000010, "Wrong size on PaperTileMapComponent_SetTileMap");
@@ -687,7 +687,7 @@ public:
 	int32                                         X;                                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Y;                                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Layer;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1178[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_116F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPaperTileInfo                         ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperTileMapComponent_GetTile) == 0x000008, "Wrong alignment on PaperTileMapComponent_GetTile");
@@ -706,7 +706,7 @@ public:
 	int32                                         TileY;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LayerIndex;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1179[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1170[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperTileMapComponent_GetTileCenterPosition) == 0x000004, "Wrong alignment on PaperTileMapComponent_GetTileCenterPosition");
@@ -726,7 +726,7 @@ public:
 	int32                                         TileY;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LayerIndex;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117A[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1171[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PaperTileMapComponent_GetTileCornerPosition) == 0x000004, "Wrong alignment on PaperTileMapComponent_GetTileCornerPosition");
@@ -758,7 +758,7 @@ public:
 	TArray<struct FVector>                        Points;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         LayerIndex;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWorldSpace;                                       // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117B[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1172[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PaperTileMapComponent_GetTilePolygon) == 0x000008, "Wrong alignment on PaperTileMapComponent_GetTilePolygon");
 static_assert(sizeof(PaperTileMapComponent_GetTilePolygon) == 0x000020, "Wrong size on PaperTileMapComponent_GetTilePolygon");
@@ -786,12 +786,12 @@ struct TileMapBlueprintLibrary_BreakTile final
 public:
 	struct FPaperTileInfo                         Tile;                                              // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         TileIndex;                                         // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117C[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1173[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperTileSet*                          TileSet;                                           // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipH;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipV;                                            // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipD;                                            // 0x0022(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117D[0x5];                                     // 0x0023(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1174[0x5];                                     // 0x0023(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TileMapBlueprintLibrary_BreakTile) == 0x000008, "Wrong alignment on TileMapBlueprintLibrary_BreakTile");
 static_assert(sizeof(TileMapBlueprintLibrary_BreakTile) == 0x000028, "Wrong size on TileMapBlueprintLibrary_BreakTile");
@@ -834,12 +834,12 @@ struct TileMapBlueprintLibrary_MakeTile final
 {
 public:
 	int32                                         TileIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1175[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperTileSet*                          TileSet;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipH;                                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipV;                                            // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFlipD;                                            // 0x0012(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_117F[0x5];                                     // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1176[0x5];                                     // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPaperTileInfo                         ReturnValue;                                       // 0x0018(0x0010)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(TileMapBlueprintLibrary_MakeTile) == 0x000008, "Wrong alignment on TileMapBlueprintLibrary_MakeTile");

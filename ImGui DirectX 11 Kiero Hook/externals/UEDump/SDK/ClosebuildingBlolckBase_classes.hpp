@@ -27,7 +27,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FRandomStream                          Random_Stream;                                     // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn)
 	int32                                         Floors;                                            // 0x0240(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_2576[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2540[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         Walls;                                             // 0x0248(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TArray<class UMaterialInterface*>             Material;                                          // 0x0258(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TArray<class UStaticMesh*>                    StaticMesh;                                        // 0x0268(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

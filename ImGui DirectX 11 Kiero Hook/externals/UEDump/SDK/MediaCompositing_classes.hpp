@@ -25,7 +25,7 @@ class UMovieSceneMediaPlayerPropertySection final : public UMovieSceneSection
 public:
 	class UMediaSource*                           MediaSource;                                       // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLoop;                                             // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_166D[0x7];                                     // 0x00F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_166F[0x7];                                     // 0x00F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -47,7 +47,7 @@ static_assert(offsetof(UMovieSceneMediaPlayerPropertySection, bLoop) == 0x0000F0
 class UMovieSceneMediaPlayerPropertyTrack final : public UMovieScenePropertyTrack
 {
 public:
-	uint8                                         Pad_166E[0x8];                                     // 0x00C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1670[0x8];                                     // 0x00C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -69,12 +69,12 @@ class UMovieSceneMediaSection final : public UMovieSceneSection
 public:
 	class UMediaSource*                           MediaSource;                                       // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLooping;                                          // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_166F[0x3];                                     // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1671[0x3];                                     // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameNumber                           StartFrameOffset;                                  // 0x00F4(0x0004)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMediaTexture*                          MediaTexture;                                      // 0x00F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMediaSoundComponent*                   MediaSoundComponent;                               // 0x0100(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseExternalMediaPlayer;                           // 0x0108(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1670[0x7];                                     // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1672[0x7];                                     // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaPlayer*                           ExternalMediaPlayer;                               // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -102,7 +102,7 @@ static_assert(offsetof(UMovieSceneMediaSection, ExternalMediaPlayer) == 0x000110
 class UMovieSceneMediaTrack final : public UMovieSceneNameableTrack
 {
 public:
-	uint8                                         Pad_1671[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1673[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMovieSceneSection*>             MediaSections;                                     // 0x0098(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:

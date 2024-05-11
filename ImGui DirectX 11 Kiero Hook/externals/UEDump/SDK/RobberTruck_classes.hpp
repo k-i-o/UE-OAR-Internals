@@ -88,7 +88,7 @@ public:
 	int32                                         MinimumTake;                                       // 0x040C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         OverlappingPlayers;                                // 0x0410(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanEndGame_;                                       // 0x0414(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F14[0x3];                                     // 0x0415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1D[0x3];                                     // 0x0415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              Timer;                                             // 0x0418(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

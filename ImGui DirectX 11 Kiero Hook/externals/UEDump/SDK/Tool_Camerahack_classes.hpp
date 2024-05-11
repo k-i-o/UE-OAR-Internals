@@ -29,7 +29,7 @@ public:
 	class UPointLightComponent*                   PointLight;                                        // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USpotLightComponent*                    SpotLight;                                         // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Activated_;                                        // 0x0288(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE9[0x7];                                     // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FC1[0x7];                                     // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACameraBP_C*                            DisabledCam;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

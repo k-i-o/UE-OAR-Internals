@@ -23,7 +23,7 @@ struct MoreOptions_C_ExecuteUbergraph_MoreOptions final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2399[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTutorialSelect_C*                      CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0010(0x0008)(NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x0018(0x0070)(ConstParm)
@@ -31,10 +31,10 @@ public:
 	float                                         CallFunc_GetMousePositionScaledByDPI_LocationX;    // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetMousePositionScaledByDPI_LocationY;    // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetMousePositionScaledByDPI_ReturnValue;  // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_239A[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A1[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239B[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A2[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCoinShopUI_C*                          CallFunc_Create_ReturnValue_1;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USettingsUI_C*                          CallFunc_Create_ReturnValue_2;                     // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -52,11 +52,11 @@ public:
 	class UVerticalBox*                           VerticalBox_0;                                     // 0x0330(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class APlayerCharacter_C*                     OwnerPlayer;                                       // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         TotalTake;                                         // 0x0340(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F71[0x4];                                     // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F65[0x4];                                     // 0x0344(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARobberTruck_C*                         Truck;                                             // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARestrictedAreaVolume_C*                WarningArea;                                       // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          WarningOnScreen_;                                  // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F72[0x7];                                     // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F66[0x7];                                     // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 InstructionText;                                   // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class APowerbox_C*                            Powerbox;                                          // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -21,7 +21,7 @@ struct FAmbientSoundStruct final
 public:
 	class USoundBase*                             Sound_2_5A350B19484DDC20D887F38BC088F397;          // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Stopsonalarm__8_0FE8126A44802F34F172CB865A4D836A;  // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E44[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E57[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Volume_5_33C8BB5B47322A4F6B3F9D9A99E2CF2A;         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FAmbientSoundStruct) == 0x000008, "Wrong alignment on FAmbientSoundStruct");

@@ -33,8 +33,8 @@ public:
 		return GetDefaultObjImpl<UDeveloperSettings>();
 	}
 };
-// static_assert(alignof(UDeveloperSettings) == 0x000008, "Wrong alignment on UDeveloperSettings");
-// static_assert(sizeof(UDeveloperSettings) == 0x000038, "Wrong size on UDeveloperSettings");
+static_assert(alignof(UDeveloperSettings) == 0x000008, "Wrong alignment on UDeveloperSettings");
+static_assert(sizeof(UDeveloperSettings) == 0x000038, "Wrong size on UDeveloperSettings");
 
 }
 

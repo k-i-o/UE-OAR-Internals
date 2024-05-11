@@ -24,12 +24,12 @@ class UImgMediaSource final : public UBaseMediaSource
 {
 public:
 	bool                                          IsPathRelativeToProjectRoot;                       // 0x0088(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1663[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_164C[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameRate                             FrameRateOverride;                                 // 0x008C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1664[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_164D[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ProxyOverride;                                     // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDirectoryPath                         SequencePath;                                      // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1665[0x10];                                    // 0x00B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_164E[0x10];                                    // 0x00B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddGlobalCamera(class AActor* InActor);

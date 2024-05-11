@@ -29,7 +29,7 @@ public:
 	EMagicLeapHandTrackingGestureFilterLevel      GestureFilterLevel;                                // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTrackingEnabled;                                  // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0013(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AE[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetConfiguration) == 0x000008, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetConfiguration");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetConfiguration) == 0x000018, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetConfiguration");
@@ -60,10 +60,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence final
 {
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Confidence;                                        // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B0[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence) == 0x00000C, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence");
@@ -77,10 +77,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints final
 {
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTransform>                     Keypoints;                                         // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C9[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints) == 0x000008, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints) == 0x000020, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints");
@@ -96,10 +96,10 @@ public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapHandTrackingKeypoint                Keypoint;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapGestureTransformSpace               TransformSpace;                                    // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CA[0xD];                                     // 0x0003(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B3[0xD];                                     // 0x0003(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CB[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B4[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetGestureKeypointTransform) == 0x000010, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetGestureKeypointTransform");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetGestureKeypointTransform) == 0x000050, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetGestureKeypointTransform");
@@ -115,10 +115,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetHandCenter final
 {
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CC[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B5[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             HandCenter;                                        // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CD[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B6[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetHandCenter) == 0x000010, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetHandCenter");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetHandCenter) == 0x000050, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetHandCenter");
@@ -132,10 +132,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized final
 {
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HandCenterNormalized;                              // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CF[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B8[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized) == 0x000014, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized");
@@ -150,10 +150,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip final
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapGestureTransformSpace               TransformSpace;                                    // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D0[0xE];                                     // 0x0002(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15B9[0xE];                                     // 0x0002(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Pointer;                                           // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D1[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BA[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip) == 0x000010, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip) == 0x000050, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip");
@@ -170,7 +170,7 @@ public:
 	class FName                                   MotionSource;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapHandTrackingKeypoint                OutKeyPoint;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D2[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BB[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetHandKeypointForMotionSource) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetHandKeypointForMotionSource");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetHandKeypointForMotionSource) == 0x00000C, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetHandKeypointForMotionSource");
@@ -185,10 +185,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip final
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapGestureTransformSpace               TransformSpace;                                    // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D3[0xE];                                     // 0x0002(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BC[0xE];                                     // 0x0002(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Secondary;                                         // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D4[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BD[0xF];                                     // 0x0041(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip) == 0x000010, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip) == 0x000050, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip");
@@ -204,7 +204,7 @@ struct MagicLeapHandTrackingFunctionLibrary_GetMagicLeapHandTrackingLiveLinkSour
 public:
 	struct FLiveLinkSourceHandle                  SourceHandle;                                      // 0x0000(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D5[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BE[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetMagicLeapHandTrackingLiveLinkSource) == 0x000008, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetMagicLeapHandTrackingLiveLinkSource");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetMagicLeapHandTrackingLiveLinkSource) == 0x000020, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetMagicLeapHandTrackingLiveLinkSource");
@@ -218,10 +218,10 @@ struct MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint final
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapHandTrackingKeypoint                Keypoint;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D6[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15BF[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   OutMotionSource;                                   // 0x0004(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D7[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C0[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint) == 0x000010, "Wrong size on MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint");
@@ -236,7 +236,7 @@ struct MagicLeapHandTrackingFunctionLibrary_GetStaticGestureConfidenceThreshold 
 {
 public:
 	EMagicLeapHandTrackingGesture                 Gesture;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D8[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C1[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_GetStaticGestureConfidenceThreshold) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_GetStaticGestureConfidenceThreshold");
@@ -267,7 +267,7 @@ public:
 	EMagicLeapHandTrackingGestureFilterLevel      GestureFilterLevel;                                // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTrackingEnabled;                                  // 0x0012(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0013(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D9[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C2[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_SetConfiguration) == 0x000008, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_SetConfiguration");
 static_assert(sizeof(MagicLeapHandTrackingFunctionLibrary_SetConfiguration) == 0x000018, "Wrong size on MagicLeapHandTrackingFunctionLibrary_SetConfiguration");
@@ -283,7 +283,7 @@ struct MagicLeapHandTrackingFunctionLibrary_SetStaticGestureConfidenceThreshold 
 {
 public:
 	EMagicLeapHandTrackingGesture                 Gesture;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15DA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Confidence;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MagicLeapHandTrackingFunctionLibrary_SetStaticGestureConfidenceThreshold) == 0x000004, "Wrong alignment on MagicLeapHandTrackingFunctionLibrary_SetStaticGestureConfidenceThreshold");

@@ -37,11 +37,11 @@ struct AdvancedSteamFriendsLibrary_FilterText final
 public:
 	class FString                                 TextToFilter;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBPTextFilteringContext                       Context;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E9[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E0[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBPUniqueNetId                         TextSourceID;                                      // 0x0018(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	class FString                                 FilteredText;                                      // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EA[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E1[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_FilterText) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_FilterText");
 static_assert(sizeof(AdvancedSteamFriendsLibrary_FilterText) == 0x000050, "Wrong size on AdvancedSteamFriendsLibrary_FilterText");
@@ -58,7 +58,7 @@ struct AdvancedSteamFriendsLibrary_GetFriendSteamLevel final
 public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EB[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E2[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_GetFriendSteamLevel) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_GetFriendSteamLevel");
 static_assert(sizeof(AdvancedSteamFriendsLibrary_GetFriendSteamLevel) == 0x000028, "Wrong size on AdvancedSteamFriendsLibrary_GetFriendSteamLevel");
@@ -84,7 +84,7 @@ public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	EBlueprintAsyncResultSwitch                   Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamAvatarSize                              AvatarSize;                                        // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EC[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E3[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_GetSteamFriendAvatar) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_GetSteamFriendAvatar");
@@ -101,7 +101,7 @@ struct AdvancedSteamFriendsLibrary_GetSteamFriendGamePlayed final
 public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	EBlueprintResultSwitch                        Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10ED[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E4[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         AppID;                                             // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_GetSteamFriendGamePlayed) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_GetSteamFriendGamePlayed");
@@ -175,7 +175,7 @@ public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	ESteamUserOverlayType                         DialogType;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EE[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E5[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_OpenSteamUserOverlay) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_OpenSteamUserOverlay");
 static_assert(sizeof(AdvancedSteamFriendsLibrary_OpenSteamUserOverlay) == 0x000028, "Wrong size on AdvancedSteamFriendsLibrary_OpenSteamUserOverlay");
@@ -191,7 +191,7 @@ public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	bool                                          bRequireNameOnly;                                  // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EF[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E6[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AdvancedSteamFriendsLibrary_RequestSteamFriendInfo) == 0x000008, "Wrong alignment on AdvancedSteamFriendsLibrary_RequestSteamFriendInfo");
 static_assert(sizeof(AdvancedSteamFriendsLibrary_RequestSteamFriendInfo) == 0x000028, "Wrong size on AdvancedSteamFriendsLibrary_RequestSteamFriendInfo");
@@ -216,7 +216,7 @@ struct AdvancedSteamWorkshopLibrary_GetSubscribedWorkshopItems final
 {
 public:
 	int32                                         NumberOfItems;                                     // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10F0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E7[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FBPSteamWorkshopID>             ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AdvancedSteamWorkshopLibrary_GetSubscribedWorkshopItems) == 0x000008, "Wrong alignment on AdvancedSteamWorkshopLibrary_GetSubscribedWorkshopItems");

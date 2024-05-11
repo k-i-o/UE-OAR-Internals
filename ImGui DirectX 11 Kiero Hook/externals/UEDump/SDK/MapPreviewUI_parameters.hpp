@@ -17,12 +17,12 @@ namespace SDK::Params
 {
 
 // Function MapPreviewUI.MapPreviewUI_C.ExecuteUbergraph_MapPreviewUI
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMapBuyUI_C*                            CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCoinShopUI_C*                          CallFunc_Create_ReturnValue_1;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 K2Node_CustomEvent_OpenedUrl;                      // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -32,12 +32,12 @@ public:
 	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_OpenSource_ReturnValue;                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FC3[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B5[0x6];                                     // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_BoolToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI) == 0x000008, "Wrong alignment on MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI");
-static_assert(sizeof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI) == 0x000088, "Wrong size on MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI");
+static_assert(sizeof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI) == 0x000090, "Wrong size on MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, EntryPoint) == 0x000000, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::EntryPoint' has a wrong offset!");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_Create_ReturnValue) == 0x000008, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_Create_ReturnValue_1) == 0x000010, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_Create_ReturnValue_1' has a wrong offset!");
@@ -48,8 +48,8 @@ static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_Ge
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, K2Node_DynamicCast_AsRobber_Controller) == 0x000068, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_OpenSource_ReturnValue) == 0x000071, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_OpenSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000072, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_Conv_BoolToString_ReturnValue) == 0x000078, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_Conv_BoolToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000088, "Member 'MapPreviewUI_C_ExecuteUbergraph_MapPreviewUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MapPreviewUI.MapPreviewUI_C.MediaOpened
 // 0x0010 (0x0010 - 0x0000)

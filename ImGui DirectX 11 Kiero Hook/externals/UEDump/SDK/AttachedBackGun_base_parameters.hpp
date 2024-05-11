@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ShopItemCategory_structs.hpp"
 #include "AttachmentArrayStructure_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,10 +24,10 @@ struct AttachedBackGun_base_C_SetupAttachments final
 public:
 	struct FAttachmentArrayStructure              Attachments;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	EShopItemCategory                             Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22EF[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E2[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UChildActorComponent*                   Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22F0[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E3[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UChildActorComponent*                   Temp_object_Variable_1;                            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   Temp_object_Variable_2;                            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   Temp_object_Variable_3;                            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,7 +42,7 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22F1[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E4[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UChildActorComponent*                   K2Node_Select_Default;                             // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

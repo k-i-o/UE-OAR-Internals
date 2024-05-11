@@ -60,7 +60,7 @@ struct AnalyticsBlueprintLibrary_RecordCurrencyGiven final
 public:
 	class FString                                 GameCurrencyType;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1132[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1129[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyGiven) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyGiven");
 static_assert(sizeof(AnalyticsBlueprintLibrary_RecordCurrencyGiven) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordCurrencyGiven");
@@ -74,7 +74,7 @@ struct AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes final
 public:
 	class FString                                 GameCurrencyType;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1133[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112A[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes");
@@ -90,10 +90,10 @@ struct AnalyticsBlueprintLibrary_RecordCurrencyPurchase final
 public:
 	class FString                                 GameCurrencyType;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1134[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 RealCurrencyType;                                  // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RealMoneyCost;                                     // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1135[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112C[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PaymentProvider;                                   // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordCurrencyPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordCurrencyPurchase");
@@ -234,7 +234,7 @@ struct AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase final
 public:
 	class FString                                 GameCurrencyType;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1136[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase");
 static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase");
@@ -248,7 +248,7 @@ struct AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes fina
 public:
 	class FString                                 GameCurrencyType;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameCurrencyAmount;                                // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1137[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes");
@@ -264,7 +264,7 @@ struct AnalyticsBlueprintLibrary_RecordSimpleItemPurchase final
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ItemQuantity;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1138[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_112F[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleItemPurchase");
 static_assert(sizeof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchase) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_RecordSimpleItemPurchase");
@@ -278,7 +278,7 @@ struct AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes final
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ItemQuantity;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1139[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1130[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes");
@@ -371,7 +371,7 @@ struct AnalyticsBlueprintLibrary_StartSessionWithAttributes final
 public:
 	TArray<struct FAnalyticsEventAttr>            Attributes;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_113A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1131[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnalyticsBlueprintLibrary_StartSessionWithAttributes) == 0x000008, "Wrong alignment on AnalyticsBlueprintLibrary_StartSessionWithAttributes");
 static_assert(sizeof(AnalyticsBlueprintLibrary_StartSessionWithAttributes) == 0x000018, "Wrong size on AnalyticsBlueprintLibrary_StartSessionWithAttributes");

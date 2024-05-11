@@ -40,7 +40,7 @@ public:
 	class UButton*                                Weapons;                                           // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EShopItemCategory                             CurrentCategory;                                   // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DF0[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DDC[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EShopItemCategory>                     CurrentCatArray;                                   // 0x02E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:

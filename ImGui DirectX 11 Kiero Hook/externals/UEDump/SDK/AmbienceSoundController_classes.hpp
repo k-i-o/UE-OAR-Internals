@@ -27,7 +27,7 @@ public:
 	class USoundBase*                             OutsideAmbience;                                   // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UAudioComponent*                        AmbientSoundComponent;                             // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          MusicPlaying_;                                     // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EF0[0x7];                                     // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F04[0x7];                                     // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        Music;                                             // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

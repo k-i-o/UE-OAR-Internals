@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "RarityNum_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
+#include "RarityNum_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -31,7 +31,7 @@ public:
 	int32                                         CashCost;                                          // 0x0254(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         CoinCost;                                          // 0x0258(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EShopItemCategory                             Item_category;                                     // 0x025C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_23E3[0x3];                                     // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EB[0x3];                                     // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 ItemBP;                                            // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	ERarityNum                                    Rarity;                                            // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -24,7 +24,7 @@ public:
 	class UClass*                                 SetupOwnerMap;                                     // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 PreviousSetup;                                     // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Estimated_added_value;                             // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_240D[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_168B[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 SetupMapBP;                                        // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UTexture2D*>                     SetupScreenshots;                                  // 0x0290(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 

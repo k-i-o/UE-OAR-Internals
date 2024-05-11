@@ -143,7 +143,7 @@ class ULiveLinkSourceSettings : public UObject
 {
 public:
 	ELiveLinkSourceMode                           Mode;                                              // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C1[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AA[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLiveLinkSourceBufferManagementSettings BufferSettings;                                    // 0x0030(0x0058)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ConnectionString;                                  // 0x0088(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class ULiveLinkSourceFactory>     Factory;                                           // 0x0098(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -265,7 +265,7 @@ public:
 	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                             FrameRate;                                         // 0x0058(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebroadcastSubject;                               // 0x0060(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C2[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AB[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -291,12 +291,12 @@ static_assert(offsetof(ULiveLinkSubjectSettings, bRebroadcastSubject) == 0x00006
 class ULiveLinkVirtualSubject final : public UObject
 {
 public:
-	uint8                                         Pad_15C3[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AC[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FLiveLinkSubjectName>           Subjects;                                          // 0x0038(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class ULiveLinkFrameTranslator*>       FrameTranslators;                                  // 0x0048(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	bool                                          bRebroadcastSubject;                               // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15C4[0x107];                                   // 0x0059(0x0107)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15AD[0x107];                                   // 0x0059(0x0107)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ShopItemCategory_structs.hpp"
-#include "SkinRotationStructure_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SkinRotationStructure_structs.hpp"
+#include "ShopItemCategory_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -49,13 +49,13 @@ public:
 	class UShopUI_C*                              ShopParent;                                        // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FTimespan                              TimeLeft;                                          // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         RotationNumber;                                    // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2345[0x4];                                     // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234C[0x4];                                     // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Item_info;                                         // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         FeaturedItems;                                     // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FSkinRotationStructure>         SkinRotationStruct;                                // 0x0338(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         FocusedItemSalePrice;                              // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2346[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234D[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EShopItemCategory>                     Categories;                                        // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:

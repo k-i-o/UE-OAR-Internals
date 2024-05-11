@@ -49,7 +49,7 @@ public:
 	class USlider*                                VoiceeSlider;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSettingsStruct                        Settings_Struct;                                   // 0x0320(0x002C)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F41[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F3E[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPauseMenu_C*                           PauseUI;                                           // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

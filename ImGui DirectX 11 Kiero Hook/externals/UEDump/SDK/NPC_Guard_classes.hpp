@@ -20,54 +20,58 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass NPC_Guard.NPC_Guard_C
-// 0x0130 (0x0670 - 0x0540)
+// 0x0150 (0x0690 - 0x0540)
 class ANPC_Guard_C final : public ANPCBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_NPC_Guard_C;                        // 0x0540(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USphereComponent*                       Sphere;                                            // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USteamStatComponent_C*                  SteamStatComponent;                                // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       EscortSphere;                                      // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   EscortRing;                                        // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpringArmComponent*                    EscortSpring;                                      // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Hat;                                               // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        PhoneSpawnArrow;                                   // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPawnSensingComponent*                  PawnSensing;                                       // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        GunLocation;                                       // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   GunBP;                                             // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAlertComponent_C*                      AlertComponent;                                    // 0x0598(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UHeavyPickupComponent_C*                RagdollPickupComponent;                            // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPickupItemComponent_C*                 PickupItemComponent;                               // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpottedHighlightcomponent_C*           SpottedHighlightcomponent;                         // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotPlayerComponent_C*                 SpotPlayerComponent;                               // 0x05B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   SenseActor;                                        // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF; // 0x05C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF; // 0x05CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20A6[0x3];                                     // 0x05CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Armed_;                                            // 0x05D8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20A7[0x7];                                     // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Investigate_Reason;                                // 0x05E0(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          Patrolling_;                                       // 0x05F0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Investigating_;                                    // 0x05F1(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20A8[0x6];                                     // 0x05F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APoliceGunBase_C*                       GunActor;                                          // 0x05F8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             HomeTransform;                                     // 0x0600(0x0030)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	TArray<class AGuardPatrolPoint_C*>            PatrolPoints;                                      // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	int32                                         CurrentPatrolPoint;                                // 0x0640(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Escorting_;                                        // 0x0644(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Alert_;                                            // 0x0645(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20A9[0x2];                                     // 0x0646(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCharacter_C*                     TargetPlayer;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Sensing_;                                          // 0x0650(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_20AA[0x7];                                     // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGuardmanager_C*                        Manager;                                           // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CameraWatcher_;                                    // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_20AB[0x7];                                     // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCharacter_C*                     EscortingPlayer;                                   // 0x0668(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicsConstraintComponent*            PhysicsConstraint;                                 // 0x0548(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere;                                            // 0x0550(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USteamStatComponent_C*                  SteamStatComponent;                                // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       EscortSphere;                                      // 0x0560(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   EscortRing;                                        // 0x0568(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpringArmComponent*                    EscortSpring;                                      // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Hat;                                               // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        PhoneSpawnArrow;                                   // 0x0580(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPawnSensingComponent*                  PawnSensing;                                       // 0x0588(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        GunLocation;                                       // 0x0590(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   GunBP;                                             // 0x0598(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAlertComponent_C*                      AlertComponent;                                    // 0x05A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UHeavyPickupComponent_C*                RagdollPickupComponent;                            // 0x05A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPickupItemComponent_C*                 PickupItemComponent;                               // 0x05B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpottedHighlightcomponent_C*           SpottedHighlightcomponent;                         // 0x05B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotPlayerComponent_C*                 SpotPlayerComponent;                               // 0x05C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   SenseActor;                                        // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF; // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF; // 0x05D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2089[0x3];                                     // 0x05D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x05D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Armed_;                                            // 0x05E0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_208A[0x7];                                     // 0x05E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Investigate_Reason;                                // 0x05E8(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          Patrolling_;                                       // 0x05F8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Investigating_;                                    // 0x05F9(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_208B[0x6];                                     // 0x05FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APoliceGunBase_C*                       GunActor;                                          // 0x0600(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_208C[0x8];                                     // 0x0608(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             HomeTransform;                                     // 0x0610(0x0030)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	TArray<class AGuardPatrolPoint_C*>            PatrolPoints;                                      // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	int32                                         CurrentPatrolPoint;                                // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Escorting_;                                        // 0x0654(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Alert_;                                            // 0x0655(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_208D[0x2];                                     // 0x0656(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCharacter_C*                     TargetPlayer;                                      // 0x0658(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Sensing_;                                          // 0x0660(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_208E[0x7];                                     // 0x0661(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGuardmanager_C*                        Manager;                                           // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CameraWatcher_;                                    // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                         Pad_208F[0x7];                                     // 0x0671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerCharacter_C*                     EscortingPlayer;                                   // 0x0678(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 AttachedKeycard;                                   // 0x0680(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_NPC_Guard(int32 EntryPoint);
+	void AttachKeycard();
 	void BndEvt__NPC_Guard_Sphere_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void EscortRingVisible(bool Visible_);
 	void MoveToEscortPoint();
@@ -117,6 +121,7 @@ public:
 	void OnFail_86C42EF74AA8DBBBB3067FB3927DD997(EPathFollowingResult MovementResult);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void UserConstructionScript();
 	void FindCurrentPatrolPoint(class AGuardPatrolPoint_C** Point, bool* Last_point_);
 	void FindNonMinusDownedPlayer(class APlayerCharacter_C** Player, bool* Found_);
 	void ShootPlayer();
@@ -136,42 +141,44 @@ public:
 	}
 };
 static_assert(alignof(ANPC_Guard_C) == 0x000010, "Wrong alignment on ANPC_Guard_C");
-static_assert(sizeof(ANPC_Guard_C) == 0x000670, "Wrong size on ANPC_Guard_C");
+static_assert(sizeof(ANPC_Guard_C) == 0x000690, "Wrong size on ANPC_Guard_C");
 static_assert(offsetof(ANPC_Guard_C, UberGraphFrame_NPC_Guard_C) == 0x000540, "Member 'ANPC_Guard_C::UberGraphFrame_NPC_Guard_C' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Sphere) == 0x000548, "Member 'ANPC_Guard_C::Sphere' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SteamStatComponent) == 0x000550, "Member 'ANPC_Guard_C::SteamStatComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortSphere) == 0x000558, "Member 'ANPC_Guard_C::EscortSphere' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortRing) == 0x000560, "Member 'ANPC_Guard_C::EscortRing' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortSpring) == 0x000568, "Member 'ANPC_Guard_C::EscortSpring' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Hat) == 0x000570, "Member 'ANPC_Guard_C::Hat' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PhoneSpawnArrow) == 0x000578, "Member 'ANPC_Guard_C::PhoneSpawnArrow' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PawnSensing) == 0x000580, "Member 'ANPC_Guard_C::PawnSensing' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunLocation) == 0x000588, "Member 'ANPC_Guard_C::GunLocation' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunBP) == 0x000590, "Member 'ANPC_Guard_C::GunBP' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, AlertComponent) == 0x000598, "Member 'ANPC_Guard_C::AlertComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, RagdollPickupComponent) == 0x0005A0, "Member 'ANPC_Guard_C::RagdollPickupComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PickupItemComponent) == 0x0005A8, "Member 'ANPC_Guard_C::PickupItemComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SpottedHighlightcomponent) == 0x0005B0, "Member 'ANPC_Guard_C::SpottedHighlightcomponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SpotPlayerComponent) == 0x0005B8, "Member 'ANPC_Guard_C::SpotPlayerComponent' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, SenseActor) == 0x0005C0, "Member 'ANPC_Guard_C::SenseActor' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF) == 0x0005C8, "Member 'ANPC_Guard_C::Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF) == 0x0005CC, "Member 'ANPC_Guard_C::Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Timeline_0) == 0x0005D0, "Member 'ANPC_Guard_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Armed_) == 0x0005D8, "Member 'ANPC_Guard_C::Armed_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Investigate_Reason) == 0x0005E0, "Member 'ANPC_Guard_C::Investigate_Reason' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Patrolling_) == 0x0005F0, "Member 'ANPC_Guard_C::Patrolling_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Investigating_) == 0x0005F1, "Member 'ANPC_Guard_C::Investigating_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, GunActor) == 0x0005F8, "Member 'ANPC_Guard_C::GunActor' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, HomeTransform) == 0x000600, "Member 'ANPC_Guard_C::HomeTransform' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, PatrolPoints) == 0x000630, "Member 'ANPC_Guard_C::PatrolPoints' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, CurrentPatrolPoint) == 0x000640, "Member 'ANPC_Guard_C::CurrentPatrolPoint' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Escorting_) == 0x000644, "Member 'ANPC_Guard_C::Escorting_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Alert_) == 0x000645, "Member 'ANPC_Guard_C::Alert_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, TargetPlayer) == 0x000648, "Member 'ANPC_Guard_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Sensing_) == 0x000650, "Member 'ANPC_Guard_C::Sensing_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, Manager) == 0x000658, "Member 'ANPC_Guard_C::Manager' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, CameraWatcher_) == 0x000660, "Member 'ANPC_Guard_C::CameraWatcher_' has a wrong offset!");
-static_assert(offsetof(ANPC_Guard_C, EscortingPlayer) == 0x000668, "Member 'ANPC_Guard_C::EscortingPlayer' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, PhysicsConstraint) == 0x000548, "Member 'ANPC_Guard_C::PhysicsConstraint' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Sphere) == 0x000550, "Member 'ANPC_Guard_C::Sphere' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, SteamStatComponent) == 0x000558, "Member 'ANPC_Guard_C::SteamStatComponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, EscortSphere) == 0x000560, "Member 'ANPC_Guard_C::EscortSphere' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, EscortRing) == 0x000568, "Member 'ANPC_Guard_C::EscortRing' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, EscortSpring) == 0x000570, "Member 'ANPC_Guard_C::EscortSpring' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Hat) == 0x000578, "Member 'ANPC_Guard_C::Hat' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, PhoneSpawnArrow) == 0x000580, "Member 'ANPC_Guard_C::PhoneSpawnArrow' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, PawnSensing) == 0x000588, "Member 'ANPC_Guard_C::PawnSensing' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, GunLocation) == 0x000590, "Member 'ANPC_Guard_C::GunLocation' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, GunBP) == 0x000598, "Member 'ANPC_Guard_C::GunBP' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, AlertComponent) == 0x0005A0, "Member 'ANPC_Guard_C::AlertComponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, RagdollPickupComponent) == 0x0005A8, "Member 'ANPC_Guard_C::RagdollPickupComponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, PickupItemComponent) == 0x0005B0, "Member 'ANPC_Guard_C::PickupItemComponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, SpottedHighlightcomponent) == 0x0005B8, "Member 'ANPC_Guard_C::SpottedHighlightcomponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, SpotPlayerComponent) == 0x0005C0, "Member 'ANPC_Guard_C::SpotPlayerComponent' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, SenseActor) == 0x0005C8, "Member 'ANPC_Guard_C::SenseActor' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF) == 0x0005D0, "Member 'ANPC_Guard_C::Timeline_0_Alpha_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF) == 0x0005D4, "Member 'ANPC_Guard_C::Timeline_0__Direction_3B178F704D255F5D3990C2837E28D2EF' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Timeline_0) == 0x0005D8, "Member 'ANPC_Guard_C::Timeline_0' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Armed_) == 0x0005E0, "Member 'ANPC_Guard_C::Armed_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Investigate_Reason) == 0x0005E8, "Member 'ANPC_Guard_C::Investigate_Reason' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Patrolling_) == 0x0005F8, "Member 'ANPC_Guard_C::Patrolling_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Investigating_) == 0x0005F9, "Member 'ANPC_Guard_C::Investigating_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, GunActor) == 0x000600, "Member 'ANPC_Guard_C::GunActor' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, HomeTransform) == 0x000610, "Member 'ANPC_Guard_C::HomeTransform' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, PatrolPoints) == 0x000640, "Member 'ANPC_Guard_C::PatrolPoints' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, CurrentPatrolPoint) == 0x000650, "Member 'ANPC_Guard_C::CurrentPatrolPoint' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Escorting_) == 0x000654, "Member 'ANPC_Guard_C::Escorting_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Alert_) == 0x000655, "Member 'ANPC_Guard_C::Alert_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, TargetPlayer) == 0x000658, "Member 'ANPC_Guard_C::TargetPlayer' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Sensing_) == 0x000660, "Member 'ANPC_Guard_C::Sensing_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, Manager) == 0x000668, "Member 'ANPC_Guard_C::Manager' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, CameraWatcher_) == 0x000670, "Member 'ANPC_Guard_C::CameraWatcher_' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, EscortingPlayer) == 0x000678, "Member 'ANPC_Guard_C::EscortingPlayer' has a wrong offset!");
+static_assert(offsetof(ANPC_Guard_C, AttachedKeycard) == 0x000680, "Member 'ANPC_Guard_C::AttachedKeycard' has a wrong offset!");
 
 }
 

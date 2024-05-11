@@ -120,7 +120,7 @@ enum class EBPLoginStatus : uint8
 struct alignas(0x08) FBPUniqueNetId final
 {
 public:
-	uint8                                         Pad_1090[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1087[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBPUniqueNetId) == 0x000008, "Wrong alignment on FBPUniqueNetId");
 static_assert(sizeof(FBPUniqueNetId) == 0x000020, "Wrong size on FBPUniqueNetId");
@@ -136,7 +136,7 @@ public:
 	bool                                          bIsJoinable;                                       // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasVoiceSupport;                                  // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBPOnlinePresenceState                        PresenceState;                                     // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1091[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1088[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StatusString;                                      // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FBPFriendPresenceInfo) == 0x000008, "Wrong alignment on FBPFriendPresenceInfo");
@@ -157,10 +157,10 @@ public:
 	class FString                                 DisplayName;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RealName;                                          // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBPOnlinePresenceState                        OnlineState;                                       // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1092[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1089[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0028(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                          bIsPlayingSameGame;                                // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1093[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_108A[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBPFriendPresenceInfo                  PresenceInfo;                                      // 0x0050(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FBPFriendInfo) == 0x000008, "Wrong alignment on FBPFriendInfo");
@@ -177,7 +177,7 @@ static_assert(offsetof(FBPFriendInfo, PresenceInfo) == 0x000050, "Member 'FBPFri
 struct alignas(0x08) FSessionPropertyKeyPair final
 {
 public:
-	uint8                                         Pad_1094[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_108B[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSessionPropertyKeyPair) == 0x000008, "Wrong alignment on FSessionPropertyKeyPair");
 static_assert(sizeof(FSessionPropertyKeyPair) == 0x000020, "Wrong size on FSessionPropertyKeyPair");
@@ -213,7 +213,7 @@ static_assert(offsetof(FBPOnlineRecentPlayer, LastSeen) == 0x000040, "Member 'FB
 struct alignas(0x08) FSessionsSearchSetting final
 {
 public:
-	uint8                                         Pad_1095[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_108C[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSessionsSearchSetting) == 0x000008, "Wrong alignment on FSessionsSearchSetting");
 static_assert(sizeof(FSessionsSearchSetting) == 0x000028, "Wrong size on FSessionsSearchSetting");
@@ -223,7 +223,7 @@ static_assert(sizeof(FSessionsSearchSetting) == 0x000028, "Wrong size on FSessio
 struct alignas(0x08) FBPUserOnlineAccount final
 {
 public:
-	uint8                                         Pad_1096[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_108D[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBPUserOnlineAccount) == 0x000008, "Wrong alignment on FBPUserOnlineAccount");
 static_assert(sizeof(FBPUserOnlineAccount) == 0x000010, "Wrong size on FBPUserOnlineAccount");

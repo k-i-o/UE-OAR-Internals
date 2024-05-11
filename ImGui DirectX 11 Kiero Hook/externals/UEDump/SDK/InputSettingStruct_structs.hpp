@@ -24,7 +24,7 @@ public:
 	class FName                                   Name_2_182CE6524D0CEC7F4B50F99E0F6756F9;           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FInputActionKeyMapping                 Actionmapping_11_421EA37C495365BF9098908EE354C38D; // 0x0008(0x0028)(Edit, BlueprintVisible)
 	bool                                          IsAxis__8_3FA115DA4EB5868C1F265EAB9A2C533F;        // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F10[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F24[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputAxisKeyMapping                   Axismapping_5_01C53C8D4B29FF1852A9FF8CF3A7A89F;    // 0x0038(0x0028)(Edit, BlueprintVisible)
 };
 static_assert(alignof(FInputSettingStruct) == 0x000008, "Wrong alignment on FInputSettingStruct");

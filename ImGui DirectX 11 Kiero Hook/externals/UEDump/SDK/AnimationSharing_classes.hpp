@@ -27,9 +27,9 @@ public:
 	float                                         PermutationTimeOffset;                             // 0x02C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         PlayRate;                                          // 0x02C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bStateBool;                                        // 0x02C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12A2[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1299[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSharingInstance*                   Instance;                                          // 0x02D0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12A3[0x8];                                     // 0x02D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129A[0x8];                                     // 0x02D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetInstancedActors(TArray<class AActor*>* Actors);
@@ -61,7 +61,7 @@ public:
 	TWeakObjectPtr<class USkeletalMeshComponent>  ToComponent;                                       // 0x02C0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         BlendTime;                                         // 0x02C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bBlendBool;                                        // 0x02CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12A4[0x3];                                     // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129B[0x3];                                     // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -89,7 +89,7 @@ public:
 	TWeakObjectPtr<class UAnimSequence>           AdditiveAnimation;                                 // 0x02C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         Alpha;                                             // 0x02C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bStateBool;                                        // 0x02CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12A5[0x3];                                     // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129C[0x3];                                     // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -114,14 +114,14 @@ class UAnimSharingInstance final : public UObject
 {
 public:
 	TArray<class AActor*>                         RegisteredActors;                                  // 0x0028(0x0010)(Edit, ZeroConstructor, Transient, EditConst, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A6[0x50];                                    // 0x0038(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129D[0x50];                                    // 0x0038(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimationSharingStateProcessor*        StateProcessor;                                    // 0x0088(0x0008)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A7[0x38];                                    // 0x0090(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129E[0x38];                                    // 0x0090(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UAnimSequence*>                  UsedAnimationSequences;                            // 0x00C8(0x0010)(Edit, ZeroConstructor, Transient, EditConst, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A8[0x10];                                    // 0x00D8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129F[0x10];                                    // 0x00D8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnum*                                  StateEnum;                                         // 0x00E8(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 SharingActor;                                      // 0x00F0(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12A9[0x20];                                    // 0x00F8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12A0[0x20];                                    // 0x00F8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -148,7 +148,7 @@ class UAnimationSharingManager final : public UObject
 public:
 	TArray<class USkeleton*>                      Skeletons;                                         // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 	TArray<class UAnimSharingInstance*>           PerSkeletonData;                                   // 0x0038(0x0010)(Edit, ZeroConstructor, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12AA[0x40];                                    // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12A1[0x40];                                    // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static bool AnimationSharingEnabled();

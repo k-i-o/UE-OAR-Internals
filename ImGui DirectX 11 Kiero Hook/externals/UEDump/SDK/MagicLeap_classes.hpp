@@ -28,7 +28,7 @@ public:
 	bool                                          bEnableZI;                                         // 0x0028(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseVulkanForZI;                                   // 0x0029(0x0001)(ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseMLAudioForZI;                                  // 0x002A(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14CC[0x5];                                     // 0x002B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C0[0x5];                                     // 0x002B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -58,7 +58,7 @@ public:
 	FMulticastInlineDelegateProperty_             PurchaseConfirmationFailure;                       // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             GetPurchaseHistorySuccess;                         // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             GetPurchaseHistoryFailure;                         // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14CD[0x8];                                     // 0x0120(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C1[0x8];                                     // 0x0120(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetItemsDetailsFailure__DelegateSignature();
@@ -97,7 +97,7 @@ static_assert(offsetof(UInAppPurchaseComponent, GetPurchaseHistoryFailure) == 0x
 class UMagicLeapRaycastComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_14D1[0x68];                                    // 0x00B0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C5[0x68];                                    // 0x00B0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void RaycastResultDelegate__DelegateSignature(const struct FMagicLeapRaycastHitResult& HitResult);
@@ -154,7 +154,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnHeadTrackingRecovered;                           // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_             OnHeadTrackingRecoveryFailed;                      // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_             OnHeadTrackingNewSessionStarted;                   // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_14D3[0x50];                                    // 0x0180(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C7[0x50];                                    // 0x0180(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -213,30 +213,30 @@ static_assert(sizeof(UMagicLeapHMDFunctionLibrary) == 0x000028, "Wrong size on U
 class UMagicLeapMeshTrackerComponent final : public USceneComponent
 {
 public:
-	uint8                                         Pad_14D9[0x8];                                     // 0x01F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14CD[0x8];                                     // 0x01F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnMeshTrackerUpdated;                              // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	bool                                          ScanWorld;                                         // 0x0210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapMeshType                            MeshType;                                          // 0x0211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DA[0x6];                                     // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14CE[0x6];                                     // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBoxComponent*                          BoundingVolume;                                    // 0x0218(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapMeshLOD                             LevelOfDetail;                                     // 0x0220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DB[0x3];                                     // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14CF[0x3];                                     // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PerimeterOfGapsToFill;                             // 0x0224(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Planarize;                                         // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DC[0x3];                                     // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14D0[0x3];                                     // 0x0229(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DisconnectedSectionArea;                           // 0x022C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RequestNormals;                                    // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RequestVertexConfidence;                           // 0x0231(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapMeshVertexColorMode                 VertexColorMode;                                   // 0x0232(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DD[0x5];                                     // 0x0233(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14D1[0x5];                                     // 0x0233(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FColor>                         BlockVertexColors;                                 // 0x0238(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FLinearColor                           VertexColorFromConfidenceZero;                     // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RemoveOverlappingTriangles;                        // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DE[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14D2[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMRMeshComponent*                       MRMesh;                                            // 0x0270(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BricksPerFrame;                                    // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14DF[0x14];                                    // 0x027C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14D3[0x14];                                    // 0x027C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ConnectBlockSelector(TScriptInterface<class IMagicLeapMeshBlockSelectorInterface> Selector);

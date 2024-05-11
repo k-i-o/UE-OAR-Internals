@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass MapPreviewUI.MapPreviewUI_C
-// 0x0068 (0x02C8 - 0x0260)
+// 0x0070 (0x02D0 - 0x0260)
 class UMapPreviewUI_C final : public UUserWidget
 {
 public:
@@ -35,6 +35,7 @@ public:
 	class UMediaPlayer*                           MediaPlayer;                                       // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 MapInfo;                                           // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UMapSelectUI_C*                         Parent;                                            // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         SalePrice;                                         // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MapPreviewUI(int32 EntryPoint);
@@ -57,7 +58,7 @@ public:
 	}
 };
 static_assert(alignof(UMapPreviewUI_C) == 0x000008, "Wrong alignment on UMapPreviewUI_C");
-static_assert(sizeof(UMapPreviewUI_C) == 0x0002C8, "Wrong size on UMapPreviewUI_C");
+static_assert(sizeof(UMapPreviewUI_C) == 0x0002D0, "Wrong size on UMapPreviewUI_C");
 static_assert(offsetof(UMapPreviewUI_C, UberGraphFrame) == 0x000260, "Member 'UMapPreviewUI_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UMapPreviewUI_C, Button_134) == 0x000268, "Member 'UMapPreviewUI_C::Button_134' has a wrong offset!");
 static_assert(offsetof(UMapPreviewUI_C, CoinBuyButton) == 0x000270, "Member 'UMapPreviewUI_C::CoinBuyButton' has a wrong offset!");
@@ -71,6 +72,7 @@ static_assert(offsetof(UMapPreviewUI_C, Vignette) == 0x0002A8, "Member 'UMapPrev
 static_assert(offsetof(UMapPreviewUI_C, MediaPlayer) == 0x0002B0, "Member 'UMapPreviewUI_C::MediaPlayer' has a wrong offset!");
 static_assert(offsetof(UMapPreviewUI_C, MapInfo) == 0x0002B8, "Member 'UMapPreviewUI_C::MapInfo' has a wrong offset!");
 static_assert(offsetof(UMapPreviewUI_C, Parent) == 0x0002C0, "Member 'UMapPreviewUI_C::Parent' has a wrong offset!");
+static_assert(offsetof(UMapPreviewUI_C, SalePrice) == 0x0002C8, "Member 'UMapPreviewUI_C::SalePrice' has a wrong offset!");
 
 }
 

@@ -26,7 +26,7 @@ public:
 	class UHighlightInRangeComponent_C*           HighlightInRangeComponent;                         // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UHighlightWhenHolding_C*                HighlightWhenHolding;                              // 0x0268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         KeycardNumber;                                     // 0x0270(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1FF3[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FCA[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Keycard_name;                                      // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

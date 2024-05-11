@@ -32,7 +32,7 @@ struct ImgMediaSource_AddTargetObject final
 public:
 	class AActor*                                 InActor;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Width;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1666[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_164F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ImgMediaSource_AddTargetObject) == 0x000008, "Wrong alignment on ImgMediaSource_AddTargetObject");
 static_assert(sizeof(ImgMediaSource_AddTargetObject) == 0x000010, "Wrong size on ImgMediaSource_AddTargetObject");

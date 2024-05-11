@@ -64,11 +64,11 @@ struct MeshDescriptionBase_CreatePolygon final
 {
 public:
 	struct FPolygonGroupID                        PolygonGroupID;                                    // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B2B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B0C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexInstanceID>              VertexInstanceIDs;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FEdgeID>                        NewEdgeIDs;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FPolygonID                             ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B2C[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B0D[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_CreatePolygon) == 0x000008, "Wrong alignment on MeshDescriptionBase_CreatePolygon");
 static_assert(sizeof(MeshDescriptionBase_CreatePolygon) == 0x000030, "Wrong size on MeshDescriptionBase_CreatePolygon");
@@ -122,11 +122,11 @@ struct MeshDescriptionBase_CreateTriangle final
 {
 public:
 	struct FPolygonGroupID                        PolygonGroupID;                                    // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B2D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B0E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexInstanceID>              VertexInstanceIDs;                                 // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FEdgeID>                        NewEdgeIDs;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FTriangleID                            ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B2E[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B0F[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_CreateTriangle) == 0x000008, "Wrong alignment on MeshDescriptionBase_CreateTriangle");
 static_assert(sizeof(MeshDescriptionBase_CreateTriangle) == 0x000030, "Wrong size on MeshDescriptionBase_CreateTriangle");
@@ -206,7 +206,7 @@ struct MeshDescriptionBase_DeleteEdge final
 {
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B2F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B10[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OrphanedVertices;                                  // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_DeleteEdge) == 0x000008, "Wrong alignment on MeshDescriptionBase_DeleteEdge");
@@ -220,7 +220,7 @@ struct MeshDescriptionBase_DeletePolygon final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B30[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B11[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OrphanedEdges;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVertexInstanceID>              OrphanedVertexInstances;                           // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FPolygonGroupID>                OrphanedPolygonGroups;                             // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -249,7 +249,7 @@ struct MeshDescriptionBase_DeleteTriangle final
 {
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B31[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B12[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OrphanedEdges;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVertexInstanceID>              OrphanedVertexInstances;                           // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FPolygonGroupID>                OrphanedPolygonGroupsPtr;                          // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -278,7 +278,7 @@ struct MeshDescriptionBase_DeleteVertexInstance final
 {
 public:
 	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B32[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B13[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OrphanedVertices;                                  // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_DeleteVertexInstance) == 0x000008, "Wrong alignment on MeshDescriptionBase_DeleteVertexInstance");
@@ -410,7 +410,7 @@ struct MeshDescriptionBase_GetEdgeConnectedPolygons final
 {
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B33[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B14[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPolygonID>                     OutConnectedPolygonIDs;                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetEdgeConnectedPolygons) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetEdgeConnectedPolygons");
@@ -424,7 +424,7 @@ struct MeshDescriptionBase_GetEdgeConnectedTriangles final
 {
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B34[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B15[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTriangleID>                    OutConnectedTriangleIDs;                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetEdgeConnectedTriangles) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetEdgeConnectedTriangles");
@@ -453,7 +453,7 @@ struct MeshDescriptionBase_GetEdgeVertices final
 {
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B35[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B16[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OutVertexIDs;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetEdgeVertices) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetEdgeVertices");
@@ -623,7 +623,7 @@ struct MeshDescriptionBase_GetPolygonAdjacentPolygons final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B36[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B17[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPolygonID>                     OutPolygonIDs;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonAdjacentPolygons) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonAdjacentPolygons");
@@ -637,7 +637,7 @@ struct MeshDescriptionBase_GetPolygonGroupPolygons final
 {
 public:
 	struct FPolygonGroupID                        PolygonGroupID;                                    // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B37[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B18[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPolygonID>                     OutPolygonIDs;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonGroupPolygons) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonGroupPolygons");
@@ -651,7 +651,7 @@ struct MeshDescriptionBase_GetPolygonInternalEdges final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B38[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B19[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OutEdgeIDs;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonInternalEdges) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonInternalEdges");
@@ -665,7 +665,7 @@ struct MeshDescriptionBase_GetPolygonPerimeterEdges final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B39[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OutEdgeIDs;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonPerimeterEdges) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonPerimeterEdges");
@@ -692,7 +692,7 @@ struct MeshDescriptionBase_GetPolygonTriangles final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTriangleID>                    OutTriangleIDs;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonTriangles) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonTriangles");
@@ -706,7 +706,7 @@ struct MeshDescriptionBase_GetPolygonVertexInstances final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexInstanceID>              OutVertexInstanceIDs;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonVertexInstances) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonVertexInstances");
@@ -720,7 +720,7 @@ struct MeshDescriptionBase_GetPolygonVertices final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OutVertexIDs;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetPolygonVertices) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetPolygonVertices");
@@ -734,7 +734,7 @@ struct MeshDescriptionBase_GetTriangleAdjacentTriangles final
 {
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTriangleID>                    OutTriangleIDs;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetTriangleAdjacentTriangles) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetTriangleAdjacentTriangles");
@@ -748,7 +748,7 @@ struct MeshDescriptionBase_GetTriangleEdges final
 {
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B1F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OutEdgeIDs;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetTriangleEdges) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetTriangleEdges");
@@ -803,7 +803,7 @@ struct MeshDescriptionBase_GetTriangleVertexInstances final
 {
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B3F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B20[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexInstanceID>              OutVertexInstanceIDs;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetTriangleVertexInstances) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetTriangleVertexInstances");
@@ -817,7 +817,7 @@ struct MeshDescriptionBase_GetTriangleVertices final
 {
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B40[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B21[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OutVertexIDs;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetTriangleVertices) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetTriangleVertices");
@@ -831,7 +831,7 @@ struct MeshDescriptionBase_GetVertexAdjacentVertices final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B41[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B22[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexID>                      OutAdjacentVertexIDs;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexAdjacentVertices) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexAdjacentVertices");
@@ -845,7 +845,7 @@ struct MeshDescriptionBase_GetVertexConnectedEdges final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B42[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B23[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEdgeID>                        OutEdgeIDs;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexConnectedEdges) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexConnectedEdges");
@@ -859,7 +859,7 @@ struct MeshDescriptionBase_GetVertexConnectedPolygons final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B43[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B24[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPolygonID>                     OutConnectedPolygonIDs;                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexConnectedPolygons) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexConnectedPolygons");
@@ -873,7 +873,7 @@ struct MeshDescriptionBase_GetVertexConnectedTriangles final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B44[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B25[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTriangleID>                    OutConnectedTriangleIDs;                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexConnectedTriangles) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexConnectedTriangles");
@@ -887,7 +887,7 @@ struct MeshDescriptionBase_GetVertexInstanceConnectedPolygons final
 {
 public:
 	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B45[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B26[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPolygonID>                     OutConnectedPolygonIDs;                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexInstanceConnectedPolygons) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexInstanceConnectedPolygons");
@@ -901,7 +901,7 @@ struct MeshDescriptionBase_GetVertexInstanceConnectedTriangles final
 {
 public:
 	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B46[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B27[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTriangleID>                    OutConnectedTriangleIDs;                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexInstanceConnectedTriangles) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexInstanceConnectedTriangles");
@@ -1001,7 +1001,7 @@ struct MeshDescriptionBase_GetVertexVertexInstances final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B47[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B28[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVertexInstanceID>              OutVertexInstanceIDs;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MeshDescriptionBase_GetVertexVertexInstances) == 0x000008, "Wrong alignment on MeshDescriptionBase_GetVertexVertexInstances");
@@ -1016,7 +1016,7 @@ struct MeshDescriptionBase_IsEdgeInternal final
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B48[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B29[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsEdgeInternal) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsEdgeInternal");
 static_assert(sizeof(MeshDescriptionBase_IsEdgeInternal) == 0x000008, "Wrong size on MeshDescriptionBase_IsEdgeInternal");
@@ -1031,7 +1031,7 @@ public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPolygonID                             PolygonID;                                         // 0x0004(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B49[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2A[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsEdgeInternalToPolygon) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsEdgeInternalToPolygon");
 static_assert(sizeof(MeshDescriptionBase_IsEdgeInternalToPolygon) == 0x00000C, "Wrong size on MeshDescriptionBase_IsEdgeInternalToPolygon");
@@ -1046,7 +1046,7 @@ struct MeshDescriptionBase_IsEdgeValid final
 public:
 	struct FEdgeID                                EdgeID;                                            // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsEdgeValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsEdgeValid");
 static_assert(sizeof(MeshDescriptionBase_IsEdgeValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsEdgeValid");
@@ -1071,7 +1071,7 @@ struct MeshDescriptionBase_IsPolygonGroupValid final
 public:
 	struct FPolygonGroupID                        PolygonGroupID;                                    // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsPolygonGroupValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsPolygonGroupValid");
 static_assert(sizeof(MeshDescriptionBase_IsPolygonGroupValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsPolygonGroupValid");
@@ -1085,7 +1085,7 @@ struct MeshDescriptionBase_IsPolygonValid final
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2D[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsPolygonValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsPolygonValid");
 static_assert(sizeof(MeshDescriptionBase_IsPolygonValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsPolygonValid");
@@ -1099,7 +1099,7 @@ struct MeshDescriptionBase_IsTrianglePartOfNgon final
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4D[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsTrianglePartOfNgon) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsTrianglePartOfNgon");
 static_assert(sizeof(MeshDescriptionBase_IsTrianglePartOfNgon) == 0x000008, "Wrong size on MeshDescriptionBase_IsTrianglePartOfNgon");
@@ -1113,7 +1113,7 @@ struct MeshDescriptionBase_IsTriangleValid final
 public:
 	struct FTriangleID                            TriangleID;                                        // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B2F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsTriangleValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsTriangleValid");
 static_assert(sizeof(MeshDescriptionBase_IsTriangleValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsTriangleValid");
@@ -1127,7 +1127,7 @@ struct MeshDescriptionBase_IsVertexInstanceValid final
 public:
 	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B4F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B30[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsVertexInstanceValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsVertexInstanceValid");
 static_assert(sizeof(MeshDescriptionBase_IsVertexInstanceValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsVertexInstanceValid");
@@ -1141,7 +1141,7 @@ struct MeshDescriptionBase_IsVertexOrphaned final
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B50[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B31[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsVertexOrphaned) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsVertexOrphaned");
 static_assert(sizeof(MeshDescriptionBase_IsVertexOrphaned) == 0x000008, "Wrong size on MeshDescriptionBase_IsVertexOrphaned");
@@ -1155,7 +1155,7 @@ struct MeshDescriptionBase_IsVertexValid final
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B51[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B32[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MeshDescriptionBase_IsVertexValid) == 0x000004, "Wrong alignment on MeshDescriptionBase_IsVertexValid");
 static_assert(sizeof(MeshDescriptionBase_IsVertexValid) == 0x000008, "Wrong size on MeshDescriptionBase_IsVertexValid");

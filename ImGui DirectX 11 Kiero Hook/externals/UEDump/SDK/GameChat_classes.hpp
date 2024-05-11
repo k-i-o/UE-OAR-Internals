@@ -31,7 +31,7 @@ public:
 	class UEditableTextBox*                       EditableTextBox_269;                               // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_366;                                         // 0x0288(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ChatOpen_;                                         // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F94[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F88[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARobberPlayerState_C*                   As_Robber_Player_State;                            // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

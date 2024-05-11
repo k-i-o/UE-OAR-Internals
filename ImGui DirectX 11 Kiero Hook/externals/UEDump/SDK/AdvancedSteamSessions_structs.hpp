@@ -182,7 +182,7 @@ struct FBPSteamGroupOfficer final
 public:
 	struct FBPUniqueNetId                         OfficerUniqueNetID;                                // 0x0000(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	bool                                          bIsOwner;                                          // 0x0020(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E3[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DA[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBPSteamGroupOfficer) == 0x000008, "Wrong alignment on FBPSteamGroupOfficer");
 static_assert(sizeof(FBPSteamGroupOfficer) == 0x000028, "Wrong size on FBPSteamGroupOfficer");
@@ -196,10 +196,10 @@ struct FBPSteamWorkshopItemDetails final
 public:
 	EFBPSteamResult                               ResultOfRequest;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFBPWorkshopFileType                          FileType;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E4[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DB[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CreatorAppID;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConsumerAppID;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E5[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Title;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Description;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ItemUrl;                                           // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -209,7 +209,7 @@ public:
 	bool                                          bBanned;                                           // 0x004C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAcceptedForUse;                                   // 0x004D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTagsTruncated;                                    // 0x004E(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E6[0x1];                                     // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DD[0x1];                                     // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CreatorSteamID;                                    // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FBPSteamWorkshopItemDetails) == 0x000008, "Wrong alignment on FBPSteamWorkshopItemDetails");
@@ -240,7 +240,7 @@ public:
 	int32                                         NumOnline;                                         // 0x0040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumInGame;                                         // 0x0044(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumChatting;                                       // 0x0048(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E7[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DE[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBPSteamGroupInfo) == 0x000008, "Wrong alignment on FBPSteamGroupInfo");
 static_assert(sizeof(FBPSteamGroupInfo) == 0x000050, "Wrong size on FBPSteamGroupInfo");
@@ -256,7 +256,7 @@ static_assert(offsetof(FBPSteamGroupInfo, NumChatting) == 0x000048, "Member 'FBP
 struct alignas(0x08) FBPSteamWorkshopID final
 {
 public:
-	uint8                                         Pad_10E8[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10DF[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBPSteamWorkshopID) == 0x000008, "Wrong alignment on FBPSteamWorkshopID");
 static_assert(sizeof(FBPSteamWorkshopID) == 0x000008, "Wrong size on FBPSteamWorkshopID");

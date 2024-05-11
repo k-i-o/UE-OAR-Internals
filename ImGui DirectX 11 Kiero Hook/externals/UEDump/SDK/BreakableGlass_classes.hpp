@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BreakableGlass.BreakableGlass_C
 // 0x0058 (0x0278 - 0x0220)
-class ABreakableGlass_C : public AActor
+class ABreakableGlass_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -29,13 +29,13 @@ public:
 	class UDamageComponent_C*                     DamageComponent;                                   // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             BreakSound;                                        // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          TwoHitBreak_;                                      // 0x0250(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1EAA[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EC2[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             GlassDestroyed;                                    // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Alarm_;                                            // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1EAB[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EC3[0x3];                                     // 0x0269(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ParticleAmount;                                    // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Broken_;                                           // 0x0270(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EAC[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EC4[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Health;                                            // 0x0274(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

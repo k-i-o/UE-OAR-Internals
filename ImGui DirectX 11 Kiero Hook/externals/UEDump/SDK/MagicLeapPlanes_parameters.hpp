@@ -34,7 +34,7 @@ struct MagicLeapPlanesFunctionLibrary_AddPersistentQuery final
 {
 public:
 	EMagicLeapPlaneQueryType                      PersistentQueryType;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15ED[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  ReturnValue;                                       // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MagicLeapPlanesFunctionLibrary_AddPersistentQuery) == 0x000004, "Wrong alignment on MagicLeapPlanesFunctionLibrary_AddPersistentQuery");
@@ -71,7 +71,7 @@ struct MagicLeapPlanesFunctionLibrary_GetContentScale final
 public:
 	const class AActor*                           ContentActor;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMagicLeapPlaneResult                  PlaneResult;                                       // 0x0008(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15EE[0x8];                                     // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D7[0x8];                                     // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0070(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MagicLeapPlanesFunctionLibrary_GetContentScale) == 0x000010, "Wrong alignment on MagicLeapPlanesFunctionLibrary_GetContentScale");
@@ -100,7 +100,7 @@ public:
 	struct FGuid                                  Handle;                                            // 0x0060(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(bool bSuccess, struct FGuid& QueryHandle, EMagicLeapPlaneQueryType QueryType, TArray<struct FMagicLeapPlaneResult>& NewPlanes, TArray<struct FGuid>& RemovedPlaneIDs, TArray<struct FMagicLeapPlaneBoundaries>& NewPolygons, TArray<struct FGuid>& RemovedPolygonIDs)> ResultDelegate;                                    // 0x0070(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15EF[0xF];                                     // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D8[0xF];                                     // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapPlanesFunctionLibrary_PlanesPersistentQueryBeginAsync) == 0x000010, "Wrong alignment on MagicLeapPlanesFunctionLibrary_PlanesPersistentQueryBeginAsync");
 static_assert(sizeof(MagicLeapPlanesFunctionLibrary_PlanesPersistentQueryBeginAsync) == 0x000090, "Wrong size on MagicLeapPlanesFunctionLibrary_PlanesPersistentQueryBeginAsync");
@@ -117,7 +117,7 @@ public:
 	struct FMagicLeapPlanesQuery                  Query;                                             // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	TDelegate<void(bool bSuccess, TArray<struct FMagicLeapPlaneResult>& Planes, TArray<struct FMagicLeapPlaneBoundaries>& Polygons)> ResultDelegate;                                    // 0x0060(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15F0[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D9[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapPlanesFunctionLibrary_PlanesQueryBeginAsync) == 0x000010, "Wrong alignment on MagicLeapPlanesFunctionLibrary_PlanesQueryBeginAsync");
 static_assert(sizeof(MagicLeapPlanesFunctionLibrary_PlanesQueryBeginAsync) == 0x000080, "Wrong size on MagicLeapPlanesFunctionLibrary_PlanesQueryBeginAsync");
@@ -147,7 +147,7 @@ struct MagicLeapPlanesFunctionLibrary_RemovePersistentQuery final
 public:
 	struct FGuid                                  Handle;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15F1[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DA[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapPlanesFunctionLibrary_RemovePersistentQuery) == 0x000004, "Wrong alignment on MagicLeapPlanesFunctionLibrary_RemovePersistentQuery");
 static_assert(sizeof(MagicLeapPlanesFunctionLibrary_RemovePersistentQuery) == 0x000014, "Wrong size on MagicLeapPlanesFunctionLibrary_RemovePersistentQuery");

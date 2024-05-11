@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Slate_structs.hpp"
-#include "Engine_structs.hpp"
 #include "InputSettingStruct_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,7 +24,7 @@ struct ControlsUI_C_ExecuteUbergraph_ControlsUI final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F3B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F25[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,7 +33,7 @@ public:
 	class UControlsUI_C*                          CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FInputSettingStruct                    CallFunc_Array_Get_Item;                           // 0x0028(0x0060)(HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F3C[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F26[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue_1;           // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FInputActionKeyMapping>         CallFunc_GetActionMappingByName_OutMappings;       // 0x0098(0x0010)(ReferenceParm)
 	struct FInputAxisKeyMapping                   K2Node_MakeStruct_InputAxisKeyMapping;             // 0x00A8(0x0028)()
@@ -45,15 +45,15 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0165(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F3D[0x2];                                     // 0x0166(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F27[0x2];                                     // 0x0166(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue_3;           // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F3E[0x3];                                     // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F28[0x3];                                     // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F3F[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F29[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(ControlsUI_C_ExecuteUbergraph_ControlsUI) == 0x000008, "Wrong alignment on ControlsUI_C_ExecuteUbergraph_ControlsUI");
@@ -93,7 +93,7 @@ struct ControlsUI_C_UpdateBinding final
 public:
 	struct FInputChord                            InputChord;                                        // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          Axis_mapping_;                                     // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F40[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F2A[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputActionKeyMapping                 Input_action;                                      // 0x0028(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FInputAxisKeyMapping                   Input_axis;                                        // 0x0050(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

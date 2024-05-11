@@ -37,6 +37,40 @@ void ADoorBP_C::ExecuteUbergraph_DoorBP(int32 EntryPoint)
 }
 
 
+// Function DoorBP.DoorBP_C.SetDoorName
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Param_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ADoorBP_C::SetDoorName(const class FString& Param_Name)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBP_C", "SetDoorName");
+
+	Params::DoorBP_C_SetDoorName Parms{};
+
+	Parms.Param_Name = std::move(Param_Name);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function DoorBP.DoorBP_C.BndEvt__DoorBP_HackableItemComponent_K2Node_ComponentBoundEvent_6_PowerboxUnlock__DelegateSignature
+// (BlueprintEvent)
+
+void ADoorBP_C::BndEvt__DoorBP_HackableItemComponent_K2Node_ComponentBoundEvent_6_PowerboxUnlock__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DoorBP_C", "BndEvt__DoorBP_HackableItemComponent_K2Node_ComponentBoundEvent_6_PowerboxUnlock__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function DoorBP.DoorBP_C.ExplodeDoorMulti
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 

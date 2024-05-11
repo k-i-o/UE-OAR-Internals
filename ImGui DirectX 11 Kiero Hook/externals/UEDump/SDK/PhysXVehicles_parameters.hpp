@@ -174,7 +174,7 @@ struct WheeledVehicleMovementComponent_SetTargetGear final
 public:
 	int32                                         GearNum;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bImmediate;                                        // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17F8[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E5[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(WheeledVehicleMovementComponent_SetTargetGear) == 0x000004, "Wrong alignment on WheeledVehicleMovementComponent_SetTargetGear");
 static_assert(sizeof(WheeledVehicleMovementComponent_SetTargetGear) == 0x000008, "Wrong size on WheeledVehicleMovementComponent_SetTargetGear");

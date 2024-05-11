@@ -50,11 +50,11 @@ public:
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UClass*>                         CompletedSetups;                                   // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         TotalAddedValue;                                   // 0x0338(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D37[0x4];                                     // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D18[0x4];                                     // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AMainMenuPlayer_C*                      MainMenuPlayer;                                    // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UMainMenuUI_C*                          MainMenuWidget;                                    // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          NoSetups_;                                         // 0x0350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D38[0x7];                                     // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D19[0x7];                                     // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ALobbyManager_C*                        LobbyManager;                                      // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -28,13 +28,13 @@ public:
 	bool                                          bIsStationary;                                     // 0x0214(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseUnreliablePose;                                // 0x0215(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapImageTargetOrientation              AxisOrientation;                                   // 0x0216(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15E5[0x1];                                     // 0x0217(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15CE[0x1];                                     // 0x0217(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSetImageTargetSucceeded;                         // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnSetImageTargetFailed;                            // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnImageTargetFound;                                // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnImageTargetLost;                                 // 0x0248(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnImageTargetUnreliableTracking;                   // 0x0258(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15E6[0x8];                                     // 0x0268(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15CF[0x8];                                     // 0x0268(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool RemoveTargetAsync();

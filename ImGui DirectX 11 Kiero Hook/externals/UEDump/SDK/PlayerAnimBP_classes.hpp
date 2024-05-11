@@ -24,7 +24,7 @@ namespace SDK
 class UPlayerAnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2171[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2165[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_37;                 // 0x02F8(0x0028)()
@@ -117,7 +117,7 @@ public:
 	struct FRotator                               ArmRotation;                                       // 0x1EF0(0x000C)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Reloading_;                                        // 0x1EFC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          SwitchingGun_;                                     // 0x1EFD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2172[0x2];                                     // 0x1EFE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2166[0x2];                                     // 0x1EFE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGunBase_C*                             GunBP;                                             // 0x1F00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          BackAttach_;                                       // 0x1F08(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Falling_;                                          // 0x1F09(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -125,14 +125,14 @@ public:
 	bool                                          Unarmed_;                                          // 0x1F0B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Downed_;                                           // 0x1F0C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Aimed_;                                            // 0x1F0D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2173[0x2];                                     // 0x1F0E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2167[0x2];                                     // 0x1F0E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCharacter_C*                     Player;                                            // 0x1F10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Vaulting;                                          // 0x1F18(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2174[0x3];                                     // 0x1F19(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2168[0x3];                                     // 0x1F19(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                DraggedItemLocation;                               // 0x1F1C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HeavyGrab_;                                        // 0x1F28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Dancing_;                                          // 0x1F29(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2175[0x6];                                     // 0x1F2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2169[0x6];                                     // 0x1F2A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      PlayerEmote;                                       // 0x1F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LocallyControlled_;                                // 0x1F38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

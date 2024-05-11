@@ -40,7 +40,7 @@ enum class ELiveLinkSourceMode : uint8
 struct alignas(0x08) FLiveLinkSourceHandle final
 {
 public:
-	uint8                                         Pad_15AC[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1595[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkSourceHandle) == 0x000008, "Wrong alignment on FLiveLinkSourceHandle");
 static_assert(sizeof(FLiveLinkSourceHandle) == 0x000018, "Wrong size on FLiveLinkSourceHandle");
@@ -50,7 +50,7 @@ static_assert(sizeof(FLiveLinkSourceHandle) == 0x000018, "Wrong size on FLiveLin
 struct alignas(0x08) FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                         Pad_15AD[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1596[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkBaseBlueprintData) == 0x000008, "Wrong alignment on FLiveLinkBaseBlueprintData");
 static_assert(sizeof(FLiveLinkBaseBlueprintData) == 0x000008, "Wrong size on FLiveLinkBaseBlueprintData");
@@ -60,7 +60,7 @@ static_assert(sizeof(FLiveLinkBaseBlueprintData) == 0x000008, "Wrong size on FLi
 struct FSubjectFrameHandle final : public FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                         Pad_15AE[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1597[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSubjectFrameHandle) == 0x000008, "Wrong alignment on FSubjectFrameHandle");
 static_assert(sizeof(FSubjectFrameHandle) == 0x000018, "Wrong size on FSubjectFrameHandle");
@@ -70,7 +70,7 @@ static_assert(sizeof(FSubjectFrameHandle) == 0x000018, "Wrong size on FSubjectFr
 struct alignas(0x08) FLiveLinkTransform final
 {
 public:
-	uint8                                         Pad_15AF[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1598[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkTransform) == 0x000008, "Wrong alignment on FLiveLinkTransform");
 static_assert(sizeof(FLiveLinkTransform) == 0x000020, "Wrong size on FLiveLinkTransform");
@@ -80,7 +80,7 @@ static_assert(sizeof(FLiveLinkTransform) == 0x000020, "Wrong size on FLiveLinkTr
 struct alignas(0x08) FCachedSubjectFrame final
 {
 public:
-	uint8                                         Pad_15B0[0x160];                                   // 0x0000(0x0160)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1599[0x160];                                   // 0x0000(0x0160)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCachedSubjectFrame) == 0x000008, "Wrong alignment on FCachedSubjectFrame");
 static_assert(sizeof(FCachedSubjectFrame) == 0x000160, "Wrong size on FCachedSubjectFrame");
@@ -93,7 +93,7 @@ public:
 	TMap<class FName, class FString>              StringMetadata;                                    // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FTimecode                              SceneTimecode;                                     // 0x0050(0x0014)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                             SceneFramerate;                                    // 0x0064(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B1[0x4];                                     // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159A[0x4];                                     // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSubjectMetadata) == 0x000008, "Wrong alignment on FSubjectMetadata");
 static_assert(sizeof(FSubjectMetadata) == 0x000070, "Wrong size on FSubjectMetadata");
@@ -135,7 +135,7 @@ public:
 	struct FLiveLinkWorldTime                     WorldTime;                                         // 0x0000(0x0010)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FLiveLinkMetaData                      MetaData;                                          // 0x0010(0x0060)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<float>                                 PropertyValues;                                    // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B2[0x20];                                    // 0x0080(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159B[0x20];                                    // 0x0080(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkBaseFrameData) == 0x000008, "Wrong alignment on FLiveLinkBaseFrameData");
 static_assert(sizeof(FLiveLinkBaseFrameData) == 0x0000A0, "Wrong size on FLiveLinkBaseFrameData");
@@ -199,7 +199,7 @@ public:
 	bool                                          bIsLocationSupported;                              // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsRotationSupported;                              // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsScaleSupported;                                 // 0x0012(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B3[0x5];                                     // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159C[0x5];                                     // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkTransformStaticData) == 0x000008, "Wrong alignment on FLiveLinkTransformStaticData");
 static_assert(sizeof(FLiveLinkTransformStaticData) == 0x000018, "Wrong size on FLiveLinkTransformStaticData");
@@ -220,7 +220,7 @@ public:
 	float                                         FilmBackHeight;                                    // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsApertureSupported;                              // 0x0024(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFocusDistanceSupported;                         // 0x0025(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B4[0x2];                                     // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159D[0x2];                                     // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkCameraStaticData) == 0x000008, "Wrong alignment on FLiveLinkCameraStaticData");
 static_assert(sizeof(FLiveLinkCameraStaticData) == 0x000028, "Wrong size on FLiveLinkCameraStaticData");
@@ -255,7 +255,7 @@ public:
 	float                                         Aperture;                                          // 0x00DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FocusDistance;                                     // 0x00E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELiveLinkCameraProjectionMode                 ProjectionMode;                                    // 0x00E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B5[0xB];                                     // 0x00E5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159E[0xB];                                     // 0x00E5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkCameraFrameData) == 0x000010, "Wrong alignment on FLiveLinkCameraFrameData");
 static_assert(sizeof(FLiveLinkCameraFrameData) == 0x0000F0, "Wrong size on FLiveLinkCameraFrameData");
@@ -304,7 +304,7 @@ public:
 	bool                                          bIsSourceLenghtSupported;                          // 0x001E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSourceRadiusSupported;                          // 0x001F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSoftSourceRadiusSupported;                      // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B6[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159F[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkLightStaticData) == 0x000008, "Wrong alignment on FLiveLinkLightStaticData");
 static_assert(sizeof(FLiveLinkLightStaticData) == 0x000028, "Wrong size on FLiveLinkLightStaticData");
@@ -332,7 +332,7 @@ public:
 	float                                         SourceRadius;                                      // 0x00E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SoftSourceRadius;                                  // 0x00EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SourceLength;                                      // 0x00F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B7[0xC];                                     // 0x00F4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A0[0xC];                                     // 0x00F4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkLightFrameData) == 0x000010, "Wrong alignment on FLiveLinkLightFrameData");
 static_assert(sizeof(FLiveLinkLightFrameData) == 0x000100, "Wrong size on FLiveLinkLightFrameData");
@@ -393,7 +393,7 @@ public:
 	class ULiveLinkSubjectSettings*               Settings;                                          // 0x0020(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkVirtualSubject*                VirtualSubject;                                    // 0x0028(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0030(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B8[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A1[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkSubjectPreset) == 0x000008, "Wrong alignment on FLiveLinkSubjectPreset");
 static_assert(sizeof(FLiveLinkSubjectPreset) == 0x000038, "Wrong size on FLiveLinkSubjectPreset");
@@ -450,7 +450,7 @@ struct FLiveLinkInterpolationSettings final
 {
 public:
 	bool                                          bUseInterpolation;                                 // 0x0000(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         InterpolationOffset;                               // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLiveLinkInterpolationSettings) == 0x000004, "Wrong alignment on FLiveLinkInterpolationSettings");
@@ -492,27 +492,27 @@ struct FLiveLinkSourceBufferManagementSettings final
 {
 public:
 	bool                                          bValidEngineTimeEnabled;                           // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ValidEngineTime;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EngineTimeOffset;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A4[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        EngineTimeClockOffset;                             // 0x0010(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bGenerateSubFrame;                                 // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BC[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A5[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameRate                             DetectedFrameRate;                                 // 0x001C(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseTimecodeSmoothLatest;                          // 0x0024(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BD[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A6[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameRate                             SourceTimecodeFrameRate;                           // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bValidTimecodeFrameEnabled;                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BE[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A7[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ValidTimecodeFrame;                                // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimecodeFrameOffset;                               // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BF[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A8[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        TimecodeClockOffset;                               // 0x0040(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LatestOffset;                                      // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxNumberOfFrameToBuffered;                        // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKeepAtLeastOneFrame;                              // 0x0050(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C0[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A9[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkSourceBufferManagementSettings) == 0x000008, "Wrong alignment on FLiveLinkSourceBufferManagementSettings");
 static_assert(sizeof(FLiveLinkSourceBufferManagementSettings) == 0x000058, "Wrong size on FLiveLinkSourceBufferManagementSettings");

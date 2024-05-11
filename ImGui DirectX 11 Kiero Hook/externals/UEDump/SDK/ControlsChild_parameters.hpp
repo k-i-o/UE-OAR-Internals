@@ -37,11 +37,11 @@ public:
 	struct FInputChord                            K2Node_MakeStruct_InputChord;                      // 0x00B8(0x0020)(HasGetValueTypeHash)
 	struct FInputChord                            K2Node_MakeStruct_InputChord_1;                    // 0x00D8(0x0020)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F12[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_166B[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F13[0x6];                                     // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_166C[0x6];                                     // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0108(0x0018)()
 };
 static_assert(alignof(ControlsChild_C_ExecuteUbergraph_ControlsChild) == 0x000008, "Wrong alignment on ControlsChild_C_ExecuteUbergraph_ControlsChild");

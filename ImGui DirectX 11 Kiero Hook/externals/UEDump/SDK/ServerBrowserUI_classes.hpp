@@ -32,15 +32,15 @@ public:
 	TArray<struct FBlueprintSessionResult>        PublicSessions;                                    // 0x0288(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class URobberGI_C*                            As_Robber_GI;                                      // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayersConnected;                                  // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23F9[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EC[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBlueprintSessionResult                JoinedSession;                                     // 0x02A8(0x0108)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          SessionsAvailable_;                                // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23FA[0x7];                                     // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23ED[0x7];                                     // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               Lobby;                                             // 0x03B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FSteamID                               SteamIDLobbyFound;                                 // 0x03C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSteamID>                       LobbiesFound;                                      // 0x03C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          LookingForServers_;                                // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23FB[0x7];                                     // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EE[0x7];                                     // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ARobberController_C*                    As_Robber_Controller;                              // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

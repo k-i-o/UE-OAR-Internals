@@ -78,7 +78,7 @@ class USteamRequestGroupOfficersCallbackProxy final : public UOnlineBlueprintCal
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10F1[0x50];                                    // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E8[0x50];                                    // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class USteamRequestGroupOfficersCallbackProxy* GetSteamGroupOfficerList(class UObject* WorldContextObject, const struct FBPUniqueNetId& GroupUniqueNetID);
@@ -105,7 +105,7 @@ class USteamWSRequestUGCDetailsCallbackProxy final : public UOnlineBlueprintCall
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10F2[0x38];                                    // 0x0050(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E9[0x38];                                    // 0x0050(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class USteamWSRequestUGCDetailsCallbackProxy* GetWorkshopItemDetails(class UObject* WorldContextObject, const struct FBPSteamWorkshopID& WorkShopID);

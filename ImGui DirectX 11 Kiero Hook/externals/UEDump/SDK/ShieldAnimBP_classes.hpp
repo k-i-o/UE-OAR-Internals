@@ -24,7 +24,7 @@ namespace SDK
 class UShieldAnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_1E9D[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB5[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_15;                 // 0x02F8(0x0028)()
@@ -78,15 +78,15 @@ public:
 	float                                         RightSpeed;                                        // 0x1434(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rifle_;                                            // 0x1438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Shooting_;                                         // 0x1439(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9E[0x2];                                     // 0x143A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB6[0x2];                                     // 0x143A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               LookAtRotation;                                    // 0x143C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Stunned_;                                          // 0x1448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9F[0x7];                                     // 0x1449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB7[0x7];                                     // 0x1449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      StunAnim;                                          // 0x1450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          In_Cover_;                                         // 0x1458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Crouched_;                                         // 0x1459(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          BodyStunned_;                                      // 0x145A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EA0[0x1];                                     // 0x145B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EB8[0x1];                                     // 0x145B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                HitLocation;                                       // 0x145C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

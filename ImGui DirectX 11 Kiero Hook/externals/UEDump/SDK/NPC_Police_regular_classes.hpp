@@ -21,7 +21,7 @@ namespace SDK
 class ANPC_Police_regular_C final : public ANPC_Police_base_C
 {
 public:
-	uint8                                         Pad_2156[0x7];                                     // 0x05F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_214D[0x7];                                     // 0x05F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x05F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass Instruction_base.Instruction_base_C
 // 0x0050 (0x0270 - 0x0220)
-class AInstruction_base_C : public AActor
+class AInstruction_base_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

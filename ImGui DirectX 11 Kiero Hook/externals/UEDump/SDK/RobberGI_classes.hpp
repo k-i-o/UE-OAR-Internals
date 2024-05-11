@@ -26,7 +26,7 @@ class URobberGI_C final : public UAdvancedFriendsGameInstance
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                         ConnectedPlayers;                                  // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_251B[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24FD[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 LobbyType;                                         // 0x0238(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class FString                                 Map;                                               // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FSteamID                               Steam_IDLobby;                                     // 0x0258(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

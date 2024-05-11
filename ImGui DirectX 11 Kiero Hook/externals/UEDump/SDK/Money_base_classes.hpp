@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass Money_base.Money_base_C
 // 0x0010 (0x0268 - 0x0258)
-class AMoney_base_C : public APickupItem_base_C
+class AMoney_base_C final : public APickupItem_base_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Money_base_C;                       // 0x0258(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

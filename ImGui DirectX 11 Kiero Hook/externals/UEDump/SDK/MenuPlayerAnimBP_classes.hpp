@@ -23,7 +23,7 @@ namespace SDK
 class UMenuPlayerAnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_1CF7[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CD8[0x8];                                     // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0030)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x02F8(0x0028)()
@@ -34,7 +34,7 @@ public:
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x0478(0x0030)()
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x04A8(0x00B0)()
 	bool                                          Emoting_;                                          // 0x0558(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CF8[0x7];                                     // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CD9[0x7];                                     // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      Emote_Anim;                                        // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

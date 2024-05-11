@@ -27,7 +27,7 @@ public:
 	class UWidgetAnimation*                       NewAnimation;                                      // 0x0268(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UImage*                                 DamageIndicator;                                   // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FVector                                DamageLocation;                                    // 0x0278(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1CCB[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CAC[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCharacter_C*                     Player;                                            // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

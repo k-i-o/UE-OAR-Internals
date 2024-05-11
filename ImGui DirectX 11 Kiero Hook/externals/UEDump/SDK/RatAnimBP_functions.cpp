@@ -17,24 +17,23 @@
 namespace SDK
 {
 
-// Function RatAnimBP.RatAnimBP_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function RatAnimBP.RatAnimBP_C.ExecuteUbergraph_RatAnimBP
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URatAnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
+void URatAnimBP_C::ExecuteUbergraph_RatAnimBP(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RatAnimBP_C", "AnimGraph");
+		Func = Class->GetFunction("RatAnimBP_C", "ExecuteUbergraph_RatAnimBP");
 
-	Params::RatAnimBP_C_AnimGraph Parms{};
+	Params::RatAnimBP_C_ExecuteUbergraph_RatAnimBP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Param_AnimGraph != nullptr)
-		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
 }
 
 
@@ -58,23 +57,24 @@ void URatAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
-// Function RatAnimBP.RatAnimBP_C.ExecuteUbergraph_RatAnimBP
-// (Final, UbergraphFunction)
+// Function RatAnimBP.RatAnimBP_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink                        Param_AnimGraph                                        (Parm, OutParm, NoDestructor)
 
-void URatAnimBP_C::ExecuteUbergraph_RatAnimBP(int32 EntryPoint)
+void URatAnimBP_C::AnimGraph(struct FPoseLink* Param_AnimGraph)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("RatAnimBP_C", "ExecuteUbergraph_RatAnimBP");
+		Func = Class->GetFunction("RatAnimBP_C", "AnimGraph");
 
-	Params::RatAnimBP_C_ExecuteUbergraph_RatAnimBP Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::RatAnimBP_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_AnimGraph != nullptr)
+		*Param_AnimGraph = std::move(Parms.Param_AnimGraph);
 }
 
 }

@@ -30,7 +30,7 @@ public:
 	int32                                         SpotHealth;                                        // 0x0248(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         MaxHealth;                                         // 0x024C(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ToolAttached_;                                     // 0x0250(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E34[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E4B[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         OwnerDamage;                                       // 0x0254(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

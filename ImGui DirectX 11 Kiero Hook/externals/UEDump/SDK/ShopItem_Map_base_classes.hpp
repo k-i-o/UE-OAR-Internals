@@ -26,7 +26,7 @@ public:
 	int32                                         Cash_low_estimate;                                 // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         Cash_high_estimate;                                // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EMapDifficulty                                Difficulty;                                        // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_21C3[0x7];                                     // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E5[0x7];                                     // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             MainObjectiveIcon;                                 // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UTexture2D*                             SketchIcon;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UBaseMediaSource*                       MapTrailerMedia;                                   // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

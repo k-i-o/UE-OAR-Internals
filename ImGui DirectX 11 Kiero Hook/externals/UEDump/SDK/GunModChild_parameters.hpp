@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AttachmentArrayStructure_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "AttachmentArrayStructure_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,31 +27,31 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A2[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFB[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A3[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFC[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAttachmentArrayStructure              CallFunc_Update_Attachment_New_attachments_structure; // 0x0030(0x0010)(HasGetValueTypeHash)
 	class UClass*                                 CallFunc_FindEquppedAttachmentFunc_Attachment;     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A4[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFD[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0058(0x0028)()
 	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A5[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFE[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_ClassDynamicCast_AsShop_Item_Weapon_Mod_Base_1; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess_1;                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A6[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DFF[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UUserWidget*>                    CallFunc_GetAllWidgetsWithInterface_FoundWidgets;  // 0x0098(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TScriptInterface<class IGunStatInterface_C>   K2Node_DynamicCast_AsGun_Stat_Interface;           // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15A7[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E00[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A8[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E01[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -65,14 +65,14 @@ public:
 	TArray<class UUserWidget*>                    CallFunc_GetAllWidgetsWithInterface_FoundWidgets_1; // 0x01C0(0x0010)(ReferenceParm, ContainsInstancedReference)
 	class UUserWidget*                            CallFunc_Array_Get_Item_1;                         // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A9[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E02[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IGunStatInterface_C>   K2Node_DynamicCast_AsGun_Stat_Interface_1;         // 0x01E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15AA[0x2];                                     // 0x01F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E03[0x2];                                     // 0x01F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15AB[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E04[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(GunModChild_C_ExecuteUbergraph_GunModChild) == 0x000008, "Wrong alignment on GunModChild_C_ExecuteUbergraph_GunModChild");

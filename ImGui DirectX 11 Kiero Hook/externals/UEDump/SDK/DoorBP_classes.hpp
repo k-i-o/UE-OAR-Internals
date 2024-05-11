@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass DoorBP.DoorBP_C
 // 0x00B8 (0x02D8 - 0x0220)
-class ADoorBP_C : public AActor
+class ADoorBP_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -41,24 +41,26 @@ public:
 	class UStaticMesh*                            DoorMesh;                                          // 0x02A0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Open_;                                             // 0x02A8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          OneDirection;                                      // 0x02A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1E5F[0x2];                                     // 0x02AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E72[0x2];                                     // 0x02AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OpenTime;                                          // 0x02AC(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Locked_;                                           // 0x02B0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          SneakOpen_;                                        // 0x02B1(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Opening_;                                          // 0x02B2(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E60[0x1];                                     // 0x02B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E73[0x1];                                     // 0x02B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Health;                                            // 0x02B4(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanShootOpen_;                                     // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          PowerLocked_;                                      // 0x02B9(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          AlarmTriggered_;                                   // 0x02BA(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          UnlockWhenOnPowerShort;                            // 0x02BB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1E61[0x4];                                     // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E74[0x4];                                     // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             OpenSound;                                         // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             CloseSound;                                        // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          StartOpen;                                         // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_DoorBP(int32 EntryPoint);
+	void SetDoorName(const class FString& Param_Name);
+	void BndEvt__DoorBP_HackableItemComponent_K2Node_ComponentBoundEvent_6_PowerboxUnlock__DelegateSignature();
 	void ExplodeDoorMulti();
 	void ReceiveBeginPlay();
 	void ExplodeDoor(class AActor* Param_Instigator);

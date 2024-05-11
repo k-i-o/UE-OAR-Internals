@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "ShopItemCategory_structs.hpp"
-#include "AttachmentArrayStructure_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AttachmentArrayStructure_structs.hpp"
 
 
 namespace SDK::Params

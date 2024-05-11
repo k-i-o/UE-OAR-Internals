@@ -29,7 +29,7 @@ public:
 	class UStaticMeshComponent*                   Shelf;                                             // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Taken_;                                            // 0x0258(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_208A[0x3];                                     // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2062[0x3];                                     // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ShelfNumber;                                       // 0x025C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

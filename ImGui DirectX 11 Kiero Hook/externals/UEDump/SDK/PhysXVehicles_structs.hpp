@@ -61,7 +61,7 @@ static_assert(offsetof(FVehicleGearData, UpRatio) == 0x000008, "Member 'FVehicle
 struct FAnimNode_WheelHandler final : public FAnimNode_SkeletalControlBase
 {
 public:
-	uint8                                         Pad_17E8[0x18];                                    // 0x00C8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D5[0x18];                                    // 0x00C8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAnimNode_WheelHandler) == 0x000008, "Wrong alignment on FAnimNode_WheelHandler");
 static_assert(sizeof(FAnimNode_WheelHandler) == 0x0000E0, "Wrong size on FAnimNode_WheelHandler");
@@ -73,7 +73,7 @@ struct FTireConfigMaterialFriction final
 public:
 	class UPhysicalMaterial*                      PhysicalMaterial;                                  // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FrictionScale;                                     // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17E9[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D6[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTireConfigMaterialFriction) == 0x000008, "Wrong alignment on FTireConfigMaterialFriction");
 static_assert(sizeof(FTireConfigMaterialFriction) == 0x000010, "Wrong size on FTireConfigMaterialFriction");
@@ -85,7 +85,7 @@ static_assert(offsetof(FTireConfigMaterialFriction, FrictionScale) == 0x000008, 
 struct FVehicleAnimInstanceProxy final : public FAnimInstanceProxy
 {
 public:
-	uint8                                         Pad_17EA[0x10];                                    // 0x0770(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D7[0x10];                                    // 0x0770(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVehicleAnimInstanceProxy) == 0x000010, "Wrong alignment on FVehicleAnimInstanceProxy");
 static_assert(sizeof(FVehicleAnimInstanceProxy) == 0x000780, "Wrong size on FVehicleAnimInstanceProxy");
@@ -131,7 +131,7 @@ public:
 	class FName                                   BoneName;                                          // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                AdditionalOffset;                                  // 0x0010(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisableSteering;                                  // 0x001C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17EB[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D8[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWheelSetup) == 0x000008, "Wrong alignment on FWheelSetup");
 static_assert(sizeof(FWheelSetup) == 0x000020, "Wrong size on FWheelSetup");
@@ -146,7 +146,7 @@ struct FVehicleTransmissionData final
 {
 public:
 	bool                                          bUseGearAutoBox;                                   // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17EC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         GearSwitchTime;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         GearAutoBoxLatency;                                // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FinalRatio;                                        // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -154,7 +154,7 @@ public:
 	float                                         ReverseGearRatio;                                  // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NeutralGearUpRatio;                                // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ClutchStrength;                                    // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17ED[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DA[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVehicleTransmissionData) == 0x000008, "Wrong alignment on FVehicleTransmissionData");
 static_assert(sizeof(FVehicleTransmissionData) == 0x000030, "Wrong size on FVehicleTransmissionData");
@@ -178,7 +178,7 @@ public:
 	float                                         DampingRateFullThrottle;                           // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DampingRateZeroThrottleClutchEngaged;              // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DampingRateZeroThrottleClutchDisengaged;           // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17EE[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DB[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVehicleEngineData) == 0x000008, "Wrong alignment on FVehicleEngineData");
 static_assert(sizeof(FVehicleEngineData) == 0x0000A0, "Wrong size on FVehicleEngineData");
@@ -195,7 +195,7 @@ struct FVehicleDifferential4WData final
 {
 public:
 	EVehicleDifferential4W                        DifferentialType;                                  // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17EF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FrontRearSplit;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FrontLeftRightSplit;                               // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RearLeftRightSplit;                                // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

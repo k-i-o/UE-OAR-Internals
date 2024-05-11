@@ -22,7 +22,7 @@ public:
 	int32                                         ID_4_ED865C784EAA9D90C364E08F142C74CC;             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NextID_15_319D8EA841E50E28C3DB4FB2610AF177;        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Completed__12_E38BF8214BD5CEFD5CAE77B6222B9EFB;    // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21B8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21AC[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Title_7_22998E3447301C355FBE37BFF1BD4BB6;          // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Description_9_7E2EB44640463B0E31646B89797E9B97;    // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 };

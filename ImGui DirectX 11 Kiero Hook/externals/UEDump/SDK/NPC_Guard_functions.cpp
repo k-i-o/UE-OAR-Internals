@@ -37,6 +37,20 @@ void ANPC_Guard_C::ExecuteUbergraph_NPC_Guard(int32 EntryPoint)
 }
 
 
+// Function NPC_Guard.NPC_Guard_C.AttachKeycard
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ANPC_Guard_C::AttachKeycard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NPC_Guard_C", "AttachKeycard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function NPC_Guard.NPC_Guard_C.BndEvt__NPC_Guard_Sphere_K2Node_ComponentBoundEvent_8_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -976,6 +990,20 @@ void ANPC_Guard_C::Timeline_0__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("NPC_Guard_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function NPC_Guard.NPC_Guard_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ANPC_Guard_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NPC_Guard_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

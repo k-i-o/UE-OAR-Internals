@@ -28,12 +28,12 @@ public:
 	float                                         MinHolePerimeter;                                  // 0x0214(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinPlaneArea;                                      // 0x0218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapPlaneQueryType                      QueryType;                                         // 0x021C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15EA[0x3];                                     // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D3[0x3];                                     // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SimilarityThreshold;                               // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15EB[0x4];                                     // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D4[0x4];                                     // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPlanesQueryResult;                               // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_             OnPersistentPlanesQueryResult;                     // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_15EC[0x18];                                    // 0x0248(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D5[0x18];                                    // 0x0248(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool RequestPlanesAsync();

@@ -28,7 +28,7 @@ public:
 	class UBoxComponent*                          Box;                                               // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 Gunmesh;                                           // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rifle_;                                            // 0x0248(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EC7[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ED9[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            CasingMesh;                                        // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             GunSound;                                          // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequence*                          ShootAnim;                                         // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

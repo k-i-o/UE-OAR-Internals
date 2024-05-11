@@ -29,7 +29,7 @@ public:
 	class UHighlightWhenHolding_C*                HighlightWhenHolding;                              // 0x0278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAlertComponent_C*                      AlertComponent;                                    // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          Active_;                                           // 0x0288(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F5D[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FDF[0x3];                                     // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SecondsToAlert;                                    // 0x028C(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:

@@ -24,76 +24,75 @@ struct MapSelectUI_C_ExecuteUbergraph_MapSelectUI final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_242E[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_240A[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMapBuyUI_C*                            CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCoinShopUI_C*                          CallFunc_Create_ReturnValue_1;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMapPreviewUI_C*                        CallFunc_Create_ReturnValue_2;                     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_242F[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240B[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EShopItemCategory                             K2Node_Event_Category_1;                           // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EShopItemCategory                             K2Node_Event_Category;                             // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2430[0x1];                                     // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240C[0x1];                                     // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Event_ItemInfo;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_SalePrice;                            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2431[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240D[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_CustomEvent_Map;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Unlocked_;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2432[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240E[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_SalePrice;                      // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2433[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240F[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2434[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2410[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2435[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2411[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMapSelectUIChild_C*                    CallFunc_Create_ReturnValue_3;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMainMenuUI_C*>                  CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0080(0x0010)(ReferenceParm, ContainsInstancedReference)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2436[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2412[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMainMenuUI_C*                          CallFunc_Array_Get_Item_1;                         // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2437[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2438[0x2];                                     // 0x00CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00D0(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2439[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_243A[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_Int64Int64_ReturnValue;        // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_243B[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0145(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ARobberController_C*                    K2Node_DynamicCast_AsRobber_Controller;            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2413[0x2];                                     // 0x00C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00C8(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2414[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2415[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_Int64Int64_ReturnValue;        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2416[0x2];                                     // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2417[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI) == 0x000008, "Wrong alignment on MapSelectUI_C_ExecuteUbergraph_MapSelectUI");
 static_assert(sizeof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI) == 0x000148, "Wrong size on MapSelectUI_C_ExecuteUbergraph_MapSelectUI");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, EntryPoint) == 0x000000, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_bool_Variable) == 0x000004, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_byte_Variable) == 0x000005, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_byte_Variable) == 0x000004, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue) == 0x000008, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue_1) == 0x000010, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Create_ReturnValue_2) == 0x000018, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Create_ReturnValue_2' has a wrong offset!");
@@ -118,30 +117,31 @@ static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_AddC
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000080, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_byte_Variable_1) == 0x000090, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Get_Item_1) == 0x000098, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Select_Default) == 0x0000A0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue) == 0x0000A8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000B0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GetPlayerController_ReturnValue) == 0x0000B8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_AsRobber_Controller) == 0x0000C0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Contains_ReturnValue) == 0x0000C9, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Contains_ReturnValue_1) == 0x0000CA, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Greater_IntInt_ReturnValue) == 0x0000CB, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanAND_ReturnValue) == 0x0000CC, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_IsValid_ReturnValue) == 0x0000CD, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_MyGeometry) == 0x0000D0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_InDeltaTime) == 0x000108, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x000110, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x000118, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x00011C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000120, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000128, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000130, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_EqualEqual_Int64Int64_ReturnValue) == 0x000138, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_EqualEqual_Int64Int64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_3) == 0x00013C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_4) == 0x000140, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000144, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanOR_ReturnValue) == 0x000145, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue) == 0x0000A0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000A8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GetPlayerController_ReturnValue) == 0x0000B0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_AsRobber_Controller) == 0x0000B8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_AsRobber_Controller' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Contains_ReturnValue) == 0x0000C1, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Array_Contains_ReturnValue_1) == 0x0000C2, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Array_Contains_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C3, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanAND_ReturnValue) == 0x0000C4, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_IsValid_ReturnValue) == 0x0000C5, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_MyGeometry) == 0x0000C8, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_MyGeometry' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Event_InDeltaTime) == 0x000100, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Event_InDeltaTime' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_PlayAnimation_ReturnValue_2) == 0x000108, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_1) == 0x000110, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_2) == 0x000114, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000118, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000120, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000128, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_EqualEqual_Int64Int64_ReturnValue) == 0x000130, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_EqualEqual_Int64Int64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, Temp_bool_Variable) == 0x000131, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_3) == 0x000134, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, K2Node_Select_Default) == 0x000138, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_Add_IntInt_ReturnValue_4) == 0x00013C, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000140, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MapSelectUI_C_ExecuteUbergraph_MapSelectUI, CallFunc_BooleanOR_ReturnValue) == 0x000141, "Member 'MapSelectUI_C_ExecuteUbergraph_MapSelectUI::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function MapSelectUI.MapSelectUI_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -163,7 +163,7 @@ struct MapSelectUI_C_FocusOnMap final
 public:
 	class UClass*                                 Map;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Unlocked_;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_243C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2418[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SalePrice;                                         // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(MapSelectUI_C_FocusOnMap) == 0x000008, "Wrong alignment on MapSelectUI_C_FocusOnMap");
@@ -341,10 +341,10 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_243D[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2419[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_243E[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241A[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0048(0x0018)()
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

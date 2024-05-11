@@ -59,11 +59,11 @@ static_assert(sizeof(UMagicLeapControllerFunctionLibrary) == 0x000028, "Wrong si
 class UMagicLeapTouchpadGesturesComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_159E[0x8];                                     // 0x00B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1592[0x8];                                     // 0x00B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnTouchpadGestureStart;                            // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnTouchpadGestureContinue;                         // 0x00C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnTouchpadGestureEnd;                              // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_159F[0x58];                                    // 0x00E8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1593[0x58];                                    // 0x00E8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

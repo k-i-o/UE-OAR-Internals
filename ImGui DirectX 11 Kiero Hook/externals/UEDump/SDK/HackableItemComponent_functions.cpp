@@ -29,5 +29,19 @@ void UHackableItemComponent_C::HackItem__DelegateSignature()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function HackableItemComponent.HackableItemComponent_C.PowerboxUnlock__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UHackableItemComponent_C::PowerboxUnlock__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HackableItemComponent_C", "PowerboxUnlock__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

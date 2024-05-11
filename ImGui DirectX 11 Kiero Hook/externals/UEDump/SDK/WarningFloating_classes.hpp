@@ -26,7 +26,7 @@ public:
 	class UImage*                                 Image_52;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AActor*                                 Actor;                                             // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         Time;                                              // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1ECD[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EDF[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    Component;                                         // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          Question_;                                         // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
