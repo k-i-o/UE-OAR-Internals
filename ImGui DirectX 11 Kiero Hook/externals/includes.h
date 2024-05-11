@@ -8,8 +8,6 @@
 #include "libs/imgui/imgui_impl_dx11.h"
 #include "../variables.h"
 #include "../functions.h"
-//#include "externals/UEDump/SDK/Basic.hpp"
-//#include "externals/UEDump/SDK/Engine_classes.hpp"
 
 typedef HRESULT(__stdcall* Present) (IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
 typedef LRESULT(CALLBACK* WNDPROC)(HWND, UINT, WPARAM, LPARAM);

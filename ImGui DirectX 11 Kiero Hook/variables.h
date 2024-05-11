@@ -1,7 +1,5 @@
 #pragma once
 
-//#include "externals/UEDump/SDK/Basic.hpp"
-//#include "externals/UEDump/SDK/Engine_classes.hpp"
 #include "externals/UEDump/SDK.hpp"
 
 namespace Vars {
