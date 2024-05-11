@@ -150,6 +150,10 @@ void KFNGUI::RenderMainWindow()
 				manager->m_pConfig->teleportExploits.killCameras = true;
 			}
 
+			if (ImGui::Button("Kill breakable glass"))
+			{
+				manager->m_pConfig->teleportExploits.killBreakableGlass = true;
+			}
 
 			ImGui::EndTabItem();
 		}

@@ -146,7 +146,7 @@ void KFNHacks::TeleportExploits()
 {
 	if (!manager->m_pConfig->teleportExploits.killCivilians && !manager->m_pConfig->teleportExploits.killRats &&
 		!manager->m_pConfig->teleportExploits.killPolice && !manager->m_pConfig->teleportExploits.killDoors && 
-		!manager->m_pConfig->teleportExploits.killCameras)
+		!manager->m_pConfig->teleportExploits.killCameras && !manager->m_pConfig->teleportExploits.killBreakableGlass)
 		return;
 	if (!Vars::MyController)
 		return;
@@ -197,6 +197,18 @@ void KFNHacks::TeleportExploits()
 		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
 		}
+		if (manager->m_pConfig->teleportExploits.killBreakableGlass && currActor->GetFullName().find("BreakableGlass") != std::string::npos)
+		{
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		}
+		// Troll
+		// Lock_pick
+		// Tool_BatteringRam
+		// ConcreteBreaker
+		// AngleGrinder
+		// DrillBP
+		// HackingDevice
+		// C4
 	}
 
 	manager->m_pConfig->teleportExploits.killCivilians = false;
@@ -204,4 +216,5 @@ void KFNHacks::TeleportExploits()
 	manager->m_pConfig->teleportExploits.killRats = false;
 	manager->m_pConfig->teleportExploits.killDoors = false;
 	manager->m_pConfig->teleportExploits.killCameras = false;
+	manager->m_pConfig->teleportExploits.killBreakableGlass = false;
 }
