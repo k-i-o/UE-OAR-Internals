@@ -81,6 +81,15 @@ public:
 		bool killBreakableGlass{ false };
 	} teleportExploits;
 
+	struct TrollExploits
+	{
+		bool killLockPick{ false };
+		bool killBatteringRam{ false };
+		bool killDrill{ false };
+		bool killHackingDevice{ false };
+		bool killC4{ false };
+	} trollExploits;
+
 	struct Esp
 	{
 		bool enabled{ false };

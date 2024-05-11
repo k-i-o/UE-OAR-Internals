@@ -19,6 +19,7 @@ void KFNHacks::RunHacks()
 	GunHacks();
 	JumpHack();
 	TeleportExploits();
+	TrollExploits();
 }
 
 
@@ -178,37 +179,17 @@ void KFNHacks::TeleportExploits()
 			continue;
 
 		if (manager->m_pConfig->teleportExploits.killCivilians && currActor->GetFullName().find("Civilian_NPC") != std::string::npos)
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
 		if (manager->m_pConfig->teleportExploits.killRats && currActor->GetFullName().find("RatCharacter") != std::string::npos)
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
 		if (manager->m_pConfig->teleportExploits.killPolice && (currActor->GetFullName().find("NPC_Police") != std::string::npos || currActor->GetFullName().find("NPC_Guard") != std::string::npos))
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
 		if (manager->m_pConfig->teleportExploits.killDoors && currActor->GetFullName().find("DoorBP") != std::string::npos)
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
 		if (manager->m_pConfig->teleportExploits.killCameras && currActor->GetFullName().find("CameraBP") != std::string::npos)
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
 		if (manager->m_pConfig->teleportExploits.killBreakableGlass && currActor->GetFullName().find("BreakableGlass") != std::string::npos)
-		{
 			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
-		}
-		// Troll
-		// Lock_pick
-		// Tool_BatteringRam
-		// ConcreteBreaker
-		// AngleGrinder
-		// DrillBP
-		// HackingDevice
-		// C4
 	}
 
 	manager->m_pConfig->teleportExploits.killCivilians = false;
@@ -217,4 +198,59 @@ void KFNHacks::TeleportExploits()
 	manager->m_pConfig->teleportExploits.killDoors = false;
 	manager->m_pConfig->teleportExploits.killCameras = false;
 	manager->m_pConfig->teleportExploits.killBreakableGlass = false;
+}
+
+void KFNHacks::TrollExploits()
+{
+	if (!manager->m_pConfig->trollExploits.killLockPick && !manager->m_pConfig->trollExploits.killBatteringRam &&
+		!manager->m_pConfig->trollExploits.killDrill && !manager->m_pConfig->trollExploits.killHackingDevice &&
+		!manager->m_pConfig->trollExploits.killC4)
+		return;
+	if (!Vars::MyController)
+		return;
+	if (!Vars::MyController->PlayerCameraManager)
+		return;
+	if (Vars::World->Levels.Num() == 0)
+		return;
+
+	// Get current level
+	SDK::ULevel* currLevel = Vars::World->Levels[0];
+	if (!currLevel)
+		return;
+
+	for (int j = 0; j < currLevel->Actors.Num(); j++)
+	{
+		SDK::AActor* currActor = currLevel->Actors[j];
+
+		// Continue if actor is bad
+		if (!currActor)
+			continue;
+		if (!currActor->RootComponent)
+			continue;
+		if (Fns::IsBadPoint(currActor))
+			continue;
+
+		// Continue if invalid location
+		const auto location = currActor->K2_GetActorLocation();
+		if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f)
+			continue;
+
+		if (manager->m_pConfig->trollExploits.killLockPick && currActor->GetFullName().find("Lock_pick") != std::string::npos)
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		if (manager->m_pConfig->trollExploits.killBatteringRam && currActor->GetFullName().find("Tool_BatteringRam") != std::string::npos)
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		if (manager->m_pConfig->trollExploits.killDrill && (currActor->GetFullName().find("ConcreteBreaker") != std::string::npos || currActor->GetFullName().find("AngleGrinder") != std::string::npos 
+			|| currActor->GetFullName().find("DrillBP") != std::string::npos))
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		if (manager->m_pConfig->trollExploits.killHackingDevice && currActor->GetFullName().find("HackingDevice") != std::string::npos)
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		if (manager->m_pConfig->trollExploits.killC4 && currActor->GetFullName().find("C4") != std::string::npos)
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+	}
+
+	manager->m_pConfig->trollExploits.killLockPick = false;
+	manager->m_pConfig->trollExploits.killBatteringRam = false;
+	manager->m_pConfig->trollExploits.killDrill = false;
+	manager->m_pConfig->trollExploits.killHackingDevice = false;
+	manager->m_pConfig->trollExploits.killC4 = false;
 }

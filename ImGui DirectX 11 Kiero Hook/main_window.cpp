@@ -130,34 +130,42 @@ void KFNGUI::RenderMainWindow()
 		if(ImGui::BeginTabItem("Exploits"))
 		{
 			if (ImGui::Button("Kill civilians"))
-			{
 				manager->m_pConfig->teleportExploits.killCivilians = true;
-			}
 
 			if (ImGui::Button("Kill rats"))
-			{
 				manager->m_pConfig->teleportExploits.killRats = true;
-			}
 
 			if (ImGui::Button("Kill police"))
-			{
 				manager->m_pConfig->teleportExploits.killPolice = true;
-			}
 
 			if (ImGui::Button("Kill doors"))
-			{
 				manager->m_pConfig->teleportExploits.killDoors = true;
-			}
 
 			if (ImGui::Button("Kill cameras"))
-			{
 				manager->m_pConfig->teleportExploits.killCameras = true;
-			}
 
 			if (ImGui::Button("Kill breakable glass"))
-			{
 				manager->m_pConfig->teleportExploits.killBreakableGlass = true;
-			}
+
+			ImGui::EndTabItem();
+		}
+
+		if (ImGui::BeginTabItem("Troll"))
+		{
+			if (ImGui::Button("Kill lock pick"))
+				manager->m_pConfig->trollExploits.killLockPick = true;
+
+			if (ImGui::Button("Kill battering ram"))
+				manager->m_pConfig->trollExploits.killBatteringRam = true;
+
+			if (ImGui::Button("Kill drill"))
+				manager->m_pConfig->trollExploits.killDrill = true;
+
+			if (ImGui::Button("Kill hacking device"))
+				manager->m_pConfig->trollExploits.killHackingDevice = true;
+
+			if (ImGui::Button("Kill c4"))
+				manager->m_pConfig->trollExploits.killC4 = true;
 
 			ImGui::EndTabItem();
 		}
