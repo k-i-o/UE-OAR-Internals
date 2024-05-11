@@ -3,7 +3,8 @@
 KFNManager::KFNManager() noexcept :
 	m_pGui(std::make_unique<KFNGUI>()),
 	m_pConfig(std::make_unique<KFNConfig>()),
-	m_pHacks(std::make_unique<KFNHacks>())
+	m_pHacks(std::make_unique<KFNHacks>()),
+	m_pEsp(std::make_unique<KFNEsp>())
 {
 }
 

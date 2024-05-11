@@ -5,6 +5,7 @@
 #include "gui.h"
 #include "config.h"
 #include "hacks.h"
+#include "esp.h"
 
 #define ASSERT(x) { MessageBoxA(NULL, NULL, x, NULL); exit(0); }
 
@@ -19,6 +20,7 @@ public:
 	std::unique_ptr<KFNGUI>    m_pGui;
 	std::unique_ptr<KFNConfig> m_pConfig;
 	std::unique_ptr<KFNHacks>  m_pHacks;
+	std::unique_ptr<KFNEsp>  m_pEsp;
 };
 
 extern std::unique_ptr<KFNManager> manager;

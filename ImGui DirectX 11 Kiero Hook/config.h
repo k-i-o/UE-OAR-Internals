@@ -69,4 +69,9 @@ public:
 	{
 		bool enabled{ false };
 	} gunHacks;
+
+	struct Esp
+	{
+		bool enabled{ false };
+	} esp;
 };

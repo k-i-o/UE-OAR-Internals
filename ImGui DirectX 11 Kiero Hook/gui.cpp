@@ -119,5 +119,5 @@ void KFNGUI::InitImGui()
 void KFNGUI::RenderImGui()
 {
 	manager->m_pGui->RenderMainWindow();
-	// TODO: Render esp
+	manager->m_pEsp->RenderESP();
 }
