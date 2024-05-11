@@ -5,6 +5,8 @@ void KFNEsp::RenderESP()
 {
 	if (!manager->m_pConfig->esp.enabled)
 		return;
+	if (!manager->UpdateSDK())
+		return;
 	ActorsLoop();
 }
 
