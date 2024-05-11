@@ -10,5 +10,5 @@ private:
 	void EspPolice(SDK::AActor* currActor);
 
 	// Base
-	void RenderNameplates(SDK::FVector2D pos, std::string name);
+	void RenderNameplate(SDK::FVector2D pos, std::string name);
 };

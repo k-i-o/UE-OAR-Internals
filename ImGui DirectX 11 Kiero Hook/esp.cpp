@@ -69,12 +69,12 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 		return;
 
 	// Render ESP
-	RenderNameplates(footPos, currActor->GetName());
+	RenderNameplate(footPos, currActor->GetName());
 }
 
 
 // Base
-void KFNEsp::RenderNameplates(SDK::FVector2D pos, std::string name)
+void KFNEsp::RenderNameplate(SDK::FVector2D pos, std::string name)
 {
 	// Centered nameplate
 	pos.X -= ImGui::CalcTextSize(name.c_str()).x * 0.5f;
