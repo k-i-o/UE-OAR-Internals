@@ -32,4 +32,7 @@ public:
 
 	ImFont* AddFont(float fontSize, const char* fontPath, ImFontConfig* fontCfg = nullptr);
 	ImWchar* GetFontGlyphRanges() noexcept;
+
+	void MultiCombo(const char* label, const std::vector<const char*>& titles, const std::vector<bool*>& options, float width = 0.f);
+	void MultiCombo(const char* label, const std::vector<const char*>& titles, const std::vector<int>& values, int* flag, float width = 0.f);
 };

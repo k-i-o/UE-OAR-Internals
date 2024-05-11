@@ -3,7 +3,9 @@
 
 #include "color.h"
 #include "kfn_gui.h"
+#include "kfn_logger.h"
 #include "kfn_manager.h"
+#include "externals/libs/imgui/imgui_internal.h"
 
 void KFNGUI::SetupImGuiFonts()
 {
@@ -120,4 +122,124 @@ ImWchar* KFNGUI::GetFontGlyphRanges() noexcept
 		builder.BuildRanges(&ranges);
 	}
 	return ranges.Data;
+}
+
+void KFNGUI::MultiCombo(const char* label, const std::vector<const char*>& titles, const std::vector<bool*>& options, float width)
+{
+    if (titles.size() != options.size())
+    {
+        // Shouldn't, might cause issues
+        kfnlog::critical("MultiCombo: titles don't match with options");
+        return;
+    }
+
+    if (width == 0.f)
+        width = ImGui::GetContentRegionAvail().x * 0.5f;
+    const float comboDistance = ImGui::GetContentRegionAvail().x - (2 * 2.f + width + ImGui::CalcTextSize(label).x);
+
+    // Calculate ID
+    std::string strId = "##";
+    strId += label;
+
+    std::string preview = "Disabled##";
+    for (size_t i = 0; i < options.size(); i++)
+    {
+        if (*options[i])
+        {
+            if (preview == "Disabled##")
+                preview = "";
+
+            preview += titles[i];
+            preview.append(", ");
+        }
+    }
+
+    // Remove last ,
+    preview.pop_back();
+    preview.pop_back();
+
+    ImGui::Text(label);
+    ImGui::SameLine();
+    ImGui::SetCursorPosX(ImGui::GetCursorPosX() + comboDistance);
+    ImGui::PushItemWidth(width);
+    if (ImGui::BeginCombo(strId.c_str(), preview.c_str()))
+    {
+        for (size_t i = 0; i < titles.size(); i++)
+        {
+            std::string pTitle = "+ ";
+            pTitle += titles[i];
+            ImGui::Selectable(*options[i] ? pTitle.c_str() : titles[i], options[i], ImGuiSelectableFlags_DontClosePopups);
+        }
+
+        ImGui::EndCombo();
+    }
+    ImGui::PopItemWidth();
+    const float comboOffset = abs(2.f - IM_FLOOR(ImGui::GetStyle().ItemSpacing.y * 0.5f));
+    ImGui::ItemSize(ImVec2(0.f, comboOffset));
+}
+
+void KFNGUI::MultiCombo(const char* label, const std::vector<const char*>& titles, const std::vector<int>& values, int* flag, float width)
+{
+    if (titles.size() != values.size())
+    {
+        // Shouldn't, might cause issues
+        kfnlog::critical("MultiCombo: titles don't match with options");
+        return;
+    }
+
+    if (width == 0.f)
+        width = ImGui::GetContentRegionAvail().x * 0.5f;
+    const float comboDistance = ImGui::GetContentRegionAvail().x - (2 * 2.f + width + ImGui::CalcTextSize(label).x);
+
+    // Calculate ID
+    std::string strId = "##";
+    strId += label;
+
+    std::string preview = "None##";
+    if (!*flag)
+        preview = "None##";
+    else
+    {
+        for (size_t i = 0; i < values.size(); i++)
+        {
+            if (*flag & values[i])
+            {
+                if (preview == "None##")
+                    preview = "";
+
+                preview += titles[i];
+                preview.append(", ");
+            }
+        }
+
+        // Remove last ,
+        preview.pop_back();
+        preview.pop_back();
+    }
+
+    ImGui::Text(label);
+    ImGui::SameLine();
+    ImGui::SetCursorPosX(ImGui::GetCursorPosX() + comboDistance);
+    ImGui::PushItemWidth(width);
+    if (ImGui::BeginCombo(strId.c_str(), preview.c_str()))
+    {
+        for (size_t i = 0; i < titles.size(); i++)
+        {
+            std::string pTitle = "+ ";
+            pTitle += titles[i];
+            const bool hasFlag = *flag & values[i];
+            if (ImGui::Selectable(hasFlag ? pTitle.c_str() : titles[i], hasFlag, ImGuiSelectableFlags_DontClosePopups))
+            {
+                if (hasFlag)
+                    *flag &= ~values[i];
+                else
+                    *flag |= values[i];
+            }
+        }
+
+        ImGui::EndCombo();
+    }
+    ImGui::PopItemWidth();
+    const float comboOffset = abs(2.f - IM_FLOOR(ImGui::GetStyle().ItemSpacing.y * 0.5f));
+    ImGui::ItemSize(ImVec2(0.f, comboOffset));
 }
