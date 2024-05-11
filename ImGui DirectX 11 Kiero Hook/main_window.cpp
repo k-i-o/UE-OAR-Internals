@@ -28,7 +28,17 @@ void KFNGUI::RenderMainWindow()
 
 		if (ImGui::BeginTabItem("ESP"))
 		{
-			// Todo: Add ESP features
+
+			ImGui::Checkbox("Enabled", &manager->m_pConfig->esp.enabled);
+			if (manager->m_pConfig->esp.enabled)
+			{
+				ImGui::Indent();
+
+				static bool s = false;
+				ImGui::Checkbox("Placeholder#1", &s);
+
+				ImGui::Unindent();
+			}
 
 			ImGui::EndTabItem();
 		}
