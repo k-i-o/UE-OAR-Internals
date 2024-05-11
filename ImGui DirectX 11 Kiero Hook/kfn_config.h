@@ -76,6 +76,8 @@ public:
 		bool killRats{ false };
 		bool killCivilians{ false };
 		bool killPolice{ false };
+		bool killDoors{ false };
+		bool killCameras{ false };
 	} teleportExploits;
 
 	struct Esp

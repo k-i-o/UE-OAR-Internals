@@ -63,21 +63,6 @@ void KFNGUI::RenderMainWindow()
 				manager->m_pConfig->cashHack.setCash = true;
 			}
 
-			if (ImGui::Button("Kill rats"))
-			{
-				manager->m_pConfig->teleportExploits.killRats = true;
-			}
-
-			if (ImGui::Button("Kill civilians"))
-			{
-				manager->m_pConfig->teleportExploits.killCivilians = true;
-			}
-
-			if (ImGui::Button("Kill police"))
-			{
-				manager->m_pConfig->teleportExploits.killPolice = true;
-			}
-
 			ImGui::Spacing();
 
 			ImGui::Checkbox("Gun hacks", &manager->m_pConfig->gunHacks.enabled);
@@ -138,15 +123,46 @@ void KFNGUI::RenderMainWindow()
 			ImGui::EndTabItem();
 		}
 
-		if (ImGui::BeginTabItem("Debug"))
+		if(ImGui::BeginTabItem("Exploits"))
 		{
-#ifdef _DEBUG
-			if (ImGui::Button("Dump UObjects"))
-				manager->DumpUObjects();
-#endif
+			if (ImGui::Button("Kill civilians"))
+			{
+				manager->m_pConfig->teleportExploits.killCivilians = true;
+			}
+
+			if (ImGui::Button("Kill rats"))
+			{
+				manager->m_pConfig->teleportExploits.killRats = true;
+			}
+
+			if (ImGui::Button("Kill police"))
+			{
+				manager->m_pConfig->teleportExploits.killPolice = true;
+			}
+
+			if (ImGui::Button("Kill doors"))
+			{
+				manager->m_pConfig->teleportExploits.killDoors = true;
+			}
+
+			if (ImGui::Button("Kill cameras"))
+			{
+				manager->m_pConfig->teleportExploits.killCameras = true;
+			}
+
 
 			ImGui::EndTabItem();
 		}
+
+#ifdef _DEBUG
+		if (ImGui::BeginTabItem("Debug"))
+		{
+			if (ImGui::Button("Dump UObjects"))
+				manager->DumpUObjects();
+
+			ImGui::EndTabItem();
+		}
+#endif
 
 		ImGui::EndTabBar();
 	}
