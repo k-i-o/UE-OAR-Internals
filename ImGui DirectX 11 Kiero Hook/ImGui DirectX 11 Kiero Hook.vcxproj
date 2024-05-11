@@ -182,6 +182,7 @@
     <ClCompile Include="kfn_gui_base.cpp" />
     <ClCompile Include="kfn_hacks.cpp" />
     <ClCompile Include="kfn_logger.cpp" />
+    <ClCompile Include="kfn_enums.h" />
     <ClCompile Include="main_window.cpp" />
     <ClCompile Include="kfn_manager.cpp" />
     <ClCompile Include="main.cpp" />

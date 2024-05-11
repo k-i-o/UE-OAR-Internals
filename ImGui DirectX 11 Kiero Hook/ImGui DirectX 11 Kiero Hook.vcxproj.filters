@@ -129,6 +129,9 @@
     <ClCompile Include="kfn_esp_base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kfn_enums.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="externals\libs\kiero\minhook\dll_resources\MinHook.rc">

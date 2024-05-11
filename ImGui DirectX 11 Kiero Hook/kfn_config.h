@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Windows.h>
+#include "kfn_enums.h"
 
 class KFNConfig
 {
@@ -73,5 +74,8 @@ public:
 	struct Esp
 	{
 		bool enabled{ false };
+
+		bool policeEspEnabled{ false };
+		int policeEspSelection{ 0 };
 	} esp;
 };

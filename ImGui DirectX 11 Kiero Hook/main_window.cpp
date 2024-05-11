@@ -1,4 +1,5 @@
 #include "color.h"
+#include "kfn_enums.h"
 #include "kfn_manager.h"
 #include "kfn_version.h"
 
@@ -34,8 +35,13 @@ void KFNGUI::RenderMainWindow()
 			{
 				ImGui::Indent();
 
-				static bool s = false;
-				ImGui::Checkbox("Placeholder#1", &s);
+				ImGui::Checkbox("Police", &manager->m_pConfig->esp.policeEspEnabled);
+				MultiCombo("Features",
+					{ "Nameplates", "Box" },
+					{ 1 << static_cast<int>(EspSelection::Nameplates),
+							   1 << static_cast<int>(EspSelection::Box)},
+					&manager->m_pConfig->esp.policeEspSelection);
+
 
 				ImGui::Unindent();
 			}

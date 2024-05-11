@@ -43,10 +43,10 @@ void KFNEsp::ActorsLoop()
 	}
 }
 
-
 void KFNEsp::EspPolice(SDK::AActor* currActor)
 {
-	// Todo: Return if police ESP is disabled
+	if (!manager->m_pConfig->esp.policeEspEnabled)
+		return;
 
 	// Actor isn't police
 	if (currActor->GetFullName().find("NPC_Police") == std::string::npos && currActor->GetFullName().find("NPC_Guard") == std::string::npos)
@@ -67,6 +67,8 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 		return;
 
 	// Render ESP
-	RenderNameplate(footPos, currActor->GetName());
-	RenderBox(headPos, footPos);
+	if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Nameplates))
+		RenderNameplate(footPos, currActor->GetName());
+	if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Box))
+		RenderBox(headPos, footPos);
 }
