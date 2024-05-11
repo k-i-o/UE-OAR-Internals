@@ -66,4 +66,13 @@ namespace Fns {
 
 		return false;
 	}
+	inline bool IsBadPoint(SDK::AActor* ptr)
+	{
+		std::uintptr_t Pointer = reinterpret_cast<std::uintptr_t>(ptr);
+
+		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
+			return true;
+
+		return false;
+	}
 }
