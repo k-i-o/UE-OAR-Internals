@@ -16,5 +16,4 @@ private:
 	void GunHacks();
 	void JumpHack();
 	void TeleportExploits();
-	void TrollExploits();
 };

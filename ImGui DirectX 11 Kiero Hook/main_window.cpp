@@ -153,29 +153,6 @@ void KFNGUI::RenderMainWindow()
 			ImGui::EndTabItem();
 		}
 
-		if (ImGui::BeginTabItem("Troll"))
-		{
-			ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 204, 0, 255));
-			ImGui::Text("Warning! Doesn't work on these maps: Orbital Bank, Black Diamond Casino, Esco Bar");
-			ImGui::PopStyleColor();
-			if (ImGui::Button("Kill lock pick"))
-				manager->m_pConfig->trollExploits.killLockPick = true;
-
-			if (ImGui::Button("Kill battering ram"))
-				manager->m_pConfig->trollExploits.killBatteringRam = true;
-
-			if (ImGui::Button("Kill drill"))
-				manager->m_pConfig->trollExploits.killDrill = true;
-
-			if (ImGui::Button("Kill hacking device"))
-				manager->m_pConfig->trollExploits.killHackingDevice = true;
-
-			if (ImGui::Button("Kill c4"))
-				manager->m_pConfig->trollExploits.killC4 = true;
-
-			ImGui::EndTabItem();
-		}
-
 #ifdef _DEBUG
 		if (ImGui::BeginTabItem("Debug"))
 		{
