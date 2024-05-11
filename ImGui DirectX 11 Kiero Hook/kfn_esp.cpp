@@ -14,33 +14,32 @@ void KFNEsp::ActorsLoop()
 		return;
 	if (!Vars::MyController->PlayerCameraManager)
 		return;
+	if (Vars::World->Levels.Num() == 0)
+		return;
 
-	for (int i = 0; i < Vars::World->Levels.Num(); i++)
+	// Get current level
+	SDK::ULevel* currLevel = Vars::World->Levels[0];
+	if (!currLevel)
+		return;
+
+	for (int j = 0; j < currLevel->Actors.Num(); j++)
 	{
-		const auto currLevel = Vars::World->Levels[i];
+		SDK::AActor* currActor = currLevel->Actors[j];
 
-		if (!currLevel)
+		// Continue if actor is bad
+		if (!currActor)
+			continue;
+		if (!currActor->RootComponent)
+			continue;
+		if (Fns::IsBadPoint(currActor))
 			continue;
 
-		for (int j = 0; j < currLevel->Actors.Num(); j++)
-		{
-			const auto currActor = currLevel->Actors[j];
+		// Continue if invalid location
+		const auto location = currActor->K2_GetActorLocation();
+		if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f)
+			continue;
 
-			// Continue if actor is bad
-			if (!currActor)
-				continue;
-			if (!currActor->RootComponent)
-				continue;
-			if (Fns::IsBadPoint(currActor))
-				continue;
-
-			// Continue if invalid location
-			const auto location = currActor->K2_GetActorLocation();
-			if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f)
-				continue;
-
-			EspPolice(currActor);
-		}
+		EspPolice(currActor);
 	}
 }
 
@@ -50,8 +49,7 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 	// Todo: Return if police ESP is disabled
 
 	// Actor isn't police
-	std::string actorName = currActor->GetFullName();
-	if (actorName.find("NPC_Police") == std::string::npos && actorName.find("NPC_Guard") == std::string::npos)
+	if (currActor->GetFullName().find("NPC_Police") == std::string::npos && currActor->GetFullName().find("NPC_Guard") == std::string::npos)
 		return;
 
 	// Get important information
