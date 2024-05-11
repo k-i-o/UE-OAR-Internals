@@ -63,6 +63,21 @@ void KFNGUI::RenderMainWindow()
 				manager->m_pConfig->cashHack.setCash = true;
 			}
 
+			if (ImGui::Button("Kill rats"))
+			{
+				manager->m_pConfig->teleportExploits.killRats = true;
+			}
+
+			if (ImGui::Button("Kill civilians"))
+			{
+				manager->m_pConfig->teleportExploits.killCivilians = true;
+			}
+
+			if (ImGui::Button("Kill police"))
+			{
+				manager->m_pConfig->teleportExploits.killPolice = true;
+			}
+
 			ImGui::Spacing();
 
 			ImGui::Checkbox("Gun hacks", &manager->m_pConfig->gunHacks.enabled);

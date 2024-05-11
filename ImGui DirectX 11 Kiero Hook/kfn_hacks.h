@@ -15,4 +15,5 @@ private:
 	void FlyHack();
 	void GunHacks();
 	void JumpHack();
+	void TeleportExploits();
 };

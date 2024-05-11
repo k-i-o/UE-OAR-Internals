@@ -18,6 +18,7 @@ void KFNHacks::RunHacks()
 	FlyHack();
 	GunHacks();
 	JumpHack();
+	TeleportExploits();
 }
 
 
@@ -139,4 +140,57 @@ void KFNHacks::JumpHack()
 	if (Vars::CharacterClass->CharacterMovement == nullptr)
 		return;
 	Vars::CharacterClass->CharacterMovement->JumpZVelocity = static_cast<float>(manager->m_pConfig->jumpHack.value) * 100.f;
+}
+
+void KFNHacks::TeleportExploits()
+{
+	if (!manager->m_pConfig->teleportExploits.killCivilians && !manager->m_pConfig->teleportExploits.killRats &&
+		!manager->m_pConfig->teleportExploits.killPolice)
+		return;
+	if (!Vars::MyController)
+		return;
+	if (!Vars::MyController->PlayerCameraManager)
+		return;
+	if (Vars::World->Levels.Num() == 0)
+		return;
+
+	// Get current level
+	SDK::ULevel* currLevel = Vars::World->Levels[0];
+	if (!currLevel)
+		return;
+
+	for (int j = 0; j < currLevel->Actors.Num(); j++)
+	{
+		SDK::AActor* currActor = currLevel->Actors[j];
+
+		// Continue if actor is bad
+		if (!currActor)
+			continue;
+		if (!currActor->RootComponent)
+			continue;
+		if (Fns::IsBadPoint(currActor))
+			continue;
+
+		// Continue if invalid location
+		const auto location = currActor->K2_GetActorLocation();
+		if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f)
+			continue;
+
+		if (manager->m_pConfig->teleportExploits.killCivilians && currActor->GetFullName().find("Civilian_NPC") != std::string::npos)
+		{
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		}
+		if (manager->m_pConfig->teleportExploits.killRats && currActor->GetFullName().find("RatCharacter") != std::string::npos)
+		{
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		}
+		if (manager->m_pConfig->teleportExploits.killPolice && (currActor->GetFullName().find("NPC_Police") != std::string::npos || currActor->GetFullName().find("NPC_Guard") != std::string::npos))
+		{
+			currActor->K2_TeleportTo(SDK::FVector{ 0, 0, 0 }, SDK::FRotator{ 0, 0, 0 });
+		}
+	}
+
+	manager->m_pConfig->teleportExploits.killCivilians = false;
+	manager->m_pConfig->teleportExploits.killPolice = false;
+	manager->m_pConfig->teleportExploits.killRats = false;
 }

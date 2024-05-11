@@ -71,6 +71,13 @@ public:
 		bool enabled{ false };
 	} gunHacks;
 
+	struct TeleportExploits
+	{
+		bool killRats{ false };
+		bool killCivilians{ false };
+		bool killPolice{ false };
+	} teleportExploits;
+
 	struct Esp
 	{
 		bool enabled{ false };
