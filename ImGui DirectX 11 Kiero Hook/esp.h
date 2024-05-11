@@ -6,5 +6,9 @@ public:
 	void RenderESP();
 
 private:
-	void RenderNameplates();
+	void ActorsLoop();
+	void EspPolice(SDK::AActor* currActor);
+
+	// Base
+	void RenderNameplates(SDK::FVector2D pos, std::string name);
 };
