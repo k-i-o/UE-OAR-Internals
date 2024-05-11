@@ -72,7 +72,7 @@
     <ClCompile Include="externals\UEDump\SDK\PlayerCharacter_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="config.cpp">
+    <ClCompile Include="kfn_config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="externals\UEDump\SDK\GunBase_functions.cpp">
