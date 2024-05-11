@@ -65,7 +65,7 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 	SDK::FVector2D headPos{};
 	if (!Vars::MyController->ProjectWorldLocationToScreen(footLocation, &footPos, false))
 		return;
-	if (!Vars::MyController->ProjectWorldLocationToScreen(footLocation, &headPos, false))
+	if (!Vars::MyController->ProjectWorldLocationToScreen(headLocation, &headPos, false))
 		return;
 
 	// Render ESP
