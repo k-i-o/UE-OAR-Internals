@@ -13,7 +13,10 @@ void KFNGUI::SetupImGuiFonts()
 	std::string calibriPath = "C:\\Windows\\Fonts\\Calibri.ttf";
 	std::filesystem::path f{ calibriPath.c_str() };
 	if (std::filesystem::exists(f))
+	{
 		AddFont(17.f, calibriPath.c_str());
+		espFont = AddFont(21.f, calibriPath.c_str());
+	}
 	else
 		ASSERT("Callibri font not found!")
 

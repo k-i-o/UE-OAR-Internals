@@ -14,6 +14,7 @@ public:
 	ID3D11RenderTargetView* mainRenderTargetView;
 
 	bool initDx = false;
+	ImFont *espFont = nullptr;
 
 	// Main
 	static HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);

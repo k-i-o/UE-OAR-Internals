@@ -119,5 +119,7 @@ void KFNGUI::InitImGui()
 void KFNGUI::RenderImGui()
 {
 	manager->m_pGui->RenderMainWindow();
+	ImGui::PushFont(espFont);
 	manager->m_pEsp->RenderESP();
+	ImGui::PopFont();
 }
