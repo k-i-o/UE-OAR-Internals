@@ -17,5 +17,7 @@ private:
 		const float height = sqrtf(temp1 + temp2);
 		return height;
 	}
+
 	void RenderNameplate(SDK::FVector2D pos, std::string name);
+	void RenderBox(SDK::FVector2D headPos, SDK::FVector2D footPos);
 };
