@@ -1,6 +1,6 @@
-#include "manager.h"
+#include "kfn_manager.h"
 #include "variables.h"
-#include "hacks.h"
+#include "kfn_hacks.h"
 
 #include "externals/UEDump/SDK/GunBase_classes.hpp"
 

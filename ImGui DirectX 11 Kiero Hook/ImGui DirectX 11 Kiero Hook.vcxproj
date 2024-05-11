@@ -150,8 +150,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="config.cpp" />
-    <ClCompile Include="esp.cpp" />
-    <ClCompile Include="esp_base.cpp" />
+    <ClCompile Include="kfn_esp.cpp" />
+    <ClCompile Include="kfn_esp_base.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_demo.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_draw.cpp" />
@@ -178,12 +178,12 @@
     <ClCompile Include="externals\UEDump\SDK\RobberGI_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\RobberGM_functions.cpp" />
     <ClCompile Include="externals\UEDump\SDK\UMG_functions.cpp" />
-    <ClCompile Include="gui.cpp" />
-    <ClCompile Include="gui_base.cpp" />
-    <ClCompile Include="hacks.cpp" />
-    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="kfn_gui.cpp" />
+    <ClCompile Include="kfn_gui_base.cpp" />
+    <ClCompile Include="kfn_hacks.cpp" />
+    <ClCompile Include="kfn_logger.cpp" />
     <ClCompile Include="main_window.cpp" />
-    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="kfn_manager.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -195,8 +195,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="esp.h" />
+    <ClInclude Include="kfn_config.h" />
+    <ClInclude Include="kfn_esp.h" />
     <ClInclude Include="externals\libs\imgui\imconfig.h" />
     <ClInclude Include="externals\libs\imgui\imgui.h" />
     <ClInclude Include="externals\libs\imgui\imgui_impl_dx11.h" />
@@ -274,12 +274,12 @@
     <ClInclude Include="externals\UEDump\SDK\UMG_structs.hpp" />
     <ClInclude Include="externals\UEDump\UnrealContainers.hpp" />
     <ClInclude Include="functions.h" />
-    <ClInclude Include="gui.h" />
-    <ClInclude Include="hacks.h" />
-    <ClInclude Include="logger.h" />
-    <ClInclude Include="manager.h" />
+    <ClInclude Include="kfn_gui.h" />
+    <ClInclude Include="kfn_hacks.h" />
+    <ClInclude Include="kfn_logger.h" />
+    <ClInclude Include="kfn_manager.h" />
     <ClInclude Include="variables.h" />
-    <ClInclude Include="version.h" />
+    <ClInclude Include="kfn_version.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

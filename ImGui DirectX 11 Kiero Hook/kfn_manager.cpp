@@ -1,4 +1,4 @@
-#include "manager.h"
+#include "kfn_manager.h"
 
 KFNManager::KFNManager() noexcept :
 	m_pGui(std::make_unique<KFNGUI>()),

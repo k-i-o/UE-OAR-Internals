@@ -1,4 +1,4 @@
-#include "logger.h"
+#include "kfn_logger.h"
 
 bool kfnlog::init(level _logLevel, bool showConsole)
 {

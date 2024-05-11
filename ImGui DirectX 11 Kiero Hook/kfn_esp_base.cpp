@@ -1,5 +1,5 @@
-#include "manager.h"
-#include "esp.h"
+#include "kfn_manager.h"
+#include "kfn_esp.h"
 
 // Base
 float KFNEsp::GetPlayerHeight(ImVec2 head, ImVec2 feet)

@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-#include "version.h"
-#include "logger.h"
-#include "manager.h"
+#include "kfn_version.h"
+#include "kfn_logger.h"
+#include "kfn_manager.h"
 
 std::unique_ptr<KFNManager> manager;
 

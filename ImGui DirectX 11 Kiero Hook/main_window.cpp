@@ -1,8 +1,8 @@
 #include "color.h"
-#include "manager.h"
-#include "version.h"
+#include "kfn_manager.h"
+#include "kfn_version.h"
 
-#include "gui.h"
+#include "kfn_gui.h"
 
 void KFNGUI::RenderMainWindow()
 {

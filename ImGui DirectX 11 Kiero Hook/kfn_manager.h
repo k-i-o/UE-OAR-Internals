@@ -2,10 +2,10 @@
 
 #include <memory>
 
-#include "gui.h"
-#include "config.h"
-#include "hacks.h"
-#include "esp.h"
+#include "kfn_gui.h"
+#include "kfn_config.h"
+#include "kfn_hacks.h"
+#include "kfn_esp.h"
 
 #define ASSERT(x) { MessageBoxA(NULL, NULL, x, NULL); exit(0); }
 

@@ -1,6 +1,6 @@
 #include <filesystem>
-#include "manager.h"
-#include "gui.h"
+#include "kfn_manager.h"
+#include "kfn_gui.h"
 
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)

@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include "config.h"
+#include "kfn_config.h"
 
 void KFNConfig::Hotkeys()
 {

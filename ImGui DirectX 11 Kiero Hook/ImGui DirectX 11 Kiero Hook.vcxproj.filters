@@ -105,28 +105,28 @@
     <ClCompile Include="externals\UEDump\SDK\UMG_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui.cpp">
+    <ClCompile Include="kfn_gui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gui_base.cpp">
+    <ClCompile Include="kfn_gui_base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hacks.cpp">
+    <ClCompile Include="kfn_hacks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="manager.cpp">
+    <ClCompile Include="kfn_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logger.cpp">
+    <ClCompile Include="kfn_logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="esp.cpp">
+    <ClCompile Include="kfn_esp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="esp_base.cpp">
+    <ClCompile Include="kfn_esp_base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -277,7 +277,7 @@
     <ClInclude Include="functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="config.h">
+    <ClInclude Include="kfn_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="externals\UEDump\SDK\AdvancedSessions_structs.hpp">
@@ -373,25 +373,25 @@
     <ClInclude Include="externals\UEDump\SDK\UMG_structs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gui.h">
+    <ClInclude Include="kfn_gui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hacks.h">
+    <ClInclude Include="kfn_hacks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="manager.h">
+    <ClInclude Include="kfn_manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="version.h">
+    <ClInclude Include="kfn_version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="color.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="logger.h">
+    <ClInclude Include="kfn_logger.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="esp.h">
+    <ClInclude Include="kfn_esp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,5 @@
-#include "manager.h"
-#include "esp.h"
+#include "kfn_manager.h"
+#include "kfn_esp.h"
 
 void KFNEsp::RenderESP()
 {

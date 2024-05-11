@@ -2,8 +2,8 @@
 #include <string>
 
 #include "color.h"
-#include "gui.h"
-#include "manager.h"
+#include "kfn_gui.h"
+#include "kfn_manager.h"
 
 void KFNGUI::SetupImGuiFonts()
 {
