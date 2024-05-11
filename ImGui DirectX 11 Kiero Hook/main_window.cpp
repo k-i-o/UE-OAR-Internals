@@ -129,6 +129,9 @@ void KFNGUI::RenderMainWindow()
 
 		if(ImGui::BeginTabItem("Exploits"))
 		{
+			ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 204, 0, 255));
+			ImGui::Text("Warning! Doesn't work on these maps: Orbital Bank, Black Diamond Casino, Esco Bar");
+			ImGui::PopStyleColor();
 			if (ImGui::Button("Kill civilians"))
 				manager->m_pConfig->teleportExploits.killCivilians = true;
 
@@ -152,6 +155,9 @@ void KFNGUI::RenderMainWindow()
 
 		if (ImGui::BeginTabItem("Troll"))
 		{
+			ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 204, 0, 255));
+			ImGui::Text("Warning! Doesn't work on these maps: Orbital Bank, Black Diamond Casino, Esco Bar");
+			ImGui::PopStyleColor();
 			if (ImGui::Button("Kill lock pick"))
 				manager->m_pConfig->trollExploits.killLockPick = true;
 
