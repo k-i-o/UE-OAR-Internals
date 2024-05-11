@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="config.cpp" />
     <ClCompile Include="esp.cpp" />
+    <ClCompile Include="esp_base.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_demo.cpp" />
     <ClCompile Include="externals\libs\imgui\imgui_draw.cpp" />
