@@ -90,7 +90,7 @@ void KFNEsp::EspCameras(SDK::AActor* currActor)
 	if (!manager->m_pConfig->esp.cameraEspEnabled)
 		return;
 
-	// Actor isn't police
+	// Actor isn't camera
 	if (currActor->GetFullName().find("CameraBP") == std::string::npos)
 		return;
 
