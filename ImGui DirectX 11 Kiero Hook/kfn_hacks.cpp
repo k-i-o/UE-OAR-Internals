@@ -124,6 +124,7 @@ void KFNHacks::FlyHack()
 		if (manager->m_pConfig->flyHack.noclip)
 			Vars::CharacterClass->bActorEnableCollision = false;
 
+		Vars::CharacterClass->CharacterMovement->Velocity = SDK::FVector{ 0, 0, 0 };
 		Vars::CharacterClass->CharacterMovement->MaxFlySpeed = 3000.f;
 		Vars::CharacterClass->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
 
