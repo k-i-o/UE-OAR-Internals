@@ -116,7 +116,7 @@ void KFNGUI::RenderMainWindow()
 			if (manager->m_pConfig->jumpHack.enabled)
 			{
 				ImGui::Indent();
-				ImGui::SliderInt("##jumpValue", &manager->m_pConfig->jumpHack.value, 0.f, 30);
+				ImGui::SliderInt("##jumpValue", &manager->m_pConfig->jumpHack.value, 0.f, 1000);
 				ImGui::Unindent();
 			}
 

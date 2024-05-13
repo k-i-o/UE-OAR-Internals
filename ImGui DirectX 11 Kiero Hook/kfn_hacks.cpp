@@ -217,11 +217,19 @@ void KFNHacks::GunHacks()
 
 void KFNHacks::JumpHack()
 {
-	if (!manager->m_pConfig->jumpHack.enabled)
-		return;
 	if (Vars::CharacterClass->CharacterMovement == nullptr)
 		return;
-	Vars::CharacterClass->CharacterMovement->JumpZVelocity = static_cast<float>(manager->m_pConfig->jumpHack.value) * 100.f;
+
+	static bool jumpHackState = false;
+	if (manager->m_pConfig->jumpHack.enabled)
+	{
+		Vars::CharacterClass->CharacterMovement->JumpZVelocity = static_cast<float>(manager->m_pConfig->jumpHack.value);
+		jumpHackState = true;
+	}
+	else if(jumpHackState)
+	{
+		Vars::CharacterClass->CharacterMovement->JumpZVelocity = 300.f;
+	}
 }
 
 void KFNHacks::TeleportExploits()

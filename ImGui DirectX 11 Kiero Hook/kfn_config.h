@@ -26,7 +26,7 @@ public:
 	struct JumpHack
 	{
 		bool enabled{ false };
-		int value{ 1 };
+		int value{ 300 };
 		int keyEnable{ VK_F2 };
 	} jumpHack;
 
