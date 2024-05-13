@@ -45,6 +45,16 @@ void KFNGUI::RenderMainWindow()
 						&manager->m_pConfig->esp.policeEspSelection);
 				}
 
+				ImGui::Checkbox("Players", &manager->m_pConfig->esp.playerEspEnabled);
+				if (manager->m_pConfig->esp.playerEspEnabled)
+				{
+					MultiCombo("Features Players",
+						{ "Nameplates", "Box" },
+						{ 1 << static_cast<int>(EspSelection::Nameplates),
+								   1 << static_cast<int>(EspSelection::Box) },
+						&manager->m_pConfig->esp.playerEspSelection);
+				}
+
 				ImGui::Checkbox("Cameras", &manager->m_pConfig->esp.cameraEspEnabled);
 
 				ImGui::Unindent();

@@ -89,5 +89,8 @@ public:
 		int policeEspSelection{ 0 };
 
 		bool cameraEspEnabled{ false };
+
+		bool playerEspEnabled{ false };
+		int playerEspSelection{ 0 };
 	} esp;
 };

@@ -43,6 +43,7 @@ void KFNEsp::ActorsLoop()
 
 		EspPolice(currActor);
 		EspCameras(currActor);
+		EspPlayers(currActor);
 	}
 }
 
@@ -101,4 +102,37 @@ void KFNEsp::EspCameras(SDK::AActor* currActor)
 
 	// Render ESP
 	RenderNameplate(origin, currActor->GetName());
+}
+
+void KFNEsp::EspPlayers(SDK::AActor* currActor)
+{
+	if (!manager->m_pConfig->esp.playerEspEnabled)
+		return;
+
+	// Actor isn't player
+	if (currActor->GetFullName().find("PlayerCharacter") == std::string::npos)
+		return;
+	if (currActor->GetOwner() == Vars::MyController)
+		return;
+
+	// Get important information
+	SDK::FVector footLocation;
+	SDK::FVector boxExtent;
+	currActor->GetActorBounds(true, &footLocation, &boxExtent, false);
+	footLocation.Z -= boxExtent.Z;
+	SDK::FVector headLocation = { footLocation.X, footLocation.Y, footLocation.Z + boxExtent.Z * 1.5f};
+
+	// Do W2S
+	SDK::FVector2D footPos{};
+	SDK::FVector2D headPos{};
+	if (!Vars::MyController->ProjectWorldLocationToScreen(footLocation, &footPos, false))
+		return;
+	if (!Vars::MyController->ProjectWorldLocationToScreen(headLocation, &headPos, false))
+		return;
+
+	// Render ESP
+	if (manager->m_pConfig->esp.playerEspSelection & 1 << static_cast<int>(EspSelection::Nameplates))
+		RenderNameplate(footPos, currActor->GetName());
+	if (manager->m_pConfig->esp.playerEspSelection & 1 << static_cast<int>(EspSelection::Box))
+		RenderBox(headPos, footPos);
 }
