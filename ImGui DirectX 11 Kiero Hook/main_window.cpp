@@ -152,6 +152,12 @@ void KFNGUI::RenderMainWindow()
 
 			if (ImGui::Button("Kill doors"))
 				manager->m_pConfig->teleportExploits.killDoors = true;
+			if (ImGui::IsItemHovered())
+			{
+				ImGui::BeginTooltip();
+				ImGui::Text("Will only delete doors locally(regardless of if you are host or not)");
+				ImGui::EndTooltip();
+			}
 
 			if (ImGui::Button("Kill cameras"))
 				manager->m_pConfig->teleportExploits.killCameras = true;
