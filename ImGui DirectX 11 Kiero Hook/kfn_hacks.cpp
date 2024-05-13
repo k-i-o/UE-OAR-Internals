@@ -16,7 +16,7 @@ void KFNHacks::RunHacks()
 	CashHack();
 	MiscHacks();
 	FlyHack();
-	GunHacks();
+	UnlimitedAmmo();
 	JumpHack();
 	TeleportExploits();
 }
@@ -193,21 +193,16 @@ void KFNHacks::FlyHack()
 	}
 }
 
-void KFNHacks::GunHacks()
+void KFNHacks::UnlimitedAmmo()
 {
-	// Todo: Actual no recoil
-	if (!manager->m_pConfig->gunHacks.enabled)
+	if (!manager->m_pConfig->unlimitedAmmo.enabled)
 		return;
 	if (!Vars::CharacterClass->HoldingGun)
 		return;
 	__try
 	{
-		Vars::CharacterClass->HoldingGun->RecoilStrength = 0.f;
-		Vars::CharacterClass->HoldingGun->Accuracy = 99.f;
 		Vars::CharacterClass->HoldingGun->CalculatedReloadTime = 0.f;
-		Vars::CharacterClass->HoldingGun->Damage = 999;
 		Vars::CharacterClass->HoldingGun->BulletsLeft = 1337;
-		Vars::CharacterClass->HoldingGun->GunKickMultiplier = 0.f;
 	}
 	__except(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION)
 	{

@@ -79,7 +79,7 @@ void KFNGUI::RenderMainWindow()
 
 			ImGui::Spacing();
 
-			ImGui::Checkbox("Gun hacks", &manager->m_pConfig->gunHacks.enabled);
+			ImGui::Checkbox("Unlimited ammo", &manager->m_pConfig->unlimitedAmmo.enabled);
 
 			ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);
 			if (manager->m_pConfig->miscHacks.enabled)

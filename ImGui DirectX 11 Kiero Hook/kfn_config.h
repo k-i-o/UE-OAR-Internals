@@ -65,10 +65,10 @@ public:
 		int cashValue{ 694200 };
 	} cashHack;
 
-	struct GunHacks
+	struct UnlimitedAmmo
 	{
 		bool enabled{ false };
-	} gunHacks;
+	} unlimitedAmmo;
 
 	struct TeleportExploits
 	{
