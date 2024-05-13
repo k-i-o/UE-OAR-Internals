@@ -22,8 +22,11 @@ void KFNEsp::RenderBox(SDK::FVector2D headPos, SDK::FVector2D footPos)
 	const float height = GetPlayerHeight(ImVec2{ headPos.X, headPos.Y }, ImVec2{ footPos.X, footPos.Y });
 	const float width = height * 0.5f;
 
-	const ImVec2 upperLeft = { footPos.X - width * 0.5f, footPos.Y - height };
-	const ImVec2 lowerRight = { footPos.X + width * 0.5f, footPos.Y };
+	SDK::FVector2D originPos = footPos;
+	originPos.Y -= height * 0.5f;
+
+	const ImVec2 upperLeft = { originPos.X - width * 0.5f, originPos.Y - height * 0.5f };
+	const ImVec2 lowerRight = { originPos.X + width * 0.5f, originPos.Y + height * 0.5f };
 	ImGui::GetBackgroundDrawList()->AddRect(upperLeft,
 		lowerRight,
 		IM_COL32(0, 0, 0, 225.f),

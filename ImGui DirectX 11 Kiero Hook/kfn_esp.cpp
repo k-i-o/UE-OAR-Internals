@@ -56,10 +56,19 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 		return;
 
 	// Get important information
-	SDK::FVector footLocation;
+	SDK::FVector origin;
 	SDK::FVector boxExtent;
-	currActor->GetActorBounds(true, &footLocation, &boxExtent, false);
-	SDK::FVector headLocation = { footLocation.X, footLocation.Y, footLocation.Z + boxExtent.Z * 0.5f };
+	currActor->GetActorBounds(true, &origin, &boxExtent, false);
+	SDK::FVector footLocation = origin, headLocation = origin;
+	if(currActor->GetFullName().find("NPC_Guard") != std::string::npos)
+	{
+		headLocation.Z += boxExtent.Z * 0.5f;
+	}
+	else if (currActor->GetFullName().find("NPC_Police") != std::string::npos)
+	{
+		footLocation.Z -= boxExtent.Z * 0.15f;
+		headLocation.Z += boxExtent.Z * 0.15f;
+	}
 
 	// Do W2S
 	SDK::FVector2D footPos{};
