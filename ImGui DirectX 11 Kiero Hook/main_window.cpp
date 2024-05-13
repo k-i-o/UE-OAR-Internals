@@ -95,8 +95,6 @@ void KFNGUI::RenderMainWindow()
 					ImGui::SliderInt("##damageLastBullets", &manager->m_pConfig->miscHacks.lastBulletsDmg, 0, 999);
 
 				ImGui::Checkbox("Damage immunity", &manager->m_pConfig->miscHacks.addedDamageImmunity);
-				if (manager->m_pConfig->miscHacks.addedDamageImmunity)
-					ImGui::SliderInt("##immunityDamage", &manager->m_pConfig->miscHacks.damageImmunity, 0, 999);
 
 				ImGui::Unindent();
 			}

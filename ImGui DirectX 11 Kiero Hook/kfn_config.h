@@ -57,7 +57,6 @@ public:
 		int lastBulletsDmg{ 99 };
 
 		bool addedDamageImmunity{ false };
-		int damageImmunity{ 99 };
 	} miscHacks;
 
 	struct CashHack

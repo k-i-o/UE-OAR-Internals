@@ -79,8 +79,18 @@ void KFNHacks::MiscHacks()
 	if (manager->m_pConfig->miscHacks.addedLastBulletsDmg)
 		Vars::CharacterClass->LastBulletsExtraDamage = manager->m_pConfig->miscHacks.lastBulletsDmg;
 
+	static bool damageImmunityState = false;
 	if (manager->m_pConfig->miscHacks.addedDamageImmunity)
-		Vars::CharacterClass->DamageImmunity = manager->m_pConfig->miscHacks.damageImmunity;
+	{
+		Vars::CharacterClass->DamageImmunity = 1;
+		damageImmunityState = true;
+	}
+	else if(damageImmunityState)
+	{
+		Vars::CharacterClass->DamageImmunity = 0;
+		damageImmunityState = false;
+	}
+
 }
 
 SDK::FVector GetVectorForward(const SDK::FVector& angles)
