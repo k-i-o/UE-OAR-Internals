@@ -83,8 +83,41 @@ void KFNHacks::MiscHacks()
 		Vars::CharacterClass->DamageImmunity = manager->m_pConfig->miscHacks.damageImmunity;
 }
 
+SDK::FVector GetVectorForward(const SDK::FVector& angles)
+{
+	float sp, sy, cp, cy;
+	float angle;
+
+	angle = angles.Y * (3.14159265 / 180.0f);
+	sy = sinf(angle);
+	cy = cosf(angle);
+	angle = -angles.X * (3.14159265 / 180.0f);
+	sp = sinf(angle);
+	cp = cosf(angle);
+
+	return { cp * cy, cp * sy, -sp };
+}
+SDK::FVector GetVectorForward(const SDK::FRotator& angles)
+{
+	float sp, sy, cp, cy;
+	float angle;
+
+	angle = angles.Yaw * (3.14159265 / 180.0f);
+	sy = sinf(angle);
+	cy = cosf(angle);
+	angle = -angles.Pitch * (3.14159265 / 180.0f);
+	sp = sinf(angle);
+	cp = cosf(angle);
+
+	return { cp * cy, cp * sy, -sp };
+}
+
+#define IsKeyHeld(key) (GetAsyncKeyState(key) & 0x8000)
+
 void KFNHacks::FlyHack()
 {
+	if (!Vars::MyController->PlayerCameraManager)
+		return;
 	static bool flyHackState = false;
 	if (manager->m_pConfig->flyHack.enabled)
 	{
@@ -100,7 +133,45 @@ void KFNHacks::FlyHack()
 		else if (GetAsyncKeyState(VK_LCONTROL))
 			pos = { 0.f, 0.f, -10.f };
 
-		Vars::CharacterClass->K2_TeleportTo(Vars::CharacterClass->K2_GetActorLocation() + pos, Vars::CharacterClass->K2_GetActorRotation());
+		SDK::FVector sum = { };
+		SDK::FVector newRot = { };
+		float flySpeed = Vars::CharacterClass->CharacterMovement->MaxFlySpeed / 90.f;
+
+		if (GetAsyncKeyState(VK_SHIFT) & 1)
+			flySpeed *= 1.5f; // hold shift to speed fly
+
+		if (IsKeyHeld('W'))
+			sum += GetVectorForward(Vars::MyController->PlayerCameraManager->GetCameraRotation()) * flySpeed;
+		else if (IsKeyHeld('S')) // we dont want to move backwards if we are holding W
+		{
+			newRot = {
+				-Vars::MyController->PlayerCameraManager->GetCameraRotation().Pitch,		   // when goind backwards, we need to flip the value here
+				Vars::MyController->PlayerCameraManager->GetCameraRotation().Yaw + 180.f, // + 180.f so we look behind us, 'S' is for going backwards after all...
+				0.f								   // roll is always zero
+			};
+			sum += GetVectorForward(newRot) * flySpeed;
+		}
+
+		if (IsKeyHeld('D'))
+		{
+			newRot = {
+				0.f,							  // when going left or right we dont't want to move up or down
+				Vars::MyController->PlayerCameraManager->GetCameraRotation().Yaw + 90.f, // + 90.f so we look to the right, 'D' is for going right after all...
+				0.f								  // roll is always zero
+			};
+			sum += GetVectorForward(newRot) * flySpeed;
+		}
+		else if (IsKeyHeld('A')) // we dont want to move left if we are holding A
+		{
+			newRot = {
+				0.f,							   // when going left or right we dont't want to move up or down
+				Vars::MyController->PlayerCameraManager->GetCameraRotation().Yaw + 270.f, // + 270.f so we look to the left, 'A' is for going left after all...
+				0.f								   // roll is always zero
+			};
+			sum += GetVectorForward(newRot) * flySpeed;
+		}
+
+		Vars::CharacterClass->K2_TeleportTo(Vars::CharacterClass->K2_GetActorLocation() + pos + sum, Vars::CharacterClass->K2_GetActorRotation());
 		flyHackState = true;
 	}
 	else if(!manager->m_pConfig->flyHack.enabled && flyHackState)

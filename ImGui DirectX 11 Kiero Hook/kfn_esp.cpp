@@ -112,6 +112,8 @@ void KFNEsp::EspPlayers(SDK::AActor* currActor)
 	// Actor isn't player
 	if (currActor->GetFullName().find("PlayerCharacter") == std::string::npos)
 		return;
+
+	// Check if actor is local
 	if (currActor->GetOwner() == Vars::MyController)
 		return;
 
