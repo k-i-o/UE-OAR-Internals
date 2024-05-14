@@ -224,6 +224,7 @@ void KFNHacks::JumpHack()
 	else if(jumpHackState)
 	{
 		Vars::CharacterClass->CharacterMovement->JumpZVelocity = 300.f;
+		jumpHackState = false;
 	}
 }
 
