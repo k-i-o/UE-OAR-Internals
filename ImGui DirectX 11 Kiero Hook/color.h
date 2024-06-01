@@ -2,7 +2,6 @@
 
 #include <array>
 #include <cmath>
-#include <d3dx9math.h>
 #include "externals/libs/imgui/imgui.h"
 
 static float alphaFactor = 1.f;
@@ -106,11 +105,6 @@ public:
         return col;
     }
 
-    D3DCOLOR d3d()
-    {
-        DerivedT col(static_cast<DerivedT&>(*this));
-        return D3DCOLOR_RGBA(static_cast<int>(col.r), static_cast<int>(col.g), static_cast<int>(col.b), static_cast<int>(col.a));
-    }
 };
 
 class ColorRGBA : public color4_base<ColorRGBA>
@@ -158,7 +152,7 @@ inline unsigned int HealthColor(float fraction) noexcept
 
 inline auto RainbowColor(float time, float speed, float alpha) noexcept
 {
-    constexpr float pi = D3DX_PI;
+    constexpr float pi = 3.14;
     return std::array{ std::sin(speed * time) * 0.5f + 0.5f, std::sin(speed * time + 2 * pi / 3) * 0.5f + 0.5f,
                       std::sin(speed * time + 4 * pi / 3) * 0.5f + 0.5f, alpha };
 }

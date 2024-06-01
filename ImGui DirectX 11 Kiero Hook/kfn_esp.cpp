@@ -56,6 +56,8 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 	if (currActor->GetFullName().find("NPC_Police") == std::string::npos && currActor->GetFullName().find("NPC_Guard") == std::string::npos)
 		return;
 
+	std::cout << currActor->GetLifeSpan() << std::endl;
+	
 	// Get important information
 	SDK::FVector origin;
 	SDK::FVector boxExtent;
@@ -84,6 +86,8 @@ void KFNEsp::EspPolice(SDK::AActor* currActor)
 		RenderNameplate(footPos, currActor->GetName());
 	if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Box))
 		RenderBox(headPos, footPos);
+	if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Snapline))
+		RenderSnapline(footPos, headPos, manager->m_pConfig->esp.policeEspSnaplineSelection);
 }
 
 void KFNEsp::EspCameras(SDK::AActor* currActor)
@@ -137,4 +141,6 @@ void KFNEsp::EspPlayers(SDK::AActor* currActor)
 		RenderNameplate(footPos, currActor->GetName());
 	if (manager->m_pConfig->esp.playerEspSelection & 1 << static_cast<int>(EspSelection::Box))
 		RenderBox(headPos, footPos);
+	if (manager->m_pConfig->esp.playerEspSelection & 1 << static_cast<int>(EspSelection::Snapline))
+		RenderSnapline(footPos, headPos, manager->m_pConfig->esp.playerEspSnaplineSelection);
 }

@@ -86,10 +86,24 @@ public:
 
 		bool policeEspEnabled{ false };
 		int policeEspSelection{ 0 };
+		int policeEspSnaplineSelection{ 2 };
 
 		bool cameraEspEnabled{ false };
 
 		bool playerEspEnabled{ false };
 		int playerEspSelection{ 0 };
+		int playerEspSnaplineSelection{ 2 };
 	} esp;
+
+	struct Wireframe
+	{
+		bool enabled{ false };
+
+	} wireframe;
+
+	struct Aimbot
+	{
+		bool enabled{ false };
+
+	} aimbot;
 };

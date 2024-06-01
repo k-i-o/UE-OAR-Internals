@@ -15,4 +15,5 @@ private:
 	float GetPlayerHeight(ImVec2 head, ImVec2 feet);
 	void RenderNameplate(SDK::FVector2D pos, std::string name);
 	void RenderBox(SDK::FVector2D headPos, SDK::FVector2D footPos);
+	void RenderSnapline(SDK::FVector2D feet, SDK::FVector2D head, int type);
 };

@@ -19,6 +19,25 @@ void KFNHacks::RunHacks()
 	UnlimitedAmmo();
 	JumpHack();
 	TeleportExploits();
+	Aimbot();
+
+	if (manager->m_pConfig->wireframe.enabled) {
+		SDK::UMaterial* TransparentMaterial = SDK::UObject::FindObject<SDK::UMaterial>("Material M_MasterGlass.M_MasterGlass");
+		SDK::UMaterial* WireframeMaterial = SDK::UObject::FindObject<SDK::UMaterial>("Material WireframeMaterial.WireframeMaterial");
+		SDK::UMaterial* FlameMaterial = SDK::UObject::FindObject<SDK::UMaterial>("Material M_FlameBig.M_FlameBig");
+
+		if (WireframeMaterial)
+		{
+			WireframeMaterial->bDisableDepthTest = true;
+			WireframeMaterial->Wireframe = true;
+			WireframeMaterial->BlendMode = SDK::EBlendMode::BLEND_Additive;
+			WireframeMaterial->MaterialDomain = SDK::EMaterialDomain::MD_Surface;
+			WireframeMaterial->AllowTranslucentCustomDepthWrites = true;
+			WireframeMaterial->bIsBlendable = true;
+			WireframeMaterial->LightmassSettings.EmissiveBoost = 2;
+			WireframeMaterial->LightmassSettings.DiffuseBoost = 0;
+		}
+	}
 }
 
 
@@ -284,4 +303,72 @@ void KFNHacks::TeleportExploits()
 	manager->m_pConfig->teleportExploits.killDoors = false;
 	manager->m_pConfig->teleportExploits.killCameras = false;
 	manager->m_pConfig->teleportExploits.killBreakableGlass = false;
+}
+
+
+void KFNHacks::Aimbot() {
+
+	if (!Vars::MyController)
+		return;
+	if (!Vars::MyController->PlayerCameraManager)
+		return;
+	if (Vars::World->Levels.Num() == 0)
+		return;
+
+	// Get current level
+	SDK::ULevel* currLevel = Vars::World->Levels[0];
+	if (!currLevel)
+		return;
+
+	SDK::AActor* closestActor{};
+	SDK::FRotator closestActorRotation{};
+	float maxDistance = FLT_MAX;
+	float cMaxDistance = 0;
+
+	auto cameraLocation = Vars::MyController->PlayerCameraManager->GetCameraLocation();
+	auto cameraRotation = Vars::MyController->PlayerCameraManager->GetCameraRotation();
+
+	for (int j = 0; j < currLevel->Actors.Num(); j++)
+	{
+		SDK::AActor* currActor = currLevel->Actors[j];
+
+		// Continue if actor is bad
+		if (!currActor)
+			continue;
+		if (!currActor->RootComponent)
+			continue;
+		if (Fns::IsBadPoint(currActor))
+			continue;
+
+		// Continue if invalid location
+		const auto location = currActor->K2_GetActorLocation();
+		if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f)
+			continue;
+
+		// Continue if not useful subject
+		std::string actorName = currActor->GetFullName();
+		if (actorName.find("NPC_Police") == std::string::npos && actorName.find("NPC_Guard") == std::string::npos) continue;
+
+		SDK::FVector2D w2s_pos{};
+		if (Vars::MyController->ProjectWorldLocationToScreen(location, &w2s_pos, false))
+		{
+			auto rot = SDK::UKismetMathLibrary::FindLookAtRotation(cameraLocation, location);
+
+			SDK::FVector2D screen_middle = { 1920 / 2, 1080 / 2 };
+
+			float aimbot_distance = SDK::UKismetMathLibrary::Distance2D(w2s_pos, screen_middle);
+
+			if (aimbot_distance > cMaxDistance && aimbot_distance < maxDistance)
+			{
+				maxDistance = aimbot_distance;
+				closestActor = currActor;
+				closestActorRotation = rot;
+			}
+		}
+	}
+
+	if (closestActor && GetAsyncKeyState(VK_RBUTTON))
+	{
+		Vars::MyController->SetControlRotation(closestActorRotation);
+	}
 }

@@ -16,4 +16,5 @@ private:
 	void UnlimitedAmmo();
 	void JumpHack();
 	void TeleportExploits();
+	void Aimbot();
 };

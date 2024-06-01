@@ -71,7 +71,7 @@ HRESULT __stdcall KFNGUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterva
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 
-	manager->m_pGui->RenderImGui();
+	manager->m_pGui->RenderImGui(); // logic must be changed, actor loop should be the main with all render shit inside it
 
 	ImGui::Render();
 

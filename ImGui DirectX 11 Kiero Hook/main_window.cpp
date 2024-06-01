@@ -38,24 +38,54 @@ void KFNGUI::RenderMainWindow()
 				ImGui::Checkbox("Police", &manager->m_pConfig->esp.policeEspEnabled);
 				if (manager->m_pConfig->esp.policeEspEnabled)
 				{
-					MultiCombo("Features Police",
-						{ "Nameplates", "Box" },
-						{ 1 << static_cast<int>(EspSelection::Nameplates),
-								   1 << static_cast<int>(EspSelection::Box) },
+					MultiCombo("Features Police", { "Nameplates", "Box", "Snapline" },
+						{
+							1 << static_cast<int>(EspSelection::Nameplates),
+							1 << static_cast<int>(EspSelection::Box),
+							1 << static_cast<int>(EspSelection::Snapline),
+						},
 						&manager->m_pConfig->esp.policeEspSelection);
+
+					if (manager->m_pConfig->esp.policeEspSelection & 1 << static_cast<int>(EspSelection::Snapline)) {
+						const char* items[]{ "Bottom", "Middle", "Top" };
+						ImGui::Combo("Snapline type for Police", &manager->m_pConfig->esp.policeEspSnaplineSelection, items, IM_ARRAYSIZE(items));
+					
+					}
 				}
 
 				ImGui::Checkbox("Players", &manager->m_pConfig->esp.playerEspEnabled);
 				if (manager->m_pConfig->esp.playerEspEnabled)
 				{
-					MultiCombo("Features Players",
-						{ "Nameplates", "Box" },
-						{ 1 << static_cast<int>(EspSelection::Nameplates),
-								   1 << static_cast<int>(EspSelection::Box) },
+					MultiCombo("Features Players", { "Nameplates", "Box", "Snapline"},
+						{
+							1 << static_cast<int>(EspSelection::Nameplates),
+							1 << static_cast<int>(EspSelection::Box),
+							1 << static_cast<int>(EspSelection::Snapline),
+						},
 						&manager->m_pConfig->esp.playerEspSelection);
+
+
+					if (manager->m_pConfig->esp.playerEspSelection & 1 << static_cast<int>(EspSelection::Snapline)) {
+						const char* items[]{ "Bottom", "Middle", "Top" };
+						ImGui::Combo("Snapline type for Players", &manager->m_pConfig->esp.playerEspSnaplineSelection, items, IM_ARRAYSIZE(items));
+					}
 				}
 
 				ImGui::Checkbox("Cameras", &manager->m_pConfig->esp.cameraEspEnabled);
+
+				ImGui::Unindent();
+			}
+
+			ImGui::EndTabItem();
+		}
+				
+		if (ImGui::BeginTabItem("Wireframe"))
+		{
+
+			ImGui::Checkbox("Enabled", &manager->m_pConfig->wireframe.enabled);
+			if (manager->m_pConfig->wireframe.enabled)
+			{
+				ImGui::Indent();
 
 				ImGui::Unindent();
 			}
@@ -80,6 +110,8 @@ void KFNGUI::RenderMainWindow()
 			ImGui::Spacing();
 
 			ImGui::Checkbox("Unlimited ammo", &manager->m_pConfig->unlimitedAmmo.enabled);
+
+			ImGui::Checkbox("Aimbot", &manager->m_pConfig->aimbot.enabled);
 
 			ImGui::Checkbox("Misc hacks", &manager->m_pConfig->miscHacks.enabled);
 			if (manager->m_pConfig->miscHacks.enabled)

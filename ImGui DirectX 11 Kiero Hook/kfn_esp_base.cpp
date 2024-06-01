@@ -35,3 +35,22 @@ void KFNEsp::RenderBox(SDK::FVector2D headPos, SDK::FVector2D footPos)
 		2.5f);
 	ImGui::GetBackgroundDrawList()->AddRect(upperLeft, lowerRight, IM_COL32(255, 0, 0, 255), 0.f, ImDrawCornerFlags_All, 1.5f);
 }
+
+void KFNEsp::RenderSnapline(SDK::FVector2D feet, SDK::FVector2D head, int type)
+{
+	ImVec2 origin, destination = ImVec2(feet.X, feet.Y);
+
+	switch (type) {
+	case 0:
+		origin = ImVec2(1920 / 2, 1080);
+		break;	
+	case 1:
+		origin = ImVec2(1920 / 2, 1080 / 2);
+		break;
+	case 2:
+		origin = ImVec2(1920 / 2, 0);
+		destination = ImVec2(head.X, head.Y);
+		break;
+	}
+	ImGui::GetBackgroundDrawList()->AddLine(origin, destination, IM_COL32(255, 0, 0, 255));
+}
